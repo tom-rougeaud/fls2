@@ -1,0 +1,69 @@
+{
+"id":"transformations","titre":"Transformations et espace","icone":"🔄","cat":"geometrie","domaine":"Espace et géométrie","classe":"Toutes les classes",
+"intro":"Symétries, translation, rotation, homothétie. Agrandir, réduire. Se repérer sur la Terre. Couper un solide.",
+"objectifs":["Je sais **reconnaître** une transformation.","Je sais **calculer** avec un agrandissement ou une réduction.","Je sais **lire** une latitude et une longitude."],
+"cours":[
+ {"titre":"Une transformation","txt":["Une [[transformation]] déplace ou change une [[figure]].","La nouvelle figure est l’[[image|image-figure]] de la figure de départ."],"ill":"trans:image"},
+ {"titre":"La symétrie axiale","txt":["La [[symétrie axiale|symetrie-axiale]] est comme un pliage le long d’une droite : l’[[axe de symétrie|axe-de-symetrie]].","La figure et son image se superposent."],"ill":"trans:symax"},
+ {"titre":"La symétrie centrale","txt":["La [[symétrie centrale|symetrie-centrale]] est un demi-tour autour d’un point O.","O est le [[milieu]] du segment entre un point et son image."],"ill":"trans:symc"},
+ {"titre":"La translation","txt":["La [[translation]] fait glisser la figure, sans la tourner.","Une flèche donne la direction, le sens et la longueur du glissement."],"ill":"trans:trans"},
+ {"titre":"La rotation","txt":["La [[rotation]] fait tourner la figure autour d’un point : le [[centre]].","On donne l’angle et le sens de rotation."],"ill":"trans:rot"},
+ {"titre":"L’homothétie","txt":["L’[[homothétie|homothetie]] agrandit ou réduit une figure à partir d’un centre.","Le [[rapport]] k dit par combien les longueurs sont multipliées."],"ill":"trans:homo"},
+ {"titre":"Ce qui ne change pas","txt":["Les symétries, la translation et la rotation gardent les longueurs, les angles et les aires.","L’homothétie de rapport k garde les angles. Elle multiplie les longueurs par k et les aires par k²."],"ill":"trans:symc"},
+ {"titre":"Agrandir et réduire","txt":["Un [[agrandissement]] : le rapport k est plus grand que 1.","Une réduction : le rapport k est entre 0 et 1."],"ex":["k = 3 : les longueurs sont multipliées par 3.","k = 0,5 : les longueurs sont divisées par 2."],"ill":"trans:agr"},
+ {"titre":"Se repérer sur la Terre","txt":["La Terre a presque la forme d’une [[sphère|sphere]].","La [[latitude]] dit si on est au nord ou au sud de l’[[équateur|equateur]].","La [[longitude]] dit si on est à l’est ou à l’ouest du méridien de Greenwich."],"ex":["Paris : environ 49° Nord et 2° Est."],"ill":"sol:globe"},
+ {"titre":"Couper un solide","txt":["Je coupe un solide par un plan : j’obtiens une [[section]].","Un pavé droit coupé parallèlement à une face : la section est un rectangle.","Un cylindre coupé parallèlement à la base : la section est un disque.","Une boule coupée par un plan : la section est un disque."],"ill":"sol:section"}
+],
+"methodes":[
+ {"titre":"Construire l’image par une translation","etapes":["Je lis la flèche : combien de carreaux à droite ou à gauche, combien en haut ou en bas.","Je déplace chaque sommet de la même façon.","Je relie les nouveaux points."],
+  "exemple":{"enonce":"Le point A a pour coordonnées (1 ; 2). On le fait glisser de 3 carreaux vers la droite et 1 carreau vers le haut. **Donne** les coordonnées de son image A’.","etapes":[{"t":"3 carreaux vers la droite : l’abscisse augmente de 3.","c":"1 + 3 = 4"},{"t":"1 carreau vers le haut : l’ordonnée augmente de 1.","c":"2 + 1 = 3"}],"reponse":"A’(4 ; 3)"}},
+ {"titre":"L’image par la symétrie de centre O","etapes":["Le centre O est l’origine du repère.","Je prends l’opposé de l’abscisse.","Je prends l’opposé de l’ordonnée."],
+  "exemple":{"enonce":"**Donne** l’image du point A(3 ; −2) par la symétrie de centre O.","etapes":[{"t":"O est le milieu de [AA’].","c":""},{"t":"Je prends les opposés des deux coordonnées.","c":"A’(−3 ; 2)"}],"reponse":"L’image de A est A’(−3 ; 2)."}},
+ {"titre":"Calculer avec un agrandissement","etapes":["Je trouve le rapport k.","Les longueurs sont multipliées par k.","Les aires sont multipliées par k².","Les volumes sont multipliés par k³."],
+  "exemple":{"enonce":"Un triangle a un périmètre de 12 cm et une aire de 6 cm². On l’agrandit avec le rapport 3. **Calcule** le nouveau périmètre et la nouvelle aire.","etapes":[{"t":"Les longueurs sont multipliées par 3.","c":"12 × 3 = 36 cm"},{"t":"Les aires sont multipliées par 3² = 9.","c":"6 × 9 = 54 cm²"}],"reponse":"Le périmètre est 36 cm et l’aire est 54 cm²."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"On fait glisser une figure sans la tourner.","q":"C’est :","o":["une translation","une rotation","une symétrie axiale"],"a":0,"exp":"Glisser sans tourner : c’est une translation."},
+ {"t":"qcm","txt":"On fait tourner une figure de 90° autour d’un point.","q":"C’est :","o":["une rotation","une translation","une homothétie"],"a":0,"exp":"Tourner autour d’un point : c’est une rotation."},
+ {"t":"vf","txt":"On fait une homothétie de rapport 2.","q":"Les longueurs sont multipliées par 2.","a":true,"exp":"Le rapport 2 multiplie toutes les longueurs par 2. Les aires sont multipliées par 4."},
+ {"t":"qcm","txt":"On réduit une figure avec le rapport 0,5.","q":"Les longueurs sont :","o":["divisées par 2","multipliées par 2","les mêmes"],"a":0,"exp":"× 0,5, c’est la même chose que ÷ 2."},
+ {"t":"question","txt":["La ville A est à 45° Nord.","La ville B est à 45° Sud.","Les deux villes sont-elles du même côté de l’équateur ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». Non : une est au nord, l’autre au sud."},
+ {"t":"donnees","txt":"Un rectangle a un périmètre de 20 cm et une aire de 24 cm². Il est bleu. On l’agrandit avec le rapport 3. Calcule l’aire du nouveau rectangle.","q":"Touche les deux données utiles.","a":["24","3"],"exp":"24 × 3² = 24 × 9 = 216 cm². Le périmètre ne sert pas."},
+ {"t":"qcm","txt":"On coupe un cylindre parallèlement à sa base.","q":"La section est :","o":["un disque","un rectangle","un triangle"],"a":0,"exp":"La coupe a la même forme que la base : un disque."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"La figure verte est l’image de la figure bleue."}
+],
+"brevet":[
+ {"id":"tf-b1","titre":"Le triangle dans le repère","ctx":["Dans un repère d’origine O, on a le triangle ABC.","A(1 ; 1), B(3 ; 1) et C(1 ; 4)."],"fig":"trans:grid",
+  "qs":[
+   {"q":"On fait glisser le triangle de 2 carreaux vers la droite. Quelles sont les coordonnées de l’image de B ?","type":"qcm","o":["(5 ; 1)","(3 ; 3)","(1 ; 1)"],"a":0,"aide":["L’abscisse augmente de 2. L’ordonnée ne change pas."],"corr":["3 + 2 = 5","B’(5 ; 1)"],"rep":"L’image de B est le point (5 ; 1)."},
+   {"q":"Quelles sont les coordonnées de l’image de C par la symétrie de centre O ?","type":"qcm","o":["(−1 ; −4)","(1 ; −4)","(−1 ; 4)"],"a":0,"aide":["Je prends les opposés des deux coordonnées."],"corr":["C(1 ; 4) → C’(−1 ; −4)"],"rep":"L’image de C est le point (−1 ; −4)."},
+   {"q":"Quelle est l’image de A par la symétrie d’axe l’axe des ordonnées ?","type":"qcm","o":["(−1 ; 1)","(1 ; −1)","(−1 ; −1)"],"a":0,"aide":["L’axe est vertical : seule l’abscisse change de signe."],"corr":["A(1 ; 1) → A’(−1 ; 1)"],"rep":"L’image de A est le point (−1 ; 1)."}
+  ]},
+ {"id":"tf-b2","titre":"La maquette de voiture","ctx":["Une maquette est une réduction d’une vraie voiture.","La vraie voiture mesure 4,5 m de long.","La maquette mesure 15 cm de long."],
+  "qs":[
+   {"q":"**Calcule** le rapport de réduction. **Donne** une fraction irréductible.","type":"frac","a":"1/30","irr":true,"aide":["4,5 m = 450 cm.","Rapport = longueur de la maquette ÷ vraie longueur."],"corr":["15 ÷ 450 = {{15/450}} = {{1/30}}"],"rep":"Le rapport de réduction est {{1/30}}."},
+   {"q":"La vraie voiture a une largeur de 1,8 m. **Calcule** la largeur de la maquette, en cm.","type":"num","a":6,"unit":"cm","aide":["1,8 m = 180 cm.","Je divise par 30."],"corr":["180 ÷ 30 = 6"],"rep":"La maquette mesure 6 cm de large."},
+   {"q":"Les aires de la vraie voiture sont multipliées par combien par rapport à la maquette ?","type":"qcm","o":["900","30","60"],"a":0,"aide":["Les longueurs sont multipliées par 30. Les aires par 30²."],"corr":["30² = 900"],"rep":"Les aires sont multipliées par 900."}
+  ]},
+ {"id":"tf-b3","titre":"Deux villes sur le globe","ctx":["Ville A : latitude 30° Nord, longitude 10° Est.","Ville B : latitude 30° Nord, longitude 50° Est."],"fig":"sol:globe",
+  "qs":[
+   {"q":"Les deux villes sont-elles à la même distance de l’équateur ?","type":"qcm","o":["Oui, elles ont la même latitude.","Non, elles ont des longitudes différentes.","On ne peut pas savoir."],"a":0,"aide":["La latitude dit la position au nord ou au sud de l’équateur."],"corr":["Latitude de A = latitude de B = 30° Nord"],"rep":"Oui, les deux villes ont la même latitude."},
+   {"q":"**Calcule** l’écart de longitude entre les deux villes.","type":"num","a":40,"unit":"°","aide":["Les deux longitudes sont à l’est : 50 − 10."],"corr":["50 − 10 = 40"],"rep":"L’écart de longitude est de 40°."}
+  ]}
+],
+"calc":["tf-trans","tf-symc","tf-symax","tf-homo","tf-rot"],
+"mots":[
+ {"id":"transformation","mot":"transformation","art":"la","g":"f","cat":"geometrie","ill":"trans:image","def":"Une action qui déplace ou change une [[figure]] : symétrie, translation, rotation, homothétie.","ph":["La [[transformation]] est une rotation.","Je reconnais la [[transformation]]."]},
+ {"id":"image-figure","mot":"image d’une figure","art":"l’","g":"f","cat":"geometrie","ill":"trans:image","def":"La nouvelle [[figure]], obtenue après la [[transformation]].","ph":["Le triangle vert est l’[[image|image-figure]] du triangle bleu.","Je construis l’[[image|image-figure]] du point A."]},
+ {"id":"symetrie-axiale","mot":"symétrie axiale","art":"la","g":"f","cat":"geometrie","ill":"trans:symax","def":"Un pliage le long d’une droite : l’axe. La figure et son [[image|image-figure]] se superposent.","ph":["Je trace l’image par la [[symétrie axiale|symetrie-axiale]] d’axe (d).","Le papillon a une [[symétrie axiale|symetrie-axiale]]."]},
+ {"id":"symetrie-centrale","mot":"symétrie centrale","art":"la","g":"f","cat":"geometrie","ill":"trans:symc","def":"Un demi-tour autour d’un point O. O est le [[milieu]] entre un point et son image.","ph":["Je construis l’image par la [[symétrie centrale|symetrie-centrale]] de centre O.","Le losange a une [[symétrie centrale|symetrie-centrale]]."]},
+ {"id":"translation","mot":"translation","art":"la","g":"f","cat":"geometrie","ill":"trans:trans","def":"Un glissement de la figure, sans la tourner. Une flèche montre le glissement.","ph":["La [[translation]] déplace le triangle de 3 carreaux vers la droite.","Je fais glisser la figure : c’est une [[translation]]."]},
+ {"id":"rotation","mot":"rotation","art":"la","g":"f","cat":"geometrie","ill":"trans:rot","def":"Faire tourner une figure autour d’un point, d’un certain angle.","ph":["La [[rotation]] de centre O et d’angle 90° tourne le carré.","Une roue fait une [[rotation]]."]},
+ {"id":"homothetie","mot":"homothétie","art":"l’","g":"f","cat":"geometrie","ill":"trans:homo","def":"Agrandir ou réduire une figure à partir d’un centre, avec un [[rapport]] k.","ph":["L’[[homothétie|homothetie]] de rapport 2 agrandit la figure.","Je construis l’image par l’[[homothétie|homothetie]] de centre O."]},
+ {"id":"agrandissement","mot":"agrandissement","art":"l’","g":"m","cat":"geometrie","ill":"trans:agr","def":"Une [[figure]] plus grande, avec la même forme et les mêmes angles. Les longueurs sont multipliées par k, plus grand que 1.","ph":["La photo est un [[agrandissement]] de rapport 2.","Pour une réduction, le rapport est plus petit que 1."]},
+ {"id":"latitude","mot":"latitude","art":"la","g":"f","cat":"geometrie","ill":"sol:lat","def":"L’angle qui dit si on est au nord ou au sud de l’[[équateur|equateur]], de 0° à 90°.","ph":["La [[latitude]] de Paris est environ 49° Nord.","Deux villes sur le même parallèle ont la même [[latitude]]."]},
+ {"id":"longitude","mot":"longitude","art":"la","g":"f","cat":"geometrie","ill":"sol:long","def":"L’angle qui dit si on est à l’est ou à l’ouest du méridien de Greenwich, de 0° à 180°.","ph":["La [[longitude]] de Paris est environ 2° Est.","Je lis la [[longitude]] sur le globe."]},
+ {"id":"equateur","mot":"équateur","art":"l’","g":"m","cat":"geometrie","ill":"sol:globe","def":"Le grand cercle au milieu de la Terre. Il sépare le nord et le sud. Sa latitude est 0°.","ph":["L’[[équateur|equateur]] a une latitude de 0°.","Le Brésil est au sud de l’[[équateur|equateur]]."]},
+ {"id":"section","mot":"section","art":"la","g":"f","cat":"geometrie","ill":"sol:section","def":"La forme obtenue quand on coupe un solide par un plan.","ph":["La [[section]] du cylindre est un disque.","Je dessine la [[section]] du pavé droit."]}
+]
+}

@@ -1,0 +1,69 @@
+{
+"id":"angles","titre":"Angles et triangles","icone":"📐","cat":"geometrie","domaine":"Espace et géométrie","classe":"5ᵉ · 4ᵉ · 3ᵉ",
+"intro":"Les types d’angles, la somme des angles d’un triangle, les angles et les droites parallèles, les triangles semblables.",
+"objectifs":["Je sais **calculer** un angle dans un triangle.","Je sais **reconnaître** des angles alternes-internes et correspondants.","Je sais **utiliser** des triangles semblables."],
+"cours":[
+ {"titre":"Les types d’angles","txt":["Un [[angle aigu|angle-aigu]] mesure moins de 90°.","Un [[angle droit|angle-droit]] mesure 90°.","Un [[angle obtus|angle-obtus]] mesure entre 90° et 180°."],"ill":"ang:types"},
+ {"titre":"La somme des angles d’un triangle","txt":["Dans un [[triangle]], la [[somme des angles|somme-des-angles]] est toujours égale à 180°."],"ex":["Deux angles mesurent 50° et 70°. Le troisième mesure 180 − 50 − 70 = 60°."],"ill":"tri:somme"},
+ {"titre":"Les triangles particuliers","txt":["Un [[triangle isocèle|triangle-isocele]] a deux côtés égaux. Ses deux angles à la base sont égaux.","Un [[triangle équilatéral|triangle-equilateral]] a trois côtés égaux. Ses trois angles mesurent 60°.","Un [[triangle rectangle|triangle-rectangle]] a un angle droit."],"ill":"tri:iso"},
+ {"titre":"Les angles opposés par le sommet","txt":["Deux droites se coupent.","Les [[angles opposés par le sommet|angles-opposes]] sont égaux."],"ill":"ang:opp"},
+ {"titre":"Angles et droites parallèles","txt":["Deux droites parallèles sont coupées par une [[sécante|secante]].","Les [[angles alternes-internes|angles-alternes-internes]] sont égaux.","Les [[angles correspondants|angles-correspondants]] sont égaux."],"note":"Et dans l’autre sens : si deux angles alternes-internes sont égaux, alors les droites sont parallèles.","ill":"ang:alt"},
+ {"titre":"Les droites du triangle","txt":["La [[médiatrice|mediatrice]] d’un segment est la droite perpendiculaire qui passe par son milieu.","Une [[hauteur|hauteur-triangle]] part d’un sommet. Elle coupe le côté opposé à angle droit."],"ill":"tri:mediatrice"},
+ {"titre":"Les triangles semblables","txt":["Deux [[triangles semblables|triangles-semblables]] ont les mêmes angles.","Leurs côtés sont proportionnels : l’un est un agrandissement de l’autre."],"ex":["Côtés 3, 4, 5 et côtés 6, 8, 10 : tous les côtés sont multipliés par 2."],"ill":"tri:semblables"}
+],
+"methodes":[
+ {"titre":"Calculer le troisième angle d’un triangle","etapes":["J’additionne les deux angles connus.","Je soustrais ce résultat à 180°.","J’écris la phrase avec le symbole °."],
+  "exemple":{"enonce":"Dans le triangle ABC, l’angle en A mesure 35° et l’angle en B mesure 85°. **Calcule** l’angle en C.","etapes":[{"t":"J’additionne les deux angles connus.","c":"35 + 85 = 120"},{"t":"Je soustrais à 180.","c":"180 − 120 = 60"}],"reponse":"L’angle en C mesure 60°."}},
+ {"titre":"Les angles d’un triangle isocèle","etapes":["Les deux angles à la base sont égaux.","Je soustrais l’angle du sommet à 180°.","Je divise par 2."],
+  "exemple":{"enonce":"Un triangle isocèle a un angle au sommet principal de 40°. **Calcule** les angles à la base.","etapes":[{"t":"Je soustrais l’angle du sommet à 180.","c":"180 − 40 = 140"},{"t":"Les deux angles à la base sont égaux : je divise par 2.","c":"140 ÷ 2 = 70"}],"reponse":"Les deux angles à la base mesurent 70°."}},
+ {"titre":"Démontrer que deux droites sont parallèles","etapes":["Je sais que : j’écris les angles égaux.","Or : j’écris la propriété des angles alternes-internes (ou correspondants).","Donc : les droites sont parallèles."],
+  "exemple":{"enonce":"Les droites (d) et (d’) sont coupées par une sécante. Deux angles alternes-internes mesurent 65°. **Démontre** que (d) et (d’) sont parallèles.","ill":"ang:alt","etapes":[{"t":"Je sais que :","c":"les deux angles alternes-internes mesurent 65°."},{"t":"Or : si deux angles alternes-internes sont égaux, alors les droites sont parallèles.","c":""},{"t":"Donc :","c":"(d) // (d’)"}],"reponse":"Les droites (d) et (d’) sont parallèles."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Un angle mesure 120°.","q":"C’est un angle :","o":["obtus","aigu","droit"],"a":0,"exp":"120° est plus grand que 90° : c’est un angle obtus."},
+ {"t":"qcm","txt":"Dans un triangle, deux angles mesurent 90° et 30°.","q":"Le troisième angle mesure :","o":["60°","90°","120°"],"a":0,"exp":"180 − 90 − 30 = 60°."},
+ {"t":"vf","txt":"Un triangle a des angles de 70°, 60° et 60°.","q":"C’est possible.","a":false,"exp":"70 + 60 + 60 = 190°. La somme doit être 180°."},
+ {"t":"qcm","txt":"Le triangle ABC est isocèle en A.","q":"Quels côtés sont égaux ?","o":["AB et AC","AB et BC","BC et AC"],"a":0,"exp":"Isocèle en A : les deux côtés qui partent de A sont égaux. AB = AC."},
+ {"t":"question","txt":["Les droites (d) et (d’) sont coupées par une droite (Δ).","Deux angles alternes-internes mesurent 72°.","Les droites (d) et (d’) sont-elles parallèles ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». Oui : les angles alternes-internes sont égaux."},
+ {"t":"donnees","txt":"Dans le triangle EFG, l’angle en E mesure 48° et l’angle en F mesure 67°. Le côté EF mesure 6 cm. Calcule l’angle en G.","q":"Touche les deux données utiles.","a":["48","67"],"exp":"180 − 48 − 67 = 65°. La longueur EF ne sert pas."},
+ {"t":"qcm","txt":"Deux triangles sont semblables.","q":"Ils ont toujours :","o":["les mêmes angles","les mêmes longueurs","la même aire"],"a":0,"exp":"Des triangles semblables ont les mêmes angles. Leurs longueurs sont proportionnelles."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"La somme des angles d’un triangle est égale à 180°."}
+],
+"brevet":[
+ {"id":"an-b1","titre":"Le toit de la maison","ctx":["Le toit d’une maison a la forme d’un triangle ABC.","Le triangle est isocèle en A.","L’angle en A mesure 110°."],"fig":"tri:toit",
+  "qs":[
+   {"q":"**Calcule** la mesure de l’angle en B.","type":"num","a":35,"unit":"°","aide":["Les angles en B et en C sont égaux.","180 − 110 = 70"],"corr":["180 − 110 = 70","70 ÷ 2 = 35"],"rep":"L’angle en B mesure 35°."},
+   {"q":"Quel est le type de l’angle en A ?","type":"qcm","o":["obtus","aigu","droit"],"a":0,"aide":["Compare 110° et 90°."],"corr":["110° > 90°"],"rep":"L’angle en A est obtus."},
+   {"q":"Affirmation : « Le triangle ABC est rectangle. » Vrai ou faux ?","type":"vf","a":false,"aide":["Un triangle rectangle a un angle de 90°."],"corr":["Les angles mesurent 110°, 35° et 35°.","Aucun angle ne mesure 90°."],"rep":"L’affirmation est fausse : aucun angle ne mesure 90°."}
+  ]},
+ {"id":"an-b2","titre":"Des droites parallèles ?","ctx":["Deux droites (d) et (d’) sont coupées par une sécante (Δ).","On mesure deux angles alternes-internes : 58° et 58°."],"fig":"ang:alt",
+  "qs":[
+   {"q":"Que peut-on dire des droites (d) et (d’) ?","type":"qcm","o":["Elles sont parallèles.","Elles sont perpendiculaires.","On ne peut rien dire."],"a":0,"aide":["Les deux angles alternes-internes sont égaux."],"corr":["Les angles alternes-internes sont égaux."],"rep":"Les droites (d) et (d’) sont parallèles."},
+   {"q":"Quelle propriété utilise-t-on ?","type":"qcm","o":["Si deux angles alternes-internes sont égaux, alors les droites sont parallèles.","Dans un triangle, la somme des angles est 180°.","Deux droites perpendiculaires à la même droite sont parallèles."],"a":0,"aide":["La propriété parle des angles alternes-internes."],"corr":["Propriété des angles alternes-internes"],"rep":"J’utilise la propriété des angles alternes-internes."},
+   {"q":"Un angle correspondant à l’angle de 58° est marqué sur la figure. Combien mesure-t-il ?","type":"num","a":58,"unit":"°","aide":["Les droites sont parallèles : les angles correspondants sont égaux."],"corr":["Les angles correspondants sont égaux : 58°."],"rep":"Cet angle mesure 58°."}
+  ]},
+ {"id":"an-b3","titre":"Les triangles semblables","ctx":["Les triangles ABC et DEF sont semblables.","AB = 4 cm, BC = 6 cm et AC = 5 cm.","DE = 8 cm. Le côté DE correspond au côté AB, EF correspond à BC et DF correspond à AC."],"fig":"tri:semblables",
+  "qs":[
+   {"q":"**Calcule** le rapport d’agrandissement.","type":"num","a":2,"aide":["Je divise DE par AB."],"corr":["8 ÷ 4 = 2"],"rep":"Le rapport d’agrandissement est 2."},
+   {"q":"**Calcule** la longueur EF.","type":"num","a":12,"unit":"cm","aide":["EF correspond à BC. Je multiplie BC par 2."],"corr":["6 × 2 = 12"],"rep":"EF = 12 cm."},
+   {"q":"**Calcule** la longueur DF.","type":"num","a":10,"unit":"cm","aide":["DF correspond à AC."],"corr":["5 × 2 = 10"],"rep":"DF = 10 cm."},
+   {"q":"**Calcule** le périmètre du triangle DEF.","type":"num","a":30,"unit":"cm","aide":["J’additionne les trois côtés de DEF."],"corr":["8 + 12 + 10 = 30"],"rep":"Le périmètre de DEF est 30 cm."}
+  ]}
+],
+"calc":["an-somme","an-iso","an-type","an-alt","an-sembl"],
+"mots":[
+ {"id":"angle-aigu","mot":"angle aigu","art":"l’","g":"m","cat":"geometrie","ill":"ang:aigu","def":"Un [[angle]] plus petit qu’un [[angle droit|angle-droit]] : il mesure moins de 90°.","ph":["Un angle de 45° est un [[angle aigu|angle-aigu]].","Le triangle a trois [[angles aigus|angle-aigu]]."]},
+ {"id":"angle-obtus","mot":"angle obtus","art":"l’","g":"m","cat":"geometrie","ill":"ang:obtus","def":"Un [[angle]] plus grand qu’un [[angle droit|angle-droit]] : il mesure entre 90° et 180°.","ph":["Un angle de 120° est un [[angle obtus|angle-obtus]].","Le toit forme un [[angle obtus|angle-obtus]]."]},
+ {"id":"somme-des-angles","mot":"somme des angles","art":"la","g":"f","cat":"geometrie","ill":"tri:somme","def":"Dans un [[triangle]], j’additionne les trois [[angles|angle]] : je trouve toujours 180°.","ph":["La [[somme des angles|somme-des-angles]] d’un triangle est 180°.","J’utilise la [[somme des angles|somme-des-angles]] pour trouver le troisième angle."]},
+ {"id":"triangle-isocele","mot":"triangle isocèle","art":"le","g":"m","cat":"geometrie","ill":"tri:iso","def":"Un [[triangle]] avec deux [[côtés|cote]] de même longueur. Ses deux angles à la base sont égaux.","ph":["ABC est un [[triangle isocèle|triangle-isocele]] en A.","Dans un [[triangle isocèle|triangle-isocele]], les angles à la base sont égaux."]},
+ {"id":"triangle-equilateral","mot":"triangle équilatéral","art":"le","g":"m","cat":"geometrie","ill":"tri:equi","def":"Un [[triangle]] avec trois côtés de même longueur. Ses trois angles mesurent 60°.","ph":["Un [[triangle équilatéral|triangle-equilateral]] a trois angles de 60°.","Je trace un [[triangle équilatéral|triangle-equilateral]] de côté 5 cm."]},
+ {"id":"triangle-rectangle","mot":"triangle rectangle","art":"le","g":"m","cat":"geometrie","ill":"tri:rect","def":"Un [[triangle]] avec un [[angle droit|angle-droit]].","ph":["ABC est un [[triangle rectangle|triangle-rectangle]] en A.","Dans un [[triangle rectangle|triangle-rectangle]], j’utilise Pythagore."]},
+ {"id":"angles-opposes","mot":"angles opposés par le sommet","art":"les","g":"mpl","cat":"geometrie","ill":"ang:opp","def":"Deux [[angles|angle]] face à face, quand deux droites se coupent. Ils sont égaux.","ph":["Les [[angles opposés par le sommet|angles-opposes]] mesurent 40° tous les deux.","Deux [[angles opposés par le sommet|angles-opposes]] sont égaux."]},
+ {"id":"angles-alternes-internes","mot":"angles alternes-internes","art":"les","g":"mpl","cat":"geometrie","ill":"ang:alt","def":"Deux angles de chaque côté de la [[sécante|secante]], entre les deux droites. Si les droites sont parallèles, ils sont égaux.","ph":["Les [[angles alternes-internes|angles-alternes-internes]] sont égaux.","Je repère deux [[angles alternes-internes|angles-alternes-internes]] sur la figure."]},
+ {"id":"angles-correspondants","mot":"angles correspondants","art":"les","g":"mpl","cat":"geometrie","ill":"ang:corr","def":"Deux angles du même côté de la [[sécante|secante]], à la même place sur chaque droite. Si les droites sont parallèles, ils sont égaux.","ph":["Les [[angles correspondants|angles-correspondants]] mesurent 58°.","Les droites sont parallèles, donc les [[angles correspondants|angles-correspondants]] sont égaux."]},
+ {"id":"secante","mot":"sécante","art":"la","g":"f","cat":"geometrie","ill":"ang:sec","def":"Une [[droite]] qui coupe d’autres droites.","ph":["La [[sécante|secante]] (Δ) coupe les droites (d) et (d’).","Je trace une [[sécante|secante]] aux deux droites parallèles."]},
+ {"id":"mediatrice","mot":"médiatrice","art":"la","g":"f","cat":"geometrie","ill":"tri:mediatrice","def":"La [[droite]] [[perpendiculaire|perpendiculaires]] à un [[segment]], qui passe par son [[milieu]].","ph":["Je trace la [[médiatrice|mediatrice]] du segment [AB].","Un point de la [[médiatrice|mediatrice]] est à la même distance de A et de B."]},
+ {"id":"hauteur-triangle","mot":"hauteur d’un triangle","art":"la","g":"f","cat":"geometrie","ill":"tri:hauteur","def":"Une droite qui passe par un [[sommet]] et qui coupe le côté opposé à [[angle droit|angle-droit]].","ph":["Je trace la [[hauteur|hauteur-triangle]] issue de A.","Aire du triangle : base × [[hauteur|hauteur-triangle]] ÷ 2."]},
+ {"id":"triangles-semblables","mot":"triangles semblables","art":"les","g":"mpl","cat":"geometrie","ill":"tri:semblables","def":"Deux [[triangles|triangle]] qui ont les mêmes angles. Leurs côtés sont proportionnels.","ph":["Les [[triangles semblables|triangles-semblables]] ont les mêmes angles.","ABC et DEF sont des [[triangles semblables|triangles-semblables]]."]}
+]
+}

@@ -1,0 +1,72 @@
+{
+"id":"consignes","titre":"Les consignes de 3ᵉ","icone":"📝","cat":"verbe","domaine":"Lire et répondre","classe":"Toutes les classes",
+"intro":"Les verbes des questions du brevet : calculer, justifier, démontrer, en déduire… Je comprends ce que je dois faire.",
+"objectifs":["Je comprends les verbes des consignes.","Je sais **arrondir** un nombre.","Je sais **justifier** avec « car » ou « donc »."],
+"cours":[
+ {"titre":"Le verbe de la consigne","txt":["Chaque question commence par un verbe.","Le verbe dit ce que je dois faire.","Je lis d’abord le verbe. Je le [[souligne|souligner]]."],"ex":["**Calcule** l’aire du rectangle.","**Trace** un triangle ABC."],"ill":"ico2:consigne"},
+ {"titre":"Calculer, déterminer","txt":["**Calcule** : je fais le [[calcul]]. J’écris le [[résultat]].","**Détermine** : je trouve la [[réponse|reponse]]. Je peux calculer, lire un [[graphique]] ou mesurer."],"ex":["**Détermine** le prix de 3 cahiers."],"ill":"ico2:determiner"},
+ {"titre":"Justifier","txt":["**Justifie** : j’explique pourquoi c’est vrai.","J’écris le calcul ou la [[propriété|propriete]].","J’utilise les mots « car » ou « donc »."],"ex":["Le nombre 15 est impair car il finit par 5.","3 × 4 = 12, donc la réponse est 12."],"ill":"ico2:justifier"},
+ {"titre":"Montrer que, démontrer","txt":["**Montre que** AB = 5 cm : la réponse est déjà donnée.","Je dois expliquer comment on la trouve.","**Démontre** : j’écris les étapes dans l’ordre.","J’utilise trois mots : « Je sais que », « Or », « Donc »."],"ill":"ico2:demontrer"},
+ {"titre":"En déduire","txt":["« **En déduire** » veut dire : j’utilise la réponse d’avant.","Je ne recommence pas tout."],"ex":["1. Calcule le prix de 4 stylos.","2. **En déduire** le prix d’un stylo."],"ill":"ico2:deduire"},
+ {"titre":"Valeur exacte, valeur approchée","txt":["√2 est une [[valeur exacte|valeur-exacte]].","1,41 est une [[valeur approchée|valeur-approchee]] de √2 : elle est presque égale.","[[Arrondir|arrondir]] au [[dixième|dixieme]] : je garde 1 chiffre après la [[virgule]].","Arrondir au [[centième|centieme]] : je garde 2 chiffres après la virgule."],"ex":["3,14159 arrondi au dixième : 3,1.","3,14159 arrondi au centième : 3,14."],"ill":"ico2:arrondi"},
+ {"titre":"Vrai ou faux ?","txt":["Une [[affirmation]] est une phrase. Elle peut être vraie ou fausse.","Pour montrer qu’elle est fausse, un seul [[contre-exemple]] suffit.","Pour montrer qu’elle est vraie, je dois justifier."],"ex":["Affirmation : « Tous les nombres pairs sont des multiples de 4. »","Contre-exemple : 6 est pair, mais 6 n’est pas un multiple de 4. L’affirmation est fausse."],"ill":"ico2:contreexemple"},
+ {"titre":"Exprimer en fonction de x","txt":["« [[Exprime|exprimer]] l’aire en fonction de x » : j’écris un calcul avec la lettre x.","Le résultat n’est pas un nombre. C’est une [[expression littérale|expression-litterale]]."],"ex":["Un carré a un côté de x cm. Son périmètre est P = 4 × x."],"ill":"ico2:exprimer"},
+ {"titre":"Conjecturer","txt":["**Conjecture** : je regarde des exemples et je propose une règle.","Je ne suis pas encore sûr. Après, il faut démontrer."],"ill":"ico2:conjecturer"}
+],
+"methodes":[
+ {"titre":"Répondre à une question du brevet","etapes":["Je lis toute la question.","Je souligne le verbe de la consigne.","J’entoure les données utiles.","Je fais le calcul ou le raisonnement.","J’écris une phrase-réponse avec l’unité."],
+  "exemple":{"enonce":"Un ticket de bus coûte 1,80 €. Sam prend le bus 2 fois par jour, pendant 5 jours. **Calcule** le prix total.","etapes":[{"t":"Je souligne le verbe.","c":"Calcule"},{"t":"J’entoure les données utiles.","c":"1,80 € · 2 fois · 5 jours"},{"t":"Je calcule le nombre de tickets.","c":"2 × 5 = 10"},{"t":"Je calcule le prix total.","c":"10 × 1,80 = 18"}],"reponse":"Sam paie 18 € en tout."}},
+ {"titre":"Arrondir un nombre décimal","etapes":["Je repère le dernier chiffre à garder.","Je regarde le chiffre juste après.","Si ce chiffre est 0, 1, 2, 3 ou 4 : je ne change rien.","Si ce chiffre est 5, 6, 7, 8 ou 9 : j’ajoute 1 au dernier chiffre gardé."],
+  "exemple":{"enonce":"**Arrondis** 7,382 au dixième.","etapes":[{"t":"Au dixième, je garde 1 chiffre après la virgule : le 3.","c":"7,3|82"},{"t":"Le chiffre juste après est 8. C’est 5 ou plus.","c":"8 ≥ 5"},{"t":"J’ajoute 1 au chiffre 3.","c":"7,3 → 7,4"}],"reponse":"7,382 arrondi au dixième est 7,4."}},
+ {"titre":"Démontrer en trois étapes","etapes":["Je sais que : j’écris les données de l’énoncé.","Or : j’écris la propriété du cours.","Donc : j’écris la conclusion."],
+  "exemple":{"enonce":"Les droites (d) et (d’) sont perpendiculaires à la droite (Δ). **Démontre** que (d) et (d’) sont parallèles.","etapes":[{"t":"Je sais que :","c":"(d) ⊥ (Δ) et (d’) ⊥ (Δ)"},{"t":"Or : si deux droites sont perpendiculaires à la même droite, alors elles sont parallèles.","c":""},{"t":"Donc :","c":"(d) // (d’)"}],"reponse":"Les droites (d) et (d’) sont parallèles."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"**Justifie** ta réponse.","q":"Que dois-je faire ?","o":["J’explique pourquoi c’est vrai.","Je recopie la question.","Je dessine une figure."],"a":0,"exp":"« Justifier » veut dire : expliquer pourquoi, avec un calcul ou une propriété."},
+ {"t":"qcm","txt":"**Arrondis** 12,46 au dixième.","q":"Quel est le bon résultat ?","o":["12,5","12,4","12"],"a":0,"exp":"Je garde 12,4. Le chiffre après est 6 : j’ajoute 1. Le résultat est 12,5."},
+ {"t":"qcm","txt":"**Donne** la valeur exacte de √5.","q":"Quelle réponse est une valeur exacte ?","o":["√5","2,24","2,2"],"a":0,"exp":"2,24 et 2,2 sont des valeurs approchées. La valeur exacte est √5."},
+ {"t":"vf","txt":"Affirmation : « Tous les nombres pairs sont des multiples de 4. »","q":"Le nombre 6 est un contre-exemple.","a":true,"exp":"6 est pair, mais 6 n’est pas dans la table de 4. Donc 6 est un contre-exemple."},
+ {"t":"question","txt":["Un rectangle a une longueur de 8 cm.","Sa largeur est de 5 cm.","Calcule son aire."],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question commence par le verbe « Calcule »."},
+ {"t":"donnees","txt":"Un cinéma vend 120 places à 9 € la place. La salle a 15 rangées. Calcule la recette du cinéma.","q":"Touche les deux données utiles.","a":["120","9"],"exp":"La recette, c’est l’argent gagné : 120 × 9. Les 15 rangées ne servent pas."},
+ {"t":"qcm","txt":"1. Calcule le prix de 4 stylos. 2. **En déduire** le prix d’un stylo.","q":"« En déduire » veut dire :","o":["J’utilise la réponse de la question 1.","Je recommence tout le calcul.","Je devine le résultat."],"a":0,"exp":"J’utilise le prix des 4 stylos et je divise par 4."},
+ {"t":"qcm","txt":"Un carré a des côtés de x cm. **Exprime** son périmètre en fonction de x.","q":"Quelle réponse convient ?","o":["P = 4 × x","P = 20 cm","P = x + 4"],"a":0,"exp":"Le carré a 4 côtés de longueur x : P = 4 × x."},
+ {"t":"ordre","q":"Remets la phrase-réponse dans l’ordre.","phrase":"Le nombre 15 est impair car il finit par 5."}
+],
+"brevet":[
+ {"id":"cons-b1","titre":"Vrai ou faux ?","ctx":["Pour chaque affirmation, dis si elle est vraie ou fausse.","**Justifie** chaque réponse."],
+  "qs":[
+   {"q":"Affirmation 1 : 2³ = 6.","type":"vf","a":false,"aide":["2³ veut dire 2 × 2 × 2."],"corr":["2³ = 2 × 2 × 2 = 8","8 ≠ 6"],"rep":"L’affirmation 1 est fausse car 2³ = 8."},
+   {"q":"Affirmation 2 : 15 est un multiple de 3.","type":"vf","a":true,"aide":["Cherche 15 dans la table de 3."],"corr":["15 = 3 × 5"],"rep":"L’affirmation 2 est vraie car 15 = 3 × 5."},
+   {"q":"Affirmation 3 : la somme de deux nombres impairs est toujours un nombre impair.","type":"vf","a":false,"aide":["Essaie avec 3 et 5."],"corr":["Contre-exemple : 3 + 5 = 8","8 est pair."],"rep":"L’affirmation 3 est fausse : 3 + 5 = 8 et 8 est pair."}
+  ]},
+ {"id":"cons-b2","titre":"L’aire d’un disque","ctx":["Un disque a un rayon de 3 cm.","Son aire est égale à π × 3² cm²."],"fig":"sol:disque|3",
+  "qs":[
+   {"q":"Quelle est la valeur exacte de l’aire ?","type":"qcm","o":["9π cm²","28,3 cm²","28 cm²"],"a":0,"aide":["3² = 9. Une valeur exacte garde π."],"corr":["π × 3² = π × 9 = 9π"],"rep":"La valeur exacte de l’aire est 9π cm²."},
+   {"q":"**Donne** une valeur approchée de l’aire, arrondie au dixième.","type":"num","a":28.274333882,"arr":1,"unit":"cm²","aide":["Utilise la touche π de la calculatrice : 9 × π.","Garde 1 chiffre après la virgule."],"corr":["9 × π ≈ 28,274","Arrondi au dixième : 28,3"],"rep":"L’aire est environ 28,3 cm²."},
+   {"q":"**Arrondis** l’aire à l’unité.","type":"num","a":28.274333882,"arr":0,"unit":"cm²","aide":["À l’unité : aucun chiffre après la virgule."],"corr":["28,274 ≈ 28"],"rep":"L’aire est environ 28 cm²."}
+  ]},
+ {"id":"cons-b3","titre":"La carte de cinéma","ctx":["Au cinéma, une place coûte 8,50 €.","Avec la carte « 5 places », on paie 35 € pour 5 places.","Lina veut aller 5 fois au cinéma."],
+  "qs":[
+   {"q":"**Calcule** le prix de 5 places sans la carte.","type":"num","a":42.5,"unit":"€","aide":["Une place coûte 8,50 €. Je multiplie par 5."],"corr":["5 × 8,50 = 42,50"],"rep":"Sans la carte, 5 places coûtent 42,50 €."},
+   {"q":"**Calcule** l’économie de Lina avec la carte.","type":"num","a":7.5,"unit":"€","aide":["L’économie, c’est la différence entre les deux prix."],"corr":["42,50 − 35 = 7,50"],"rep":"Avec la carte, Lina économise 7,50 €."},
+   {"q":"La carte est-elle intéressante ? **Justifie**.","type":"qcm","o":["Oui, car 35 € est moins cher que 42,50 €.","Non, car 35 € est plus cher que 42,50 €.","Oui, car il y a 5 places."],"a":0,"aide":["Compare les deux prix."],"corr":["35 < 42,50"],"rep":"La carte est intéressante car 35 € est moins cher que 42,50 €."}
+  ]}
+],
+"calc":["arrondi","vexacte","consigne"],
+"mots":[
+ {"id":"justifier","mot":"justifier","cat":"verbe","ill":"ico2:justifier","f":{"c":"Justifie · Justifiez","je":"je justifie"},"def":"Expliquer pourquoi c’est vrai, avec un [[calcul]] ou une [[propriété|propriete]].","ph":["[[Justifie|justifier]] ta réponse avec un calcul.","Je [[justifie|justifier]] avec le mot « car »."],"dire":["Explique pourquoi.","Donne la raison."]},
+ {"id":"demontrer","mot":"démontrer","cat":"verbe","ill":"ico2:demontrer","f":{"c":"Démontre · Démontrez","je":"je démontre"},"def":"Prouver qu’une phrase est vraie, étape par étape, avec des [[propriétés|propriete]].","ph":["[[Démontre|demontrer]] que le triangle est rectangle.","Pour [[démontrer|demontrer]], j’écris : je sais que, or, donc."],"dire":["Prouve que…","Montre que…"]},
+ {"id":"montrer-que","mot":"montrer que","cat":"verbe","ill":"ico2:montrer","f":{"c":"Montre que · Montrez que","je":"je montre que"},"def":"La réponse est déjà donnée. Il faut expliquer comment on la trouve.","ph":["[[Montre que|montrer-que]] le prix est de 12 €.","Je [[montre que|montrer-que]] AB = 5 cm avec un calcul."]},
+ {"id":"en-deduire","mot":"en déduire","cat":"verbe","ill":"ico2:deduire","f":{"c":"Déduis-en · Déduisez-en","je":"j’en déduis"},"def":"Utiliser la [[réponse|reponse]] d’avant pour trouver la nouvelle réponse.","ph":["[[En déduire|en-deduire]] le prix d’un stylo.","J’[[en déduis|en-deduire]] que le triangle est rectangle."],"dire":["Utilise la question précédente.","Donc…"]},
+ {"id":"conjecturer","mot":"conjecturer","cat":"verbe","ill":"ico2:conjecturer","f":{"c":"Conjecture · Conjecturez","je":"je conjecture"},"def":"Regarder des exemples et proposer une règle. On n’est pas encore sûr.","ph":["[[Conjecture|conjecturer]] le résultat avec trois exemples.","Je [[conjecture|conjecturer]] que le résultat est toujours pair."]},
+ {"id":"determiner","mot":"déterminer","cat":"verbe","ill":"ico2:determiner","f":{"c":"Détermine · Déterminez","je":"je détermine"},"def":"Trouver une [[réponse|reponse]] : par un [[calcul]], une mesure ou une lecture de [[graphique]].","ph":["[[Détermine|determiner]] la longueur AB.","Je [[détermine|determiner]] le prix avec le tableau."],"dire":["Trouve…","Calcule…"]},
+ {"id":"exprimer","mot":"exprimer en fonction de x","cat":"verbe","ill":"ico2:exprimer","f":{"c":"Exprime · Exprimez","je":"j’exprime"},"def":"Écrire un [[calcul]] avec la lettre x. La réponse est une [[expression littérale|expression-litterale]].","ph":["[[Exprime|exprimer]] l’aire en fonction de x.","J’[[exprime|exprimer]] le périmètre : P = 4 × x."]},
+ {"id":"valeur-exacte","mot":"valeur exacte","art":"la","g":"f","cat":"nombre","ill":"ico2:exacte","def":"Le nombre juste, sans [[arrondir]]. Par exemple : √2, π ou {{1/3}}.","ph":["La [[valeur exacte|valeur-exacte]] de l’aire est 9π cm².","Je donne la [[valeur exacte|valeur-exacte]] : √7."]},
+ {"id":"valeur-approchee","mot":"valeur approchée","art":"la","g":"f","cat":"nombre","ill":"ico2:approchee","def":"Un nombre presque égal au nombre exact. On écrit souvent le signe ≈.","ph":["1,41 est une [[valeur approchée|valeur-approchee]] de √2.","Je donne une [[valeur approchée|valeur-approchee]] au dixième."],"dire":["environ 1,41","à peu près 1,41"]},
+ {"id":"au-dixieme","mot":"au dixième près","cat":"nombre","ill":"ico2:arrondi","def":"Avec 1 chiffre après la [[virgule]]. Au centième près : avec 2 chiffres après la virgule.","ph":["J’[[arrondis|arrondir]] le résultat [[au dixième près|au-dixieme]] : 28,3.","Donne une valeur approchée [[au dixième près|au-dixieme]]."],"dire":["arrondi au dixième","à 0,1 près"]},
+ {"id":"affirmation","mot":"affirmation","art":"l’","g":"f","cat":"verbe","ill":"ico2:affirmation","def":"Une phrase qui dit quelque chose. Elle peut être vraie ou fausse.","ph":["Cette [[affirmation]] est fausse.","Je lis l’[[affirmation]], puis je [[justifie|justifier]]."]},
+ {"id":"contre-exemple","mot":"contre-exemple","art":"le","g":"m","cat":"verbe","ill":"ico2:contreexemple","def":"Un exemple qui montre qu’une [[affirmation]] est fausse. Un seul suffit.","ph":["Le nombre 6 est un [[contre-exemple]].","Je donne un [[contre-exemple]] pour [[justifier]]."]},
+ {"id":"propriete","mot":"propriété","art":"la","g":"f","cat":"verbe","ill":"ico2:propriete","def":"Une règle du cours, toujours vraie. Elle s’écrit souvent : « Si…, alors… ».","ph":["J’utilise la [[propriété|propriete]] de Pythagore.","Or, d’après la [[propriété|propriete]] du cours, les droites sont parallèles."]},
+ {"id":"codage","mot":"codage","art":"le","g":"m","cat":"geometrie","ill":"ico2:codage","def":"Les petits signes sur une [[figure]] : ils montrent des longueurs égales ou un [[angle droit|angle-droit]].","ph":["Le [[codage]] montre que AB = AC.","Je lis le [[codage]] de la figure."]}
+]
+}

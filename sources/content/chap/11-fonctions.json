@@ -1,0 +1,78 @@
+{
+"id":"fonctions","titre":"Repère et fonctions","icone":"📈","cat":"fonction","domaine":"Données et fonctions","classe":"4ᵉ · 3ᵉ",
+"intro":"Les coordonnées d’un point. Les fonctions : image, antécédent, courbe, fonctions linéaires et affines.",
+"objectifs":["Je sais **lire** les coordonnées d’un point.","Je sais **calculer** une image et **trouver** un antécédent.","Je sais **reconnaître** une fonction linéaire ou affine."],
+"cours":[
+ {"titre":"Le repère","txt":["Un [[repère]] a deux [[axes|axe]] gradués. Ils se coupent à l’[[origine]] O.","L’axe horizontal est l’[[axe des abscisses|axe-des-abscisses]].","L’axe vertical est l’[[axe des ordonnées|axe-des-ordonnees]]."],"ill":"rep:axes"},
+ {"titre":"Les coordonnées d’un point","txt":["Un point a deux [[coordonnées|coordonnees]] : son [[abscisse]] et son [[ordonnée|ordonnee]].","On écrit A(3 ; 2) : l’abscisse de A est 3, l’ordonnée de A est 2.","Je lis toujours l’abscisse en premier."],"ill":"rep:pt|3|2"},
+ {"titre":"Une fonction","txt":["Une [[fonction]] est comme une machine à calculer.","À un nombre x, elle associe un seul nombre, noté f(x).","On écrit f(x) = 2x + 1."],"ill":"ico2:machine"},
+ {"titre":"Image et antécédent","txt":["f(3) = 7 : 7 est l’[[image]] de 3 par la fonction f.","3 est un [[antécédent|antecedent]] de 7 par la fonction f."],"note":"Un nombre a une seule image. Mais un nombre peut avoir plusieurs antécédents.","ill":"ico2:imageant"},
+ {"titre":"Le tableau de valeurs","txt":["Un [[tableau de valeurs|tableau-de-valeurs]] donne des nombres x et leurs images f(x).","Ici, f(x) = 2x + 1."],"tab":[["x","−1","0","1","2"],["f(x)","−1","1","3","5"]],"ill":"fn:tab"},
+ {"titre":"La représentation graphique","txt":["La [[représentation graphique|representation-graphique]] de f est formée des points de coordonnées (x ; f(x)).","Pour lire une image : je pars de x sur l’axe des abscisses. Je vais jusqu’à la courbe. Je lis sur l’axe des ordonnées.","Pour lire un antécédent : je pars de l’axe des ordonnées."],"ill":"rep:img|2"},
+ {"titre":"La fonction linéaire","txt":["Une [[fonction linéaire|fonction-lineaire]] s’écrit f(x) = ax.","Elle représente une situation de [[proportionnalité|proportionnel]].","Sa représentation est une droite qui passe par l’origine."],"ex":["f(x) = 3x"],"ill":"rep:lin|2"},
+ {"titre":"La fonction affine","txt":["Une [[fonction affine|fonction-affine]] s’écrit f(x) = ax + b.","Sa représentation est une droite.","a est le [[coefficient directeur|coefficient-directeur]]. b est l’[[ordonnée à l’origine|ordonnee-a-l-origine]]."],"ex":["f(x) = 2x + 1 : a = 2 et b = 1."],"ill":"rep:aff|2|1"},
+ {"titre":"Lire a et b sur le graphique","txt":["b : la droite coupe l’axe des ordonnées au point d’ordonnée b.","a : quand x augmente de 1, f(x) augmente de a."],"ill":"rep:coef|2|1"}
+],
+"methodes":[
+ {"titre":"Calculer une image","etapes":["Je remplace x par le nombre dans l’expression de f.","Je calcule en respectant les priorités.","J’écris la phrase : l’image de … est …"],
+  "exemple":{"enonce":"Soit f(x) = 3x − 4. **Calcule** l’image de 5 par f.","etapes":[{"t":"Je remplace x par 5.","c":"f(5) = 3 × 5 − 4"},{"t":"Je calcule.","c":"f(5) = 15 − 4 = 11"}],"reponse":"L’image de 5 par f est 11."}},
+ {"titre":"Trouver un antécédent","etapes":["J’écris l’équation : f(x) = le nombre.","Je résous l’équation.","J’écris la phrase : un antécédent de … est …"],
+  "exemple":{"enonce":"Soit f(x) = 2x + 3. **Détermine** l’antécédent de 11 par f.","etapes":[{"t":"J’écris l’équation.","c":"2x + 3 = 11"},{"t":"Je résous l’équation.","c":"2x = 8, donc x = 4"},{"t":"Je vérifie.","c":"f(4) = 2 × 4 + 3 = 11 ✓"}],"reponse":"L’antécédent de 11 par f est 4."}},
+ {"titre":"Lire une image sur un graphique","etapes":["Je place le nombre x sur l’axe des abscisses.","Je monte (ou je descends) jusqu’à la courbe.","Je vais horizontalement jusqu’à l’axe des ordonnées.","Je lis la valeur."],
+  "exemple":{"enonce":"La droite représente f(x) = x + 1. **Lis** l’image de 2.","ill":"rep:img|2","etapes":[{"t":"Je pars de 2 sur l’axe des abscisses.","c":"x = 2"},{"t":"Je monte jusqu’à la droite, puis je vais vers l’axe des ordonnées.","c":"Je lis 3."}],"reponse":"L’image de 2 est 3 : f(2) = 3."}},
+ {"titre":"Tracer une fonction affine","etapes":["Je calcule deux images.","Je place les deux points dans le repère.","Je trace la droite qui passe par ces deux points."],
+  "exemple":{"enonce":"**Trace** la représentation graphique de f(x) = 2x − 1.","etapes":[{"t":"Je calcule l’image de 0.","c":"f(0) = −1 : point A(0 ; −1)"},{"t":"Je calcule l’image de 2.","c":"f(2) = 3 : point B(2 ; 3)"},{"t":"Je place A et B, puis je trace la droite (AB).","c":""}],"reponse":"La droite (AB) représente la fonction f."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Le point A a pour coordonnées (4 ; −2).","q":"Quelle est l’abscisse de A ?","o":["4","−2","2"],"a":0,"exp":"L’abscisse est le premier nombre : 4. L’ordonnée est −2."},
+ {"t":"qcm","txt":"f(5) = 12","q":"Quelle phrase est juste ?","o":["12 est l’image de 5.","5 est l’image de 12.","12 est l’antécédent de 5."],"a":0,"exp":"f(5) = 12 : l’image de 5 est 12, et 5 est un antécédent de 12."},
+ {"t":"vf","txt":"f(x) = 4x","q":"f est une fonction linéaire.","a":true,"exp":"f(x) = ax avec a = 4 : c’est une fonction linéaire."},
+ {"t":"qcm","txt":"f(x) = 2x + 7","q":"Quelle est l’ordonnée à l’origine ?","o":["7","2","9"],"a":0,"exp":"f(x) = ax + b avec a = 2 et b = 7."},
+ {"t":"question","txt":["Un taxi coûte 3 € au départ, plus 2 € par kilomètre.","On note f(x) le prix pour x kilomètres.","Exprime f(x) en fonction de x."],"q":"Touche la phrase qui est la consigne.","a":2,"exp":"La consigne commence par le verbe « Exprime ». f(x) = 2x + 3."},
+ {"t":"donnees","txt":"Un forfait de téléphone coûte 10 € par mois, plus 0,05 € par SMS. Le téléphone pèse 180 g. On note f(x) le prix pour x SMS. Exprime f(x).","q":"Touche les deux données utiles.","a":["10","0,05"],"exp":"f(x) = 0,05x + 10. La masse du téléphone ne sert pas."},
+ {"t":"qcm","txt":"Sur un graphique, je veux lire l’image de 3.","q":"D’où dois-je partir ?","o":["De 3 sur l’axe des abscisses.","De 3 sur l’axe des ordonnées.","De l’origine."],"a":0,"exp":"Pour une image, je pars de x, sur l’axe horizontal."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"L’image de 3 par la fonction f est 7."}
+],
+"brevet":[
+ {"id":"fn-b1","titre":"La location de vélos","ctx":["Un magasin loue des vélos.","Tarif : 5 € pour la journée, plus 2 € par heure.","On note f(x) le prix payé pour x heures."],
+  "qs":[
+   {"q":"**Calcule** le prix pour 3 heures.","type":"num","a":11,"unit":"€","aide":["5 € plus 2 € pour chaque heure."],"corr":["5 + 2 × 3 = 5 + 6 = 11"],"rep":"Pour 3 heures, on paie 11 €."},
+   {"q":"**Exprime** f(x) en fonction de x.","type":"qcm","o":["f(x) = 2x + 5","f(x) = 5x + 2","f(x) = 7x"],"a":0,"aide":["2 € par heure : 2x. Plus 5 €."],"corr":["f(x) = 2x + 5"],"rep":"f(x) = 2x + 5"},
+   {"q":"Quelle est la nature de la fonction f ?","type":"qcm","o":["affine","linéaire","ni linéaire, ni affine"],"a":0,"aide":["f(x) = ax + b avec b qui n’est pas 0."],"corr":["f(x) = 2x + 5 : a = 2 et b = 5."],"rep":"La fonction f est affine."},
+   {"q":"Léo a payé 19 €. **Détermine** pendant combien d’heures il a loué le vélo.","type":"num","a":7,"unit":"heures","aide":["Je résous 2x + 5 = 19."],"corr":["2x + 5 = 19","2x = 14","x = 7"],"rep":"Léo a loué le vélo pendant 7 heures."}
+  ]},
+ {"id":"fn-b2","titre":"Lire un graphique","ctx":["La droite représente une fonction g."],"fig":"rep:graph|2|-1",
+  "qs":[
+   {"q":"**Lis** l’image de 2 par g.","type":"num","a":3,"aide":["Je pars de 2 sur l’axe des abscisses."],"corr":["g(2) = 3"],"rep":"L’image de 2 par g est 3."},
+   {"q":"**Lis** l’antécédent de 5 par g.","type":"num","a":3,"aide":["Je pars de 5 sur l’axe des ordonnées."],"corr":["g(3) = 5"],"rep":"L’antécédent de 5 par g est 3."},
+   {"q":"Quelle est l’ordonnée à l’origine de g ?","type":"num","a":-1,"aide":["Je regarde où la droite coupe l’axe des ordonnées."],"corr":["La droite coupe l’axe des ordonnées en −1."],"rep":"L’ordonnée à l’origine est −1."},
+   {"q":"**Détermine** l’expression de g(x).","type":"expr","a":"2x-1","form":"any","aide":["Quand x augmente de 1, g(x) augmente de 2 : a = 2.","b = −1"],"corr":["a = 2 et b = −1","g(x) = 2x − 1"],"rep":"g(x) = 2x − 1"}
+  ]},
+ {"id":"fn-b3","titre":"Deux tarifs au cinéma","ctx":["Au cinéma, il y a deux tarifs.","• Tarif normal : 9 € la place. Le prix est f(x) = 9x.","• Tarif carte : 20 € la carte, puis 5 € la place. Le prix est g(x) = 5x + 20.","x est le nombre de places."],
+  "qs":[
+   {"q":"Quelle fonction est linéaire ?","type":"qcm","o":["f","g","les deux"],"a":0,"aide":["Une fonction linéaire s’écrit ax."],"corr":["f(x) = 9x est de la forme ax."],"rep":"La fonction f est linéaire."},
+   {"q":"**Calcule** g(4).","type":"num","a":40,"aide":["Je remplace x par 4 dans 5x + 20."],"corr":["g(4) = 5 × 4 + 20 = 40"],"rep":"g(4) = 40 : 4 places coûtent 40 € avec la carte."},
+   {"q":"**Résous** l’équation f(x) = g(x).","type":"num","a":5,"aide":["9x = 5x + 20"],"corr":["9x − 5x = 20","4x = 20","x = 5"],"rep":"Pour 5 places, les deux tarifs sont égaux."},
+   {"q":"Pour 8 places, quel tarif est le moins cher ?","type":"qcm","o":["Le tarif carte.","Le tarif normal.","Les deux sont égaux."],"a":0,"aide":["Calcule f(8) et g(8)."],"corr":["f(8) = 72 et g(8) = 60"],"rep":"Pour 8 places, le tarif carte est le moins cher."}
+  ]}
+],
+"calc":["fn-img","fn-ant","fn-coord","fn-ab","fn-lect"],
+"mots":[
+ {"id":"repere","mot":"repère","art":"le","g":"m","cat":"fonction","ill":"rep:axes","def":"Deux [[axes|axe]] gradués [[perpendiculaires]]. Ils se coupent à l’[[origine]].","ph":["Je place le point A dans le [[repère]].","Le [[repère]] a deux axes gradués."]},
+ {"id":"origine","mot":"origine","art":"l’","g":"f","cat":"fonction","ill":"rep:orig","def":"Le point O, là où les deux axes se coupent. Ses [[coordonnées|coordonnees]] sont (0 ; 0).","ph":["L’[[origine]] du repère est le point O.","La droite passe par l’[[origine]]."]},
+ {"id":"axe-des-abscisses","mot":"axe des abscisses","art":"l’","g":"m","cat":"fonction","ill":"rep:axex","def":"L’axe [[horizontal]] du repère. On y lit l’[[abscisse]].","ph":["Je pars de 3 sur l’[[axe des abscisses|axe-des-abscisses]].","L’[[axe des abscisses|axe-des-abscisses]] est horizontal."]},
+ {"id":"axe-des-ordonnees","mot":"axe des ordonnées","art":"l’","g":"m","cat":"fonction","ill":"rep:axey","def":"L’axe [[vertical]] du repère. On y lit l’[[ordonnée|ordonnee]].","ph":["Je lis la valeur sur l’[[axe des ordonnées|axe-des-ordonnees]].","La droite coupe l’[[axe des ordonnées|axe-des-ordonnees]] en 1."]},
+ {"id":"abscisse","mot":"abscisse","art":"l’","g":"f","cat":"fonction","ill":"rep:abs|3|2","def":"Le premier nombre des [[coordonnées|coordonnees]] d’un point. On le lit sur l’axe horizontal.","ph":["L’[[abscisse]] du point A est 3.","Je lis l’[[abscisse]] en premier."]},
+ {"id":"ordonnee","mot":"ordonnée","art":"l’","g":"f","cat":"fonction","ill":"rep:ord|3|2","def":"Le deuxième nombre des [[coordonnées|coordonnees]] d’un point. On le lit sur l’axe vertical.","ph":["L’[[ordonnée|ordonnee]] du point A est 2.","Le point B a une [[ordonnée|ordonnee]] négative."]},
+ {"id":"coordonnees","mot":"coordonnées","art":"les","g":"fpl","cat":"fonction","ill":"rep:pt|3|2","def":"Deux nombres qui donnent la place d’un point : A(3 ; 2). D’abord l’[[abscisse]], puis l’[[ordonnée|ordonnee]].","ph":["Les [[coordonnées|coordonnees]] du point A sont (3 ; 2).","Je lis les [[coordonnées|coordonnees]] du point B."],"dire":["A(3 ; 2) se lit « A de coordonnées 3 et 2 »."]},
+ {"id":"fonction","mot":"fonction","art":"la","g":"f","cat":"fonction","ill":"ico2:machine","def":"Une machine à calculer. À chaque nombre x, elle associe un seul nombre f(x).","ph":["La [[fonction]] f multiplie par 2 et ajoute 1.","f(x) = 3x est une [[fonction]] linéaire."],"dire":["f(x) se lit « f de x »."]},
+ {"id":"image","mot":"image","art":"l’","g":"f","cat":"fonction","ill":"ico2:image","def":"Le nombre f(x) qui sort de la machine. Si f(3) = 7, alors 7 est l’image de 3.","ph":["L’[[image]] de 3 par f est 7.","Je calcule l’[[image]] de −2."]},
+ {"id":"antecedent","mot":"antécédent","art":"l’","g":"m","cat":"fonction","ill":"ico2:antecedent","def":"Le nombre x qui entre dans la machine. Si f(3) = 7, alors 3 est un antécédent de 7.","ph":["Un [[antécédent|antecedent]] de 7 par f est 3.","Je cherche l’[[antécédent|antecedent]] de 11."]},
+ {"id":"tableau-de-valeurs","mot":"tableau de valeurs","art":"le","g":"m","cat":"fonction","ill":"fn:tab","def":"Un tableau avec des nombres x et leurs [[images|image]] f(x).","ph":["Je complète le [[tableau de valeurs|tableau-de-valeurs]].","Dans le [[tableau de valeurs|tableau-de-valeurs]], f(2) = 5."]},
+ {"id":"representation-graphique","mot":"représentation graphique","art":"la","g":"f","cat":"fonction","ill":"rep:courbe","def":"La courbe ou la droite d’une [[fonction]] dans un [[repère]]. Ses points ont pour coordonnées (x ; f(x)).","ph":["Je trace la [[représentation graphique|representation-graphique]] de f.","Je lis l’image sur la [[représentation graphique|representation-graphique]]."],"dire":["la courbe de f","le graphique de f"]},
+ {"id":"fonction-lineaire","mot":"fonction linéaire","art":"la","g":"f","cat":"fonction","ill":"rep:lin|2","def":"Une [[fonction]] f(x) = ax. Sa représentation est une droite qui passe par l’[[origine]].","ph":["f(x) = 4x est une [[fonction linéaire|fonction-lineaire]].","Une [[fonction linéaire|fonction-lineaire]] traduit la proportionnalité."]},
+ {"id":"fonction-affine","mot":"fonction affine","art":"la","g":"f","cat":"fonction","ill":"rep:aff|2|1","def":"Une [[fonction]] f(x) = ax + b. Sa représentation est une droite.","ph":["f(x) = 2x + 1 est une [[fonction affine|fonction-affine]].","Le prix du taxi est une [[fonction affine|fonction-affine]] de la distance."]},
+ {"id":"coefficient-directeur","mot":"coefficient directeur","art":"le","g":"m","cat":"fonction","ill":"rep:coef|2|1","def":"Le nombre a dans f(x) = ax + b. Il dit si la droite monte ou descend.","ph":["Le [[coefficient directeur|coefficient-directeur]] de f est 2.","Un [[coefficient directeur|coefficient-directeur]] négatif : la droite descend."]},
+ {"id":"ordonnee-a-l-origine","mot":"ordonnée à l’origine","art":"l’","g":"f","cat":"fonction","ill":"rep:b|2|1","def":"Le nombre b dans f(x) = ax + b. La droite coupe l’[[axe des ordonnées|axe-des-ordonnees]] en b.","ph":["L’[[ordonnée à l’origine|ordonnee-a-l-origine]] de f est 1.","Je lis l’[[ordonnée à l’origine|ordonnee-a-l-origine]] sur le graphique."]}
+]
+}

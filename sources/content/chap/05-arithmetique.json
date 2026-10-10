@@ -1,0 +1,64 @@
+{
+"id":"arithmetique","titre":"Diviseurs et nombres premiers","icone":"🔐","cat":"nombre","domaine":"Nombres et calculs","classe":"5ᵉ · 4ᵉ · 3ᵉ",
+"intro":"Multiples, diviseurs, critères de divisibilité, nombres premiers. Faire des paquets identiques.",
+"objectifs":["Je sais **trouver** les diviseurs d’un nombre.","Je sais **reconnaître** un nombre premier.","Je sais **décomposer** un nombre en facteurs premiers."],
+"cours":[
+ {"titre":"Multiple et diviseur","txt":["15 = 3 × 5.","15 est un [[multiple]] de 3. 3 est un [[diviseur]] de 15.","On dit aussi : 15 est [[divisible]] par 3."],"ill":"txt:15 = {3} × 5|15 ÷ 3 = 5   reste [0]"},
+ {"titre":"La division euclidienne","txt":["Dans une [[division euclidienne|division-euclidienne]], on trouve un [[quotient]] entier et un [[reste]].","17 = 5 × 3 + 2 : le quotient est 3 et le reste est 2.","Si le reste est 0, le nombre est divisible."],"ill":"arith:eucl|17|5"},
+ {"titre":"Les critères de divisibilité","txt":["Divisible par 2 : le nombre finit par 0, 2, 4, 6 ou 8.","Divisible par 5 : il finit par 0 ou 5. Divisible par 10 : il finit par 0.","Divisible par 3 : la somme de ses chiffres est dans la table de 3.","Divisible par 9 : la somme de ses chiffres est dans la table de 9."],"ex":["471 : 4 + 7 + 1 = 12. 12 est dans la table de 3, donc 471 est divisible par 3."],"ill":"txt:471 → 4 + 7 + 1 = {12}|12 = 3 × 4"},
+ {"titre":"Les nombres premiers","txt":["Un [[nombre premier|nombre-premier]] a exactement deux diviseurs : 1 et lui-même.","Les premiers nombres premiers sont : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29.","1 n’est pas un nombre premier."],"ill":"arith:premier|7"},
+ {"titre":"Décomposer en facteurs premiers","txt":["Un nombre entier plus grand que 1 s’écrit comme un [[produit]] de nombres premiers.","C’est la [[décomposition en facteurs premiers|decomposition]]."],"ex":["60 = 2 × 2 × 3 × 5 = 2² × 3 × 5"],"ill":"arith:arbre|60"},
+ {"titre":"Rendre une fraction irréductible","txt":["Je décompose le numérateur et le dénominateur.","Je barre les [[facteurs|facteur]] communs."],"ex":["{{84/90}} = {{2 × 2 × 3 × 7/2 × 3 × 3 × 5}} = {{14/15}}"],"ill":"fr2:simp|84|90|14|15"},
+ {"titre":"Les diviseurs communs","txt":["Un [[diviseur commun|diviseur-commun]] à 12 et 18 divise les deux nombres.","Les diviseurs communs à 12 et 18 sont 1, 2, 3 et 6. Le plus grand est 6.","On s’en sert pour faire des paquets identiques."],"ill":"arith:commun|12|18"}
+],
+"methodes":[
+ {"titre":"Savoir si un nombre est premier","etapes":["Je teste les divisions par 2, 3, 5, 7, 11…","J’arrête quand le carré du diviseur testé dépasse le nombre.","Si aucune division ne tombe juste, le nombre est premier."],
+  "exemple":{"enonce":"Le nombre 91 est-il premier ? **Justifie**.","etapes":[{"t":"91 est impair : il n’est pas divisible par 2.","c":"91 ÷ 2 ✗"},{"t":"9 + 1 = 10 : il n’est pas divisible par 3.","c":"91 ÷ 3 ✗"},{"t":"91 ne finit pas par 0 ou 5.","c":"91 ÷ 5 ✗"},{"t":"91 ÷ 7 = 13 : la division tombe juste.","c":"91 = 7 × 13"}],"reponse":"91 n’est pas premier car 91 = 7 × 13."}},
+ {"titre":"Décomposer un nombre en facteurs premiers","etapes":["Je divise par le plus petit nombre premier possible : 2, puis 3, puis 5…","Je recommence avec le quotient.","Je m’arrête quand le quotient est 1.","J’écris le produit de tous les diviseurs utilisés."],
+  "exemple":{"enonce":"**Décompose** 60 en produit de facteurs premiers.","etapes":[{"t":"60 est pair : je divise par 2.","c":"60 ÷ 2 = 30"},{"t":"30 est pair : je divise par 2.","c":"30 ÷ 2 = 15"},{"t":"15 est divisible par 3.","c":"15 ÷ 3 = 5"},{"t":"5 est premier.","c":"5 ÷ 5 = 1"}],"reponse":"60 = 2 × 2 × 3 × 5 = 2² × 3 × 5"}},
+ {"titre":"Faire des paquets identiques","etapes":["J’écris les diviseurs des deux nombres.","Je garde les diviseurs communs.","Pour avoir le plus de paquets, je prends le plus grand diviseur commun.","Je calcule ce qu’il y a dans chaque paquet."],
+  "exemple":{"enonce":"Un fleuriste a 24 roses et 36 tulipes. Il veut faire le plus grand nombre de bouquets identiques avec toutes les fleurs. **Détermine** le nombre de bouquets.","etapes":[{"t":"Diviseurs de 24 :","c":"1, 2, 3, 4, 6, 8, 12, 24"},{"t":"Diviseurs de 36 :","c":"1, 2, 3, 4, 6, 9, 12, 18, 36"},{"t":"Le plus grand diviseur commun est 12.","c":"12 bouquets"},{"t":"Dans chaque bouquet :","c":"24 ÷ 12 = 2 roses et 36 ÷ 12 = 3 tulipes"}],"reponse":"Il peut faire 12 bouquets de 2 roses et 3 tulipes."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"35 = 5 × 7","q":"Quelle phrase est vraie ?","o":["35 est un multiple de 7.","35 est un diviseur de 7.","7 est un multiple de 35."],"a":0,"exp":"35 = 5 × 7 : 35 est dans la table de 7. C’est un multiple de 7."},
+ {"t":"vf","txt":"On regarde le nombre 1 245.","q":"Ce nombre est divisible par 5.","a":true,"exp":"1 245 finit par 5, donc il est divisible par 5."},
+ {"t":"qcm","txt":"On partage 50 bonbons entre 8 enfants. Chaque enfant reçoit 6 bonbons.","q":"Combien de bonbons reste-t-il ?","o":["2","6","8"],"a":0,"exp":"8 × 6 = 48. 50 − 48 = 2. Il reste 2 bonbons : 50 = 8 × 6 + 2."},
+ {"t":"qcm","txt":"Un nombre premier a exactement deux diviseurs.","q":"Quel nombre est premier ?","o":["13","15","21"],"a":0,"exp":"15 = 3 × 5 et 21 = 3 × 7. 13 a seulement deux diviseurs : 1 et 13."},
+ {"t":"question","txt":["Un pâtissier a 48 macarons au chocolat et 60 macarons à la vanille.","Il fait des boîtes identiques avec tous les macarons.","Combien de boîtes peut-il faire au maximum ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question commence par « Combien »."},
+ {"t":"donnees","txt":"Dans un club, il y a 84 garçons et 105 filles. Le club existe depuis 12 ans. On veut faire des équipes identiques avec tous les enfants.","q":"Touche les deux données utiles.","a":["84","105"],"exp":"Je cherche les diviseurs communs à 84 et 105. L’âge du club ne sert pas."},
+ {"t":"qcm","txt":"48 est divisible par 6.","q":"Cela veut dire :","o":["48 ÷ 6 tombe juste.","48 + 6 = 54.","6 est plus grand que 48."],"a":0,"exp":"48 ÷ 6 = 8, et le reste est 0."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"91 n’est pas premier car 91 = 7 × 13."}
+],
+"brevet":[
+ {"id":"ar-b1","titre":"Les bouquets","ctx":["Un fleuriste a 120 roses et 72 tulipes.","Il veut faire des bouquets identiques.","Il veut utiliser toutes les fleurs."],
+  "qs":[
+   {"q":"Peut-il faire 8 bouquets ? **Justifie**.","type":"qcm","o":["Oui, car 120 et 72 sont divisibles par 8.","Non, car 72 n’est pas divisible par 8.","Non, car 120 n’est pas divisible par 8."],"a":0,"aide":["Calcule 120 ÷ 8 et 72 ÷ 8."],"corr":["120 ÷ 8 = 15","72 ÷ 8 = 9"],"rep":"Oui, il peut faire 8 bouquets car 120 et 72 sont divisibles par 8."},
+   {"q":"**Décompose** 120 en produit de facteurs premiers.","type":"qcm","o":["2³ × 3 × 5","2 × 3 × 4 × 5","2² × 30"],"a":0,"aide":["4 et 30 ne sont pas des nombres premiers.","120 ÷ 2 = 60 ; 60 ÷ 2 = 30 ; 30 ÷ 2 = 15…"],"corr":["120 = 2 × 2 × 2 × 3 × 5 = 2³ × 3 × 5"],"rep":"120 = 2³ × 3 × 5"},
+   {"q":"Quel est le plus grand nombre de bouquets possible ?","type":"num","a":24,"unit":"bouquets","aide":["72 = 2³ × 3².","Je prends les facteurs communs : 2³ × 3."],"corr":["Facteurs communs : 2 × 2 × 2 × 3 = 24","120 ÷ 24 = 5 et 72 ÷ 24 = 3"],"rep":"Il peut faire au maximum 24 bouquets."},
+   {"q":"Combien de roses y a-t-il alors dans chaque bouquet ?","type":"num","a":5,"unit":"roses","aide":["Je partage 120 roses en 24 bouquets."],"corr":["120 ÷ 24 = 5"],"rep":"Chaque bouquet a 5 roses et 3 tulipes."}
+  ]},
+ {"id":"ar-b2","titre":"Le nombre mystère","ctx":["Je suis un nombre entier entre 30 et 50.","Je suis divisible par 3 et par 4.","Je ne suis pas divisible par 9."],
+  "qs":[
+   {"q":"Quel est ce nombre ?","type":"num","a":48,"aide":["Divisible par 3 et par 4 : je cherche dans la table de 12.","Les multiples de 12 entre 30 et 50 sont 36 et 48."],"corr":["Multiples de 12 entre 30 et 50 : 36 et 48.","36 = 9 × 4 est divisible par 9.","48 n’est pas divisible par 9."],"rep":"Le nombre mystère est 48."},
+   {"q":"Ce nombre est-il premier ?","type":"vf","a":false,"aide":["Un nombre premier a seulement deux diviseurs."],"corr":["48 = 2 × 24"],"rep":"48 n’est pas premier car 48 = 2 × 24."}
+  ]},
+ {"id":"ar-b3","titre":"Une fraction à simplifier","ctx":["On veut simplifier la fraction {{84/126}}."],
+  "qs":[
+   {"q":"**Décompose** 84 en produit de facteurs premiers.","type":"qcm","o":["2² × 3 × 7","2 × 42","4 × 21"],"a":0,"aide":["42, 4 et 21 ne sont pas premiers."],"corr":["84 = 2 × 2 × 3 × 7 = 2² × 3 × 7"],"rep":"84 = 2² × 3 × 7"},
+   {"q":"**Décompose** 126 en produit de facteurs premiers.","type":"qcm","o":["2 × 3² × 7","2 × 63","6 × 21"],"a":0,"aide":["126 ÷ 2 = 63 ; 63 ÷ 3 = 21 ; 21 ÷ 3 = 7."],"corr":["126 = 2 × 3 × 3 × 7 = 2 × 3² × 7"],"rep":"126 = 2 × 3² × 7"},
+   {"q":"**En déduire** la fraction irréductible égale à {{84/126}}.","type":"frac","a":"2/3","irr":true,"aide":["Je barre les facteurs communs : 2, 3 et 7."],"corr":["{{84/126}} = {{2 × 2 × 3 × 7/2 × 3 × 3 × 7}} = {{2/3}}"],"rep":"{{84/126}} = {{2/3}}"}
+  ]}
+],
+"calc":["ar-div","ar-crit","ar-prem","ar-decomp","ar-eucl"],
+"mots":[
+ {"id":"multiple","mot":"multiple","art":"le","g":"m","cat":"nombre","ill":"arith:mult|3","def":"15 est un multiple de 3 car 15 = 3 × 5. Les multiples de 3 sont 0, 3, 6, 9, 12…","ph":["30 est un [[multiple]] de 5.","J’écris les [[multiples|multiple]] de 4 : 4, 8, 12, 16."]},
+ {"id":"diviseur","mot":"diviseur","art":"le","g":"m","cat":"nombre","ill":"arith:diviseurs|12","def":"3 est un diviseur de 12 car 12 ÷ 3 = 4 tombe juste : le [[reste]] est 0.","ph":["Les [[diviseurs|diviseur]] de 12 sont 1, 2, 3, 4, 6 et 12.","5 est un [[diviseur]] de 35."]},
+ {"id":"divisible","mot":"divisible","cat":"nombre","ill":"txt:12 ÷ 3 = 4|reste [0]","def":"12 est divisible par 3 : la [[division]] 12 ÷ 3 tombe juste.","ph":["48 est [[divisible]] par 6.","Un nombre pair est [[divisible]] par 2."],"dire":["La division tombe juste.","12 est dans la table de 3."]},
+ {"id":"critere-divisibilite","mot":"critère de divisibilité","art":"le","g":"m","cat":"nombre","ill":"txt:471 → 4 + 7 + 1 = {12}|12 = 3 × 4","def":"Une règle pour savoir vite si un nombre est [[divisible]] par 2, 3, 5, 9 ou 10.","ph":["J’utilise le [[critère de divisibilité|critere-divisibilite]] par 3.","D’après le [[critère de divisibilité|critere-divisibilite]] par 5, 1 245 est divisible par 5."]},
+ {"id":"nombre-premier","mot":"nombre premier","art":"le","g":"m","cat":"nombre","ill":"arith:premier|7","def":"Un [[nombre entier|nombre-entier]] qui a exactement deux [[diviseurs|diviseur]] : 1 et lui-même. Exemples : 2, 3, 5, 7, 11.","ph":["13 est un [[nombre premier|nombre-premier]].","15 n’est pas un [[nombre premier|nombre-premier]] car 15 = 3 × 5."]},
+ {"id":"decomposition","mot":"décomposition en facteurs premiers","art":"la","g":"f","cat":"nombre","ill":"arith:arbre|60","def":"L’écriture d’un nombre comme un [[produit]] de [[nombres premiers|nombre-premier]]. Exemple : 60 = 2² × 3 × 5.","ph":["J’écris la [[décomposition en facteurs premiers|decomposition]] de 60.","La [[décomposition en facteurs premiers|decomposition]] de 12 est 2² × 3."],"dire":["décomposer en produit de facteurs premiers"]},
+ {"id":"facteur","mot":"facteur","art":"le","g":"m","cat":"nombre","ill":"txt:{3} × {5} = 15","def":"Un nombre dans une [[multiplication]]. Dans 3 × 5, les facteurs sont 3 et 5.","ph":["Dans 2 × 7, les [[facteurs|facteur]] sont 2 et 7.","Je barre les [[facteurs|facteur]] communs."]},
+ {"id":"division-euclidienne","mot":"division euclidienne","art":"la","g":"f","cat":"nombre","ill":"arith:eucl|17|5","def":"Une [[division]] avec un [[quotient]] entier et un [[reste]]. Exemple : 17 = 5 × 3 + 2.","ph":["Dans la [[division euclidienne|division-euclidienne]] de 17 par 5, le reste est 2.","Je pose la [[division euclidienne|division-euclidienne]] de 50 par 8."]},
+ {"id":"diviseur-commun","mot":"diviseur commun","art":"le","g":"m","cat":"nombre","ill":"arith:commun|12|18","def":"Un nombre qui divise deux nombres. 6 est un diviseur commun à 12 et 18.","ph":["Le plus grand [[diviseur commun|diviseur-commun]] à 12 et 18 est 6.","Je cherche les [[diviseurs communs|diviseur-commun]] à 24 et 36."]}
+]
+}

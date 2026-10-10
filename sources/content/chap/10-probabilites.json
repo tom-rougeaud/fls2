@@ -1,0 +1,70 @@
+{
+"id":"probabilites","titre":"Les probabilités","icone":"🎲","cat":"donnees","domaine":"Données et fonctions","classe":"5ᵉ · 4ᵉ · 3ᵉ",
+"intro":"Le hasard en mathématiques : issues, événements, probabilité, événement contraire.",
+"objectifs":["Je sais **trouver** les issues d’une expérience.","Je sais **calculer** une probabilité.","Je sais **utiliser** l’événement contraire."],
+"cours":[
+ {"titre":"Une expérience aléatoire","txt":["Dans une [[expérience aléatoire|experience-aleatoire]], je connais tous les résultats possibles.","Mais je ne sais pas quel résultat va sortir."],"ex":["Lancer un [[dé|de]].","Tirer une boule [[au hasard|au-hasard]] dans une [[urne]]."],"ill":"proba:de"},
+ {"titre":"Issues et événements","txt":["Une [[issue]] est un résultat possible. Un dé a 6 issues : 1, 2, 3, 4, 5 et 6.","Un [[événement|evenement]] est un groupe d’issues."],"ex":["L’événement « obtenir un nombre pair » : 2, 4 et 6."],"ill":"proba:evenement"},
+ {"titre":"La probabilité","txt":["La [[probabilité|probabilite]] d’un événement est un nombre entre 0 et 1.","Si les issues ont toutes la même chance, elles sont [[équiprobables|equiprobable]].","Alors : P = nombre d’issues favorables ÷ nombre total d’issues."],"ex":["P(obtenir 5) = {{1/6}}","P(obtenir un nombre pair) = {{3/6}} = {{1/2}}"],"ill":"proba:echelle"},
+ {"titre":"Certain ou impossible","txt":["Un événement [[certain]] arrive toujours. Sa probabilité est 1.","Un événement [[impossible]] n’arrive jamais. Sa probabilité est 0."],"ex":["Obtenir 7 avec un dé à 6 faces : c’est impossible. P = 0.","Obtenir un nombre plus petit que 10 : c’est certain. P = 1."],"ill":"proba:certain"},
+ {"titre":"L’événement contraire","txt":["L’[[événement contraire|evenement-contraire]] de A arrive quand A n’arrive pas.","P(contraire de A) = 1 − P(A)."],"ex":["P(gagner) = 0,3, donc P(perdre) = 1 − 0,3 = 0,7."],"ill":"proba:contraire"},
+ {"titre":"Une urne","txt":["Une urne contient 3 boules rouges et 5 boules bleues. On tire une boule au hasard.","Il y a 8 boules en tout."],"ex":["P(rouge) = {{3/8}}","P(bleue) = {{5/8}}"],"ill":"proba:urne|3|5"},
+ {"titre":"Fréquence et probabilité","txt":["Je répète une expérience un très grand nombre de fois.","La [[fréquence|frequence]] d’un résultat devient proche de sa probabilité."],"ex":["Je lance une pièce 1 000 fois. J’obtiens « pile » environ 500 fois."],"ill":"proba:piece"},
+ {"titre":"Deux expériences","txt":["Pour deux expériences, l’une après l’autre, je fais un [[arbre des possibles|arbre]] ou un tableau.","Je compte toutes les issues."],"ex":["Je lance deux pièces : PP, PF, FP, FF. Il y a 4 issues.","P(deux fois pile) = {{1/4}}"],"ill":"proba:arbre"}
+],
+"methodes":[
+ {"titre":"Calculer une probabilité","etapes":["Je compte toutes les issues possibles.","Je vérifie qu’elles ont toutes la même chance.","Je compte les issues qui réalisent l’événement.","Je divise : issues favorables ÷ nombre total d’issues."],
+  "exemple":{"enonce":"Une urne contient 4 boules vertes, 6 boules rouges et 2 boules jaunes. On tire une boule au hasard. **Calcule** la probabilité de tirer une boule rouge.","etapes":[{"t":"Je compte toutes les boules.","c":"4 + 6 + 2 = 12"},{"t":"Je compte les boules rouges.","c":"6"},{"t":"Je divise et je simplifie.","c":"P(rouge) = {{6/12}} = {{1/2}}"}],"reponse":"La probabilité de tirer une boule rouge est {{1/2}}."}},
+ {"titre":"Utiliser l’événement contraire","etapes":["Je repère l’événement contraire.","Je calcule 1 − la probabilité connue."],
+  "exemple":{"enonce":"Dans un jeu, la probabilité de gagner est 0,15. **Calcule** la probabilité de perdre.","etapes":[{"t":"Perdre est le contraire de gagner.","c":"P(perdre) = 1 − P(gagner)"},{"t":"Je calcule.","c":"1 − 0,15 = 0,85"}],"reponse":"La probabilité de perdre est 0,85."}},
+ {"titre":"Compter les issues de deux expériences","etapes":["Je compte les issues de la première expérience.","Je compte les issues de la deuxième expérience.","Je fais un tableau ou un arbre.","Le nombre d’issues est le produit des deux nombres."],
+  "exemple":{"enonce":"On lance un dé et une pièce. **Détermine** le nombre d’issues, puis la probabilité d’obtenir « 6 et pile ».","etapes":[{"t":"Le dé a 6 issues. La pièce a 2 issues.","c":"6 × 2 = 12 issues"},{"t":"« 6 et pile » est une seule issue.","c":"P = {{1/12}}"}],"reponse":"Il y a 12 issues. La probabilité d’obtenir « 6 et pile » est {{1/12}}."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"On lance un dé à 6 faces.","q":"Quel événement est impossible ?","o":["Obtenir 7.","Obtenir 6.","Obtenir un nombre pair."],"a":0,"exp":"Le dé a les faces 1 à 6. Obtenir 7 est impossible."},
+ {"t":"qcm","txt":"Une urne contient 2 boules rouges et 8 boules noires. On tire une boule au hasard.","q":"Quelle couleur a le plus de chances de sortir ?","o":["Noire","Rouge","Les deux ont la même chance."],"a":0,"exp":"P(noire) = {{8/10}} et P(rouge) = {{2/10}}. La boule noire a plus de chances."},
+ {"t":"vf","txt":"Un élève dit : « La probabilité de gagner est 1,5. »","q":"C’est possible.","a":false,"exp":"Une probabilité est toujours entre 0 et 1."},
+ {"t":"qcm","txt":"On tire une carte au hasard.","q":"« Au hasard » veut dire :","o":["sans regarder et sans choisir","on choisit la meilleure carte","on tire toutes les cartes"],"a":0,"exp":"Au hasard : chaque carte peut sortir."},
+ {"t":"question","txt":["Un sac contient 5 bonbons à la fraise et 15 bonbons à la menthe.","Lina prend un bonbon sans regarder.","Quelle est la probabilité que ce bonbon soit à la fraise ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». P = {{5/20}} = {{1/4}}."},
+ {"t":"donnees","txt":"Une roue a 8 secteurs de même taille. 3 secteurs sont rouges. La roue a coûté 20 €. On fait tourner la roue. Quelle est la probabilité de tomber sur le rouge ?","q":"Touche les deux données utiles.","a":["8","3"],"exp":"P(rouge) = {{3/8}}. Le prix de la roue ne sert pas."},
+ {"t":"qcm","txt":"La probabilité d’un événement A est 0,4.","q":"La probabilité du contraire de A est :","o":["0,6","0,4","1,4"],"a":0,"exp":"1 − 0,4 = 0,6."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"Une probabilité est un nombre entre 0 et 1."}
+],
+"brevet":[
+ {"id":"pb-b1","titre":"Le sac de billes","ctx":["Un sac contient 5 billes rouges, 3 billes bleues et 2 billes vertes.","On tire une bille au hasard."],"fig":"proba:sac|5|3|2",
+  "qs":[
+   {"q":"**Calcule** la probabilité de tirer une bille rouge. **Donne** une fraction irréductible.","type":"frac","a":"1/2","irr":true,"aide":["Il y a 5 + 3 + 2 = 10 billes."],"corr":["P(rouge) = {{5/10}} = {{1/2}}"],"rep":"La probabilité de tirer une bille rouge est {{1/2}}."},
+   {"q":"**Calcule** la probabilité de ne pas tirer une bille bleue.","type":"frac","a":"7/10","irr":true,"aide":["P(bleue) = {{3/10}}. J’utilise le contraire."],"corr":["1 − {{3/10}} = {{7/10}}"],"rep":"La probabilité de ne pas tirer une bille bleue est {{7/10}}."},
+   {"q":"On ajoute des billes vertes. On veut que la probabilité de tirer une bille verte soit {{1/2}}. Combien de billes vertes faut-il ajouter ?","type":"qcm","o":["6","5","8"],"a":0,"aide":["Il faut autant de billes vertes que de billes rouges et bleues.","Il y a 5 + 3 = 8 billes rouges et bleues."],"corr":["Il faut 8 billes vertes.","8 − 2 = 6"],"rep":"Il faut ajouter 6 billes vertes."}
+  ]},
+ {"id":"pb-b2","titre":"La roue de la fête","ctx":["À la fête de l’école, une roue a 12 secteurs identiques.","5 secteurs font gagner un ballon. 2 secteurs font gagner un livre.","Les autres secteurs sont perdants."],"fig":"proba:roue|12|5|2",
+  "qs":[
+   {"q":"Combien de secteurs sont perdants ?","type":"num","a":5,"unit":"secteurs","aide":["12 − 5 − 2 = ?"],"corr":["12 − 5 − 2 = 5"],"rep":"5 secteurs sont perdants."},
+   {"q":"**Calcule** la probabilité de gagner un livre.","type":"frac","a":"1/6","irr":true,"aide":["2 secteurs sur 12."],"corr":["P(livre) = {{2/12}} = {{1/6}}"],"rep":"La probabilité de gagner un livre est {{1/6}}."},
+   {"q":"**Calcule** la probabilité de gagner un lot (un ballon ou un livre).","type":"frac","a":"7/12","irr":true,"aide":["5 + 2 = 7 secteurs gagnants."],"corr":["P(lot) = {{7/12}}"],"rep":"La probabilité de gagner un lot est {{7/12}}."},
+   {"q":"Affirmation : « On a plus de chances de perdre que de gagner un ballon. » Vrai ou faux ?","type":"vf","a":false,"aide":["Compare P(perdre) et P(ballon)."],"corr":["P(perdre) = {{5/12}} et P(ballon) = {{5/12}}","Les chances sont égales."],"rep":"L’affirmation est fausse : les deux probabilités sont égales à {{5/12}}."}
+  ]},
+ {"id":"pb-b3","titre":"Les deux dés","ctx":["On lance deux dés à 6 faces.","On additionne les deux nombres obtenus."],
+  "qs":[
+   {"q":"Combien y a-t-il d’issues possibles ?","type":"num","a":36,"unit":"issues","aide":["Fais un tableau : 6 lignes et 6 colonnes."],"corr":["6 × 6 = 36"],"rep":"Il y a 36 issues possibles."},
+   {"q":"Quelle somme a le plus de chances de sortir ?","type":"qcm","o":["7","12","2"],"a":0,"aide":["Compte les façons d’obtenir chaque somme."],"corr":["Somme 7 : 1+6, 2+5, 3+4, 4+3, 5+2, 6+1 : 6 façons.","Somme 12 : 6+6 : 1 façon."],"rep":"La somme 7 a le plus de chances de sortir."},
+   {"q":"**Calcule** la probabilité d’obtenir une somme égale à 12.","type":"frac","a":"1/36","irr":true,"aide":["Une seule issue : 6 et 6."],"corr":["P(12) = {{1/36}}"],"rep":"La probabilité d’obtenir 12 est {{1/36}}."},
+   {"q":"**Calcule** la probabilité d’obtenir une somme égale à 7.","type":"frac","a":"1/6","irr":true,"aide":["6 issues sur 36."],"corr":["P(7) = {{6/36}} = {{1/6}}"],"rep":"La probabilité d’obtenir 7 est {{1/6}}."}
+  ]}
+],
+"calc":["pb-de","pb-urne","pb-contr","pb-roue","pb-cert"],
+"mots":[
+ {"id":"experience-aleatoire","mot":"expérience aléatoire","art":"l’","g":"f","cat":"donnees","ill":"proba:de","def":"Une expérience où je connais tous les résultats possibles, mais je ne sais pas lequel va sortir.","ph":["Lancer un dé est une [[expérience aléatoire|experience-aleatoire]].","Je décris l’[[expérience aléatoire|experience-aleatoire]]."]},
+ {"id":"issue","mot":"issue","art":"l’","g":"f","cat":"donnees","ill":"proba:issues","def":"Un résultat possible d’une expérience. Un dé a 6 issues : 1, 2, 3, 4, 5 et 6.","ph":["Une pièce a deux [[issues|issue]] : pile ou face.","Je compte les [[issues|issue]] favorables."]},
+ {"id":"evenement","mot":"événement","art":"l’","g":"m","cat":"donnees","ill":"proba:evenement","def":"Un groupe d’[[issues|issue]]. « Obtenir un nombre pair » est un événement : 2, 4 ou 6.","ph":["L’[[événement|evenement]] « obtenir 6 » a une seule issue.","Je calcule la probabilité de l’[[événement|evenement]] A."]},
+ {"id":"probabilite","mot":"probabilité","art":"la","g":"f","cat":"donnees","ill":"proba:echelle","def":"Un nombre entre 0 et 1. Il dit la chance qu’un [[événement|evenement]] arrive.","ph":["La [[probabilité|probabilite]] d’obtenir 5 est {{1/6}}.","Une [[probabilité|probabilite]] de 0,5 : une chance sur deux."],"dire":["une chance sur six","P(A) se lit « P de A »"]},
+ {"id":"equiprobable","mot":"équiprobable","cat":"donnees","ill":"proba:roue|6|0|0","def":"Toutes les [[issues|issue]] ont la même chance de sortir.","ph":["Avec un dé normal, les issues sont [[équiprobables|equiprobable]].","La roue a des secteurs égaux : c’est [[équiprobable|equiprobable]]."]},
+ {"id":"certain","mot":"certain","cat":"donnees","ill":"proba:certain","def":"Un [[événement|evenement]] certain arrive toujours. Sa probabilité est 1.","ph":["Obtenir un nombre plus petit que 10 avec un dé est [[certain]].","Un événement [[certain]] a une probabilité de 1."]},
+ {"id":"impossible","mot":"impossible","cat":"donnees","ill":"proba:impossible","def":"Un [[événement|evenement]] impossible n’arrive jamais. Sa probabilité est 0.","ph":["Obtenir 7 avec un dé est [[impossible]].","Un événement [[impossible]] a une probabilité de 0."]},
+ {"id":"evenement-contraire","mot":"événement contraire","art":"l’","g":"m","cat":"donnees","ill":"proba:contraire","def":"L’événement contraire de A arrive quand A n’arrive pas. P(contraire de A) = 1 − P(A).","ph":["Perdre est l’[[événement contraire|evenement-contraire]] de gagner.","J’utilise l’[[événement contraire|evenement-contraire]] : 1 − 0,3 = 0,7."]},
+ {"id":"urne","mot":"urne","art":"l’","g":"f","cat":"donnees","ill":"proba:urne|3|5","def":"Une boîte ou un sac avec des boules. On tire une boule sans regarder.","ph":["L’[[urne]] contient 3 boules rouges et 5 boules bleues.","Je tire une boule dans l’[[urne]]."]},
+ {"id":"de","mot":"dé","art":"le","g":"m","cat":"donnees","ill":"proba:de","def":"Un petit [[cube]] avec des points de 1 à 6 sur ses [[faces|face]].","ph":["Je lance le [[dé|de]] et j’obtiens 4.","Un [[dé|de]] a six faces."]},
+ {"id":"au-hasard","mot":"au hasard","cat":"donnees","ill":"proba:hasard","def":"Sans regarder et sans choisir. Chaque issue peut sortir.","ph":["On tire une carte [[au hasard|au-hasard]].","Je choisis un élève [[au hasard|au-hasard]]."]},
+ {"id":"arbre","mot":"arbre des possibles","art":"l’","g":"m","cat":"donnees","ill":"proba:arbre","def":"Un schéma avec des branches. Il montre toutes les [[issues|issue]] de deux expériences.","ph":["Je fais un [[arbre des possibles|arbre]] pour deux lancers de pièce.","L’[[arbre des possibles|arbre]] montre 4 issues."]}
+]
+}

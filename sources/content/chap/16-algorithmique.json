@@ -1,0 +1,71 @@
+{
+"id":"algorithmique","titre":"Algorithmique avec Scratch","icone":"🧩","cat":"algo","domaine":"Algorithmique et programmation","classe":"5ᵉ · 4ᵉ · 3ᵉ",
+"intro":"Lire et écrire un script : blocs, boucles, variables, conditions. Tracer des figures avec le lutin.",
+"objectifs":["Je sais **lire** un script Scratch.","Je sais **suivre** la valeur d’une variable.","Je sais **utiliser** une boucle et une condition."],
+"cours":[
+ {"titre":"Un algorithme","txt":["Un [[algorithme]] est une suite d’[[instructions|instruction]], dans un ordre précis, pour résoudre un problème.","Une recette de cuisine est un algorithme."],"ill":"scr:algo"},
+ {"titre":"Un programme","txt":["Un [[programme]] est un algorithme écrit pour un ordinateur.","Dans Scratch, j’assemble des [[blocs|bloc]] pour faire un [[script]]."],"ill":"scr:script"},
+ {"titre":"Le lutin et la scène","txt":["Le [[lutin]] est l’objet qui bouge sur la scène.","La scène est un [[repère]] : x va de −240 à 240 et y va de −180 à 180.","Le centre de la scène est le point (0 ; 0)."],"ill":"scr:scene"},
+ {"titre":"Le départ du script","txt":["Un script commence souvent par un bloc jaune : « quand le [[drapeau vert|drapeau-vert]] est cliqué ».","Quand je clique sur le drapeau vert, le programme démarre."],"ill":"scr:drapeau"},
+ {"titre":"Les boucles","txt":["Une [[boucle]] [[répète|repeter]] des instructions.","« répéter 4 fois » : les blocs à l’intérieur sont faits 4 fois.","« répéter indéfiniment » : les blocs sont faits sans arrêt."],"ex":["répéter 4 fois : avancer de 100 pas, tourner de 90 degrés. Le lutin trace un carré."],"ill":"scr:repeter"},
+ {"titre":"Les variables","txt":["Une [[variable]] est une boîte avec un nom. Elle garde un nombre ou un mot.","« mettre score à 0 » : la variable score vaut 0.","« ajouter 1 à score » : score augmente de 1."],"ill":"scr:var"},
+ {"titre":"Les conditions","txt":["Une [[condition]] est une question. La réponse est vrai ou faux.","« si … alors » : les blocs à l’intérieur sont faits seulement si la condition est vraie.","« [[si … alors … sinon|si-alors]] » : si la condition est fausse, on fait les blocs du « sinon »."],"ill":"scr:sisinon"},
+ {"titre":"Demander et répondre","txt":["« demander … et attendre » : le lutin pose une question. On écrit la réponse au clavier.","La réponse est gardée dans le bloc « réponse »."],"ill":"scr:demander"},
+ {"titre":"Tracer avec le stylo","txt":["« stylo en position d’écriture » : le lutin trace un trait quand il avance.","Pour un [[polygone régulier|polygone-regulier]] à n côtés : répéter n fois, avancer, puis tourner de 360 ÷ n degrés."],"ex":["Triangle équilatéral : tourner de 120°.","Hexagone (6 côtés) : tourner de 60°."],"ill":"scr:poly"}
+],
+"methodes":[
+ {"titre":"Suivre une variable","etapes":["Je lis les blocs de haut en bas.","J’écris la valeur de la variable après chaque bloc.","Dans une boucle, je fais autant de tours que demandé.","À la fin, je lis la valeur."],
+  "exemple":{"enonce":"Script : mettre n à 3 ; répéter 4 fois : ajouter 2 à n ; puis dire n. **Détermine** ce que dit le lutin.","etapes":[{"t":"Au départ :","c":"n = 3"},{"t":"Tour 1 et tour 2 :","c":"n = 5, puis n = 7"},{"t":"Tour 3 et tour 4 :","c":"n = 9, puis n = 11"}],"reponse":"Le lutin dit 11."}},
+ {"titre":"Tracer un polygone régulier","etapes":["Je compte le nombre de côtés n.","Je calcule l’angle pour tourner : 360 ÷ n.","J’écris la boucle : répéter n fois, avancer, tourner."],
+  "exemple":{"enonce":"**Écris** un script pour tracer un hexagone régulier de côté 50 pas.","etapes":[{"t":"Un hexagone a 6 côtés.","c":"360 ÷ 6 = 60"},{"t":"J’écris la boucle.","c":"répéter 6 fois : avancer de 50 pas, tourner de 60 degrés"}],"reponse":"répéter 6 fois : avancer de 50, tourner de 60 degrés."}},
+ {"titre":"Utiliser une condition","etapes":["Je lis la condition.","Je regarde si elle est vraie ou fausse.","Vraie : je fais les blocs du « alors ». Fausse : je fais les blocs du « sinon »."],
+  "exemple":{"enonce":"Script : demander « Quel âge as-tu ? » ; si réponse > 17 alors dire « Tu es majeur. » sinon dire « Tu es mineur. ». On répond 15. **Détermine** ce que dit le lutin.","etapes":[{"t":"La condition est : 15 > 17.","c":"Faux"},{"t":"La condition est fausse : je fais le bloc « sinon ».","c":"dire « Tu es mineur. »"}],"reponse":"Le lutin dit « Tu es mineur. »"}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"répéter 5 fois : avancer de 10 pas","q":"De combien de pas le lutin avance-t-il en tout ?","o":["50","10","15"],"a":0,"exp":"5 fois 10 pas : 5 × 10 = 50 pas."},
+ {"t":"qcm","txt":"mettre score à 0, puis ajouter 3 à score, puis ajouter 3 à score.","q":"Que vaut score à la fin ?","o":["6","3","0"],"a":0,"exp":"0 + 3 + 3 = 6."},
+ {"t":"vf","txt":"si 8 > 5 alors dire « Bravo »","q":"Le lutin dit « Bravo ».","a":true,"exp":"8 > 5 est vrai, donc le lutin dit « Bravo »."},
+ {"t":"qcm","txt":"Je veux tracer un carré.","q":"De combien de degrés le lutin doit-il tourner à chaque coin ?","o":["90","45","360"],"a":0,"exp":"360 ÷ 4 = 90 degrés."},
+ {"t":"question","txt":["Le lutin est au point (0 ; 0).","Il avance de 100 pas vers la droite.","Quelle est sa nouvelle abscisse ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». L’abscisse devient 100."},
+ {"t":"donnees","txt":"Un script répète 8 fois : avancer de 30 pas, tourner de 45 degrés. Le lutin est un ballon rouge. Combien de pas le lutin fait-il en tout ?","q":"Touche les deux données utiles.","a":["8","30"],"exp":"8 × 30 = 240 pas. L’angle et la couleur ne servent pas pour cette question."},
+ {"t":"qcm","txt":"demander « Quel est ton nom ? » et attendre","q":"Que fait ce bloc ?","o":["Il pose une question et attend la réponse.","Il dit bonjour.","Il arrête le programme."],"a":0,"exp":"Le lutin pose la question. Le programme attend que l’on écrive la réponse."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"La boucle répète les instructions quatre fois."}
+],
+"brevet":[
+ {"id":"al-b1","titre":"Un programme de calcul en Scratch","ctx":["Voici un script."],"fig":"scr:prog1",
+  "qs":[
+   {"q":"On répond 3. Que dit le lutin ?","type":"num","a":7,"aide":["x = 3, puis y = 3 × 4, puis y = y − 5."],"corr":["y = 3 × 4 = 12","y = 12 − 5 = 7"],"rep":"Le lutin dit 7."},
+   {"q":"On répond −2. Que dit le lutin ?","type":"num","a":-13,"aide":["(−2) × 4 = −8"],"corr":["y = (−2) × 4 = −8","y = −8 − 5 = −13"],"rep":"Le lutin dit −13."},
+   {"q":"On répond un nombre x. **Exprime** le résultat en fonction de x.","type":"expr","a":"4x-5","form":"any","aide":["y = x × 4, puis y − 5."],"corr":["y = 4x − 5"],"rep":"Le résultat est 4x − 5."},
+   {"q":"Quel nombre faut-il répondre pour que le lutin dise 35 ?","type":"num","a":10,"aide":["Je résous 4x − 5 = 35."],"corr":["4x − 5 = 35","4x = 40","x = 10"],"rep":"Il faut répondre 10."}
+  ]},
+ {"id":"al-b2","titre":"La figure du lutin","ctx":["Voici un script. Le stylo est en position d’écriture."],"fig":"scr:prog2",
+  "qs":[
+   {"q":"Quelle figure le lutin trace-t-il ?","type":"qcm","o":["un pentagone régulier (5 côtés)","un carré","un triangle"],"a":0,"aide":["La boucle répète 5 fois : 5 côtés."],"corr":["5 côtés de 80 pas, tourner de 72° (360 ÷ 5 = 72)"],"rep":"Le lutin trace un pentagone régulier."},
+   {"q":"**Calcule** le périmètre de la figure, en pas.","type":"num","a":400,"unit":"pas","aide":["5 côtés de 80 pas."],"corr":["5 × 80 = 400"],"rep":"Le périmètre est 400 pas."},
+   {"q":"Pour tracer un triangle équilatéral, il faut tourner de :","type":"qcm","o":["120 degrés","60 degrés","90 degrés"],"a":0,"aide":["360 ÷ 3 = ?"],"corr":["360 ÷ 3 = 120"],"rep":"Il faut tourner de 120 degrés."}
+  ]},
+ {"id":"al-b3","titre":"Le jeu du nombre","ctx":["Voici un script de jeu."],"fig":"scr:prog3",
+  "qs":[
+   {"q":"Quand la boucle s’arrête-t-elle ?","type":"qcm","o":["Quand on répond 7.","Après 7 essais.","Jamais."],"a":0,"aide":["Lis la condition : « répéter jusqu’à ce que réponse = 7 »."],"corr":["La boucle s’arrête quand réponse = 7."],"rep":"La boucle s’arrête quand on répond 7."},
+   {"q":"Lina répond 3, puis 9, puis 7. Que dit le lutin ?","type":"num","a":3,"aide":["Chaque réponse ajoute 1 à essais."],"corr":["essais : 0 → 1 → 2 → 3"],"rep":"Le lutin dit 3."},
+   {"q":"Que compte la variable « essais » ?","type":"qcm","o":["Le nombre de réponses données.","Le nombre à deviner.","La dernière réponse."],"a":0,"aide":["On ajoute 1 à essais après chaque réponse."],"corr":["essais augmente de 1 à chaque réponse."],"rep":"La variable « essais » compte le nombre de réponses."}
+  ]}
+],
+"calc":["al-var","al-boucle","al-si","al-poly","al-prog"],
+"mots":[
+ {"id":"algorithme","mot":"algorithme","art":"l’","g":"m","cat":"algo","ill":"scr:algo","def":"Une suite d’[[instructions|instruction]], dans un ordre précis, pour résoudre un [[problème|probleme]].","ph":["Une recette est un [[algorithme]].","J’écris un [[algorithme]] pour calculer le prix."]},
+ {"id":"programme","mot":"programme","art":"le","g":"m","cat":"algo","ill":"scr:script","def":"Un [[algorithme]] écrit pour l’ordinateur, par exemple avec Scratch.","ph":["Je lance le [[programme]] avec le drapeau vert.","Le [[programme]] calcule le résultat."]},
+ {"id":"script","mot":"script","art":"le","g":"m","cat":"algo","ill":"scr:script","def":"Des [[blocs|bloc]] Scratch assemblés les uns sous les autres.","ph":["Je lis le [[script]] de haut en bas.","Le [[script]] commence par le drapeau vert."]},
+ {"id":"bloc","mot":"bloc","art":"le","g":"m","cat":"algo","ill":"scr:bloc","def":"Une pièce de Scratch. Chaque bloc donne une [[instruction]].","ph":["Le [[bloc]] « avancer de 10 pas » est bleu.","J’ajoute un [[bloc]] sous le précédent."]},
+ {"id":"instruction","mot":"instruction","art":"l’","g":"f","cat":"algo","ill":"scr:avancer","def":"Un ordre donné à l’ordinateur : avancer, tourner, dire…","ph":["Chaque [[instruction]] est un bloc.","Le lutin suit les [[instructions|instruction]] dans l’ordre."]},
+ {"id":"lutin","mot":"lutin","art":"le","g":"m","cat":"algo","ill":"scr:lutin","def":"L’objet ou le personnage qui bouge sur la scène de Scratch.","ph":["Le [[lutin]] avance de 100 pas.","Je choisis un nouveau [[lutin]]."]},
+ {"id":"drapeau-vert","mot":"drapeau vert","art":"le","g":"m","cat":"algo","ill":"scr:drapeau","def":"Le bouton qui lance le [[programme]]. Le bloc « quand le drapeau vert est cliqué » commence le [[script]].","ph":["Je clique sur le [[drapeau vert|drapeau-vert]].","Le script démarre avec le [[drapeau vert|drapeau-vert]]."]},
+ {"id":"boucle","mot":"boucle","art":"la","g":"f","cat":"algo","ill":"scr:repeter","def":"Un [[bloc]] qui répète des [[instructions|instruction]] plusieurs fois.","ph":["La [[boucle]] répète 4 fois.","J’utilise une [[boucle]] pour tracer un carré."]},
+ {"id":"repeter","mot":"répéter","cat":"verbe","ill":"scr:repeter","f":{"c":"Répète · Répétez","je":"je répète"},"def":"Faire plusieurs fois la même chose.","ph":["Le lutin [[répète|repeter]] 4 fois les mêmes blocs.","[[Répète|repeter]] 6 fois : avancer, tourner."]},
+ {"id":"variable","mot":"variable","art":"la","g":"f","cat":"algo","ill":"scr:var","def":"Une boîte avec un nom. Elle garde un nombre ou un mot, qui peut changer.","ph":["La [[variable]] score vaut 0 au départ.","J’ajoute 1 à la [[variable]] essais."]},
+ {"id":"condition","mot":"condition","art":"la","g":"f","cat":"algo","ill":"scr:si","def":"Une question avec la réponse vrai ou faux. Exemple : réponse = 7 ?","ph":["La [[condition]] est vraie.","Si la [[condition]] est fausse, on fait le bloc « sinon »."]},
+ {"id":"si-alors","mot":"si … alors … sinon","cat":"algo","ill":"scr:sisinon","def":"Un [[bloc]] : si la [[condition]] est vraie, je fais les blocs du « alors ». Sinon, je fais les blocs du « sinon ».","ph":["J’utilise le bloc [[si … alors … sinon|si-alors]].","Le bloc [[si … alors … sinon|si-alors]] teste la réponse."]},
+ {"id":"polygone-regulier","mot":"polygone régulier","art":"le","g":"m","cat":"geometrie","ill":"scr:poly","def":"Une [[figure]] avec tous ses côtés égaux et tous ses angles égaux : triangle équilatéral, carré, hexagone…","ph":["Le lutin trace un [[polygone régulier|polygone-regulier]] à 6 côtés.","Un carré est un [[polygone régulier|polygone-regulier]]."]}
+]
+}

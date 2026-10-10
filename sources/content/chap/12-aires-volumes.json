@@ -1,0 +1,70 @@
+{
+"id":"aires-volumes","titre":"Aires et volumes","icone":"🧊","cat":"mesure","domaine":"Grandeurs et mesures","classe":"Toutes les classes",
+"intro":"Les formules d’aires et de volumes : rectangle, disque, cylindre, pyramide, cône, boule. Les conversions.",
+"objectifs":["Je sais **calculer** une aire et un périmètre.","Je sais **calculer** le volume d’un solide.","Je sais **convertir** des volumes en litres."],
+"cours":[
+ {"titre":"Aire et périmètre","txt":["Le [[périmètre|perimetre]] est la longueur du tour. Il s’exprime en cm, en m…","L’[[aire]] est la surface. Elle s’exprime en cm², en m²…"],"ill":"shape:aire"},
+ {"titre":"Les formules d’aire","txt":["Rectangle : longueur × largeur.","Carré : côté × côté.","Triangle : base × hauteur ÷ 2.","[[Disque|disque]] : π × rayon × rayon. On écrit π × r²."],"ill":"aire:tri"},
+ {"titre":"Le périmètre d’un cercle","txt":["Le périmètre d’un [[cercle]] est 2 × π × rayon.","On peut aussi écrire π × diamètre."],"ex":["Rayon 5 cm : 2 × π × 5 ≈ 31,4 cm."],"ill":"sol:disque|5"},
+ {"titre":"Le volume","txt":["Le [[volume]] est la place occupée par un solide.","Il s’exprime en cm³, en m³… ou en litres.","1 L = 1 dm³ = 1 000 cm³."],"ill":"sol:cubes"},
+ {"titre":"Prisme et cylindre","txt":["Volume = aire de la [[base]] × [[hauteur|hauteur-solide]].","[[Pavé droit|pave-droit]] : longueur × largeur × hauteur.","[[Cylindre|cylindre]] : π × r² × h."],"ill":"sol:cylindre|3|8"},
+ {"titre":"Pyramide et cône","txt":["Volume = aire de la base × hauteur ÷ 3.","[[Pyramide|pyramide]] à base carrée : côté × côté × hauteur ÷ 3.","[[Cône|cone]] : π × r² × h ÷ 3."],"ill":"sol:cone"},
+ {"titre":"La boule","txt":["Volume d’une [[boule]] : {{4/3}} × π × r³.","Aire d’une [[sphère|sphere]] : 4 × π × r²."],"ill":"sol:boule"},
+ {"titre":"Les conversions","txt":["Aires : 1 m² = 100 dm² = 10 000 cm².","Volumes : 1 m³ = 1 000 dm³ = 1 000 L.","1 dm³ = 1 L et 1 cm³ = 1 mL."],"ex":["2,5 L = 2 500 cm³","3 m³ = 3 000 L"],"ill":"txt:1 dm³ = [1 L]|1 cm³ = [1 mL]"},
+ {"titre":"Agrandir ou réduire","txt":["Si les longueurs sont multipliées par k :","les aires sont multipliées par k² ;","les volumes sont multipliés par k³."],"ex":["k = 2 : l’aire est multipliée par 4, le volume par 8."],"ill":"trans:agr"}
+],
+"methodes":[
+ {"titre":"Calculer le volume d’un cylindre","etapes":["Je trouve le rayon r et la hauteur h.","Je calcule l’aire de la base : π × r².","Je multiplie par la hauteur.","J’arrondis et j’écris l’unité : cm³."],
+  "exemple":{"enonce":"Une boîte de conserve a un rayon de 4 cm et une hauteur de 10 cm. **Calcule** son volume, arrondi au cm³.","etapes":[{"t":"J’écris la formule.","c":"V = π × r² × h"},{"t":"Je remplace r par 4 et h par 10.","c":"V = π × 4² × 10 = 160π"},{"t":"À la calculatrice.","c":"160π ≈ 502,65"},{"t":"J’arrondis au cm³.","c":"V ≈ 503 cm³"}],"reponse":"Le volume de la boîte est environ 503 cm³."}},
+ {"titre":"Calculer le volume d’un cône","etapes":["Je calcule l’aire de la base : π × r².","Je multiplie par la hauteur.","Je divise par 3."],
+  "exemple":{"enonce":"Un cône a un rayon de 3 cm et une hauteur de 8 cm. **Calcule** son volume, arrondi au dixième.","etapes":[{"t":"Aire de la base.","c":"π × 3² = 9π"},{"t":"Je multiplie par 8 et je divise par 3.","c":"9π × 8 ÷ 3 = 24π"},{"t":"À la calculatrice.","c":"24π ≈ 75,4"}],"reponse":"Le volume du cône est environ 75,4 cm³."}},
+ {"titre":"Convertir un volume en litres","etapes":["Je me rappelle : 1 dm³ = 1 L.","Des cm³ aux dm³ : je divise par 1 000.","Des m³ aux dm³ : je multiplie par 1 000."],
+  "exemple":{"enonce":"Un aquarium a un volume de 36 000 cm³. **Calcule** sa contenance en litres.","etapes":[{"t":"Je divise par 1 000.","c":"36 000 cm³ = 36 dm³"},{"t":"1 dm³ = 1 L.","c":"36 dm³ = 36 L"}],"reponse":"L’aquarium contient 36 L."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Une piscine a la forme d’un pavé droit.","q":"Pour savoir combien d’eau elle contient, je calcule :","o":["son volume","son périmètre","son aire"],"a":0,"exp":"La quantité d’eau, c’est la place à l’intérieur : le volume."},
+ {"t":"qcm","txt":"On veut mettre une clôture autour d’un jardin.","q":"Je calcule :","o":["le périmètre du jardin","l’aire du jardin","le volume du jardin"],"a":0,"exp":"La clôture fait le tour : c’est le périmètre."},
+ {"t":"vf","txt":"Une affirmation sur les unités.","q":"1 L = 1 000 cm³.","a":true,"exp":"1 L = 1 dm³ = 1 000 cm³."},
+ {"t":"qcm","txt":"Un cylindre a un rayon de 2 cm et une hauteur de 5 cm.","q":"Quel calcul donne son volume ?","o":["π × 2² × 5","2 × π × 2","π × 2² × 5 ÷ 3"],"a":0,"exp":"Volume du cylindre : π × r² × h. (÷ 3 sert pour le cône.)"},
+ {"t":"question","txt":["Un verre a la forme d’un cylindre.","Son rayon est 3 cm et sa hauteur est 10 cm.","Peut-on verser 25 cL d’eau dans ce verre ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». Il faut comparer le volume du verre et 25 cL."},
+ {"t":"donnees","txt":"Une boîte en forme de pavé droit mesure 20 cm de long, 10 cm de large et 5 cm de haut. Elle est rouge et coûte 3 €. Calcule son volume.","q":"Touche les trois données utiles.","a":["20","10","5"],"exp":"V = 20 × 10 × 5 = 1 000 cm³. Le prix ne sert pas."},
+ {"t":"qcm","txt":"On multiplie toutes les longueurs d’un cube par 2.","q":"Son volume est multiplié par :","o":["8","2","4"],"a":0,"exp":"Volume : k³ = 2³ = 8."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"Le volume du pavé est égal à 1 000 cm³."}
+],
+"brevet":[
+ {"id":"av-b1","titre":"Le verre d’eau","ctx":["Un verre a la forme d’un cylindre.","Son rayon est de 3 cm. Sa hauteur est de 10 cm.","1 cL = 10 cm³."],"fig":"sol:cylindre|3|10",
+  "qs":[
+   {"q":"**Calcule** le volume du verre. **Arrondis** au cm³.","type":"num","a":282.743338823,"arr":0,"unit":"cm³","aide":["V = π × r² × h","V = π × 3² × 10"],"corr":["V = π × 9 × 10 = 90π","90π ≈ 282,7","V ≈ 283 cm³"],"rep":"Le volume du verre est environ 283 cm³."},
+   {"q":"**Convertis** ce volume en centilitres. **Arrondis** à l’unité.","type":"num","a":28.2743338823,"arr":0,"unit":"cL","aide":["1 cL = 10 cm³ : je divise par 10."],"corr":["282,7 ÷ 10 ≈ 28,3","≈ 28 cL"],"rep":"Le verre contient environ 28 cL."},
+   {"q":"Peut-on verser 25 cL d’eau dans ce verre ?","type":"qcm","o":["Oui, car 25 cL est moins que 28 cL.","Non, car 25 cL est plus que 28 cL.","On ne peut pas savoir."],"a":0,"aide":["Compare 25 cL et le volume du verre."],"corr":["25 < 28"],"rep":"Oui, on peut verser 25 cL d’eau dans le verre."}
+  ]},
+ {"id":"av-b2","titre":"Le cornet de glace","ctx":["Un cornet de glace a la forme d’un cône.","Son rayon est de 2,5 cm. Sa hauteur est de 12 cm.","On pose dessus une boule de glace de rayon 2,5 cm."],"fig":"sol:cornet",
+  "qs":[
+   {"q":"**Calcule** le volume du cône. **Arrondis** au dixième.","type":"num","a":78.5398163,"arr":1,"unit":"cm³","aide":["V = π × r² × h ÷ 3","V = π × 2,5² × 12 ÷ 3"],"corr":["π × 6,25 × 12 ÷ 3 = 25π","25π ≈ 78,5"],"rep":"Le volume du cône est environ 78,5 cm³."},
+   {"q":"**Calcule** le volume de la boule de glace. **Arrondis** au dixième.","type":"num","a":65.4498469,"arr":1,"unit":"cm³","aide":["V = {{4/3}} × π × r³","2,5³ = 15,625"],"corr":["{{4/3}} × π × 15,625 ≈ 65,4"],"rep":"Le volume de la boule est environ 65,4 cm³."},
+   {"q":"La glace fond et coule dans le cornet. Va-t-elle déborder ?","type":"qcm","o":["Non, car le volume de la boule est plus petit que le volume du cône.","Oui, car la boule est plus grande que le cône.","Oui, car 65,4 est plus grand que 78,5."],"a":0,"aide":["Compare 65,4 cm³ et 78,5 cm³."],"corr":["65,4 < 78,5"],"rep":"La glace ne va pas déborder : 65,4 cm³ est moins que 78,5 cm³."}
+  ]},
+ {"id":"av-b3","titre":"La piscine","ctx":["Une piscine a la forme d’un pavé droit.","Elle mesure 8 m de long, 4 m de large et 1,5 m de profondeur.","Un tuyau donne 20 L d’eau par minute."],
+  "qs":[
+   {"q":"**Calcule** le volume de la piscine, en m³.","type":"num","a":48,"unit":"m³","aide":["V = longueur × largeur × hauteur"],"corr":["8 × 4 × 1,5 = 48"],"rep":"Le volume de la piscine est 48 m³."},
+   {"q":"**Convertis** ce volume en litres.","type":"num","a":48000,"unit":"L","aide":["1 m³ = 1 000 L"],"corr":["48 × 1 000 = 48 000"],"rep":"La piscine contient 48 000 L."},
+   {"q":"**Calcule** le temps pour remplir la piscine, en heures.","type":"num","a":40,"unit":"h","aide":["48 000 ÷ 20 = ? minutes","Ensuite, je divise par 60."],"corr":["48 000 ÷ 20 = 2 400 min","2 400 ÷ 60 = 40 h"],"rep":"Il faut 40 heures pour remplir la piscine."}
+  ]}
+],
+"calc":["av-aire","av-cercle","av-vol","av-conv","av-agr"],
+"mots":[
+ {"id":"volume","mot":"volume","art":"le","g":"m","cat":"mesure","ill":"sol:cubes","def":"La place occupée par un solide. On le mesure en cm³, en m³ ou en litres.","ph":["Le [[volume]] du cube est 27 cm³.","Je calcule le [[volume]] de la boîte."]},
+ {"id":"cm2","mot":"centimètre carré","art":"le","g":"m","sym":"cm²","cat":"mesure","ill":"aire:cm2","def":"Une unité d’[[aire]] : l’aire d’un carré de 1 cm de côté.","ph":["L’aire du rectangle est 12 [[centimètres carrés|cm2]].","cm² se lit « [[centimètre carré|cm2]] »."]},
+ {"id":"cm3","mot":"centimètre cube","art":"le","g":"m","sym":"cm³","cat":"mesure","ill":"sol:cm3","def":"Une unité de [[volume]] : le volume d’un cube de 1 cm de côté. 1 cm³ = 1 mL.","ph":["Le volume est 500 [[centimètres cubes|cm3]].","1 000 [[centimètres cubes|cm3]] font 1 litre."]},
+ {"id":"formule","mot":"formule","art":"la","g":"f","cat":"mesure","ill":"txt:A = π × r²|V = π × r² × h","def":"Un [[calcul]] avec des lettres, toujours vrai. Il sert à trouver une aire ou un volume.","ph":["J’écris la [[formule]] du volume du cylindre.","Je [[remplace|remplacer]] les lettres de la [[formule]] par des nombres."]},
+ {"id":"base","mot":"base","art":"la","g":"f","cat":"geometrie","ill":"sol:base","def":"La [[face]] sur laquelle repose un solide. La base d’un cylindre est un [[disque]].","ph":["La [[base]] du prisme est un triangle.","Je calcule l’aire de la [[base]]."]},
+ {"id":"hauteur-solide","mot":"hauteur","art":"la","g":"f","cat":"geometrie","ill":"sol:hauteur","def":"La distance entre la [[base]] et le haut du solide, mesurée bien droit.","ph":["La [[hauteur|hauteur-solide]] du cône est 12 cm.","Je multiplie l’aire de la base par la [[hauteur|hauteur-solide]]."]},
+ {"id":"prisme","mot":"prisme droit","art":"le","g":"m","cat":"geometrie","ill":"sol:prisme","def":"Un solide avec deux [[bases|base]] identiques et parallèles. Les autres faces sont des [[rectangles|rectangle]].","ph":["Une tente a la forme d’un [[prisme droit|prisme]].","Le [[prisme droit|prisme]] a deux bases triangulaires."]},
+ {"id":"pyramide","mot":"pyramide","art":"la","g":"f","cat":"geometrie","ill":"sol:pyramide","def":"Un solide avec une [[base]] et des faces en triangle qui se rejoignent au [[sommet]].","ph":["La [[pyramide]] a une base carrée.","Je calcule le volume de la [[pyramide]]."]},
+ {"id":"cone","mot":"cône","art":"le","g":"m","cat":"geometrie","ill":"sol:cone","def":"Un solide avec une [[base]] en forme de [[disque]] et un [[sommet]], comme un cornet de glace.","ph":["Le cornet de glace a la forme d’un [[cône|cone]].","Le volume du [[cône|cone]] est π × r² × h ÷ 3."]},
+ {"id":"boule","mot":"boule","art":"la","g":"f","cat":"geometrie","ill":"sol:boule","def":"Un solide tout rond et plein, comme une balle.","ph":["Le volume de la [[boule]] est {{4/3}} × π × r³.","La [[boule]] a un rayon de 5 cm."]},
+ {"id":"sphere","mot":"sphère","art":"la","g":"f","cat":"geometrie","ill":"sol:sphere","def":"La surface d’une [[boule]]. Tous ses points sont à la même distance du [[centre]].","ph":["La Terre a presque la forme d’une [[sphère|sphere]].","L’aire de la [[sphère|sphere]] est 4 × π × r²."]},
+ {"id":"pi","mot":"pi","sym":"π","cat":"nombre","ill":"txt:{π} ≈ 3,14","def":"Un nombre spécial : le périmètre d’un cercle divisé par son diamètre. π ≈ 3,14.","ph":["J’utilise la touche [[π|pi]] de la calculatrice.","L’aire du disque est [[π|pi]] × r²."]},
+ {"id":"disque","mot":"disque","art":"le","g":"m","cat":"geometrie","ill":"sol:disque|3","def":"La surface à l’intérieur d’un [[cercle]]. Son aire est π × r².","ph":["L’aire du [[disque]] de rayon 3 cm est 9π cm².","La base du cylindre est un [[disque]]."]}
+]
+}

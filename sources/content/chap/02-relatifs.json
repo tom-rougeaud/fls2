@@ -1,0 +1,66 @@
+{
+"id":"relatifs","titre":"Les nombres relatifs","icone":"🌡️","cat":"nombre","domaine":"Nombres et calculs","classe":"5ᵉ · 4ᵉ",
+"intro":"Les nombres positifs et négatifs. On les utilise pour les températures, les altitudes et l’argent.",
+"objectifs":["Je sais **comparer** des nombres relatifs.","Je sais **additionner** et **soustraire** des nombres relatifs.","Je sais **multiplier** et **diviser** avec la règle des signes."],
+"cours":[
+ {"titre":"Positif ou négatif","txt":["Un [[nombre positif|nombre-positif]] est plus grand que 0. Exemple : 5 ou +5.","Un [[nombre négatif|nombre-negatif]] est plus petit que 0. Il a le [[signe]] −. Exemple : −3.","0 est à la fois positif et négatif."],"ex":["Il fait −4 °C : la température est négative."],"ill":"nl2:-5|5|-3,4|"},
+ {"titre":"La distance à zéro","txt":["Sur la [[droite graduée|droite-graduee]], chaque nombre a une [[distance à zéro|distance-a-zero]].","C’est le nombre sans son signe."],"ex":["La distance à zéro de −4 est 4.","La distance à zéro de 4 est aussi 4."],"ill":"nl2:-5|5|-4|dist"},
+ {"titre":"L’opposé","txt":["−4 et 4 sont [[opposés|oppose]] : ils ont la même distance à zéro, mais des signes différents.","La [[somme]] de deux nombres opposés est égale à 0."],"ex":["−4 + 4 = 0"],"ill":"nl2:-5|5|-4,4|opp"},
+ {"titre":"Comparer","txt":["Sur la droite graduée, le plus grand nombre est à droite.","Entre deux nombres négatifs, le plus grand est le plus proche de 0."],"ex":["−2 > −7","−5 < 1"],"ill":"nl2:-8|2|-7,-2|cmp"},
+ {"titre":"Additionner","txt":["Même signe : j’[[additionne|additionner]] les distances à zéro. Je garde le signe.","Signes différents : je [[soustrais|soustraire]] les distances à zéro. Je garde le signe du nombre le plus loin de 0."],"ex":["(−3) + (−5) = −8","(−7) + 4 = −3"],"ill":"nl2:-8|2|-7,4|sum"},
+ {"titre":"Soustraire","txt":["Soustraire un nombre, c’est additionner son opposé."],"ex":["5 − (−2) = 5 + 2 = 7","−3 − 4 = −3 + (−4) = −7"],"ill":"txt:5 {− (−2)}|= 5 {+ 2} = [7]"},
+ {"titre":"Multiplier et diviser","txt":["J’utilise la [[règle des signes|regle-des-signes]].","Deux nombres de même signe : le résultat est positif.","Deux nombres de signes différents : le résultat est négatif."],"ex":["(−3) × (−4) = 12","(−20) ÷ 5 = −4"],"ill":"txt:{−} × {−} = {+}|{+} × {−} = {−}"},
+ {"titre":"Les priorités de calcul","txt":["D’abord, je calcule entre les [[parenthèses|parentheses]].","Ensuite, je fais les [[multiplications|multiplication]] et les [[divisions|division]].","Enfin, je fais les [[additions|addition]] et les [[soustractions|soustraction]], de gauche à droite."],"ex":["2 + 3 × (−4) = 2 + (−12) = −10"],"ill":"txt:2 + {3 × (−4)}|= 2 + (−12) = [−10]"}
+],
+"methodes":[
+ {"titre":"Additionner deux nombres relatifs","etapes":["Je regarde les signes des deux nombres.","Même signe : j’additionne les distances à zéro et je garde le signe.","Signes différents : je soustrais les distances à zéro.","Je garde le signe du nombre le plus loin de zéro."],
+  "exemple":{"enonce":"**Calcule** (−9) + 4.","etapes":[{"t":"Les signes sont différents.","c":"−9 et +4"},{"t":"Je soustrais les distances à zéro.","c":"9 − 4 = 5"},{"t":"−9 est plus loin de zéro : je garde le signe −.","c":"(−9) + 4 = −5"}],"reponse":"(−9) + 4 = −5"}},
+ {"titre":"Multiplier des nombres relatifs","etapes":["Je compte les nombres négatifs.","S’il y en a 2, 4, 6… (un nombre pair) : le résultat est positif.","S’il y en a 1, 3, 5… (un nombre impair) : le résultat est négatif.","Je multiplie les distances à zéro."],
+  "exemple":{"enonce":"**Calcule** (−2) × 3 × (−5).","etapes":[{"t":"Il y a 2 nombres négatifs. 2 est pair : le résultat est positif.","c":"+"},{"t":"Je multiplie les distances à zéro.","c":"2 × 3 × 5 = 30"}],"reponse":"(−2) × 3 × (−5) = 30"}},
+ {"titre":"Calculer avec les priorités","etapes":["Je cherche les parenthèses.","Je fais les multiplications et les divisions.","Je fais les additions et les soustractions, de gauche à droite.","J’écris une ligne pour chaque étape."],
+  "exemple":{"enonce":"**Calcule** A = 7 − 2 × (−3).","etapes":[{"t":"Je fais d’abord la multiplication.","c":"2 × (−3) = −6"},{"t":"J’écris la nouvelle ligne.","c":"A = 7 − (−6)"},{"t":"Soustraire −6, c’est ajouter 6.","c":"A = 7 + 6 = 13"}],"reponse":"A = 13"}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"À 6 h, il fait −5 °C. À 14 h, il fait 3 °C.","q":"La température a-t-elle augmenté ou baissé ?","o":["Elle a augmenté.","Elle a baissé.","Elle n’a pas changé."],"a":0,"exp":"−5 est plus petit que 3. La température a augmenté de 8 °C."},
+ {"t":"qcm","txt":"Un sous-marin est à 120 m sous le niveau de la mer.","q":"Quel nombre donne son altitude ?","o":["−120 m","120 m","+120 m"],"a":0,"exp":"Sous le niveau de la mer, l’altitude est négative : −120 m."},
+ {"t":"qcm","txt":"Sur son compte, Karim a −30 €. Il dépose 50 €.","q":"Quel calcul faut-il faire ?","o":["−30 + 50","−30 − 50","30 − 50"],"a":0,"exp":"Il dépose de l’argent : on ajoute 50. −30 + 50 = 20."},
+ {"t":"question","txt":["Le mont Everest a une altitude de 8 849 m.","La fosse des Mariannes est à −10 994 m.","Calcule l’écart entre ces deux altitudes."],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question commence par le verbe « Calcule »."},
+ {"t":"donnees","txt":"Le matin, il fait −8 °C. Le vent souffle à 30 km/h. L’après-midi, la température monte de 5 °C. Quelle est la température l’après-midi ?","q":"Touche les deux données utiles.","a":["−8","5"],"exp":"−8 + 5 = −3. La vitesse du vent ne sert pas."},
+ {"t":"vf","txt":"On calcule (−3) × (−4).","q":"Le résultat est négatif.","a":false,"exp":"Deux nombres négatifs : le produit est positif. (−3) × (−4) = 12."},
+ {"t":"qcm","txt":"L’opposé de −7.","q":"Quel est ce nombre ?","o":["7","−7","0"],"a":0,"exp":"−7 et 7 ont la même distance à zéro et des signes différents."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"L’opposé de −7 est 7."}
+],
+"brevet":[
+ {"id":"rel-b1","titre":"Les températures de la semaine","ctx":["Voici les températures du matin, à Strasbourg, pendant 5 jours."],"tab":[["Jour","Lundi","Mardi","Mercredi","Jeudi","Vendredi"],["Température (°C)","−4","−7","2","−1","5"]],
+  "qs":[
+   {"q":"Quel jour fait-il le plus froid ?","type":"qcm","o":["Mardi","Lundi","Jeudi"],"a":0,"aide":["Le plus froid, c’est la température la plus petite."],"corr":["−7 est le plus petit nombre."],"rep":"Il fait le plus froid mardi."},
+   {"q":"**Calcule** l’écart entre la température la plus haute et la température la plus basse.","type":"num","a":12,"unit":"°C","aide":["La plus haute : 5 °C. La plus basse : −7 °C.","Écart = 5 − (−7)"],"corr":["5 − (−7) = 5 + 7 = 12"],"rep":"L’écart est de 12 °C."},
+   {"q":"**Calcule** la moyenne de ces températures.","type":"num","a":-1,"unit":"°C","aide":["J’additionne les 5 températures.","Je divise la somme par 5."],"corr":["(−4) + (−7) + 2 + (−1) + 5 = −5","−5 ÷ 5 = −1"],"rep":"La température moyenne est de −1 °C."}
+  ]},
+ {"id":"rel-b2","titre":"Un programme de calcul","ctx":["Voici un programme de calcul :","• Choisir un nombre.","• Multiplier ce nombre par −3.","• Ajouter 10 au résultat."],
+  "qs":[
+   {"q":"On choisit le nombre 4. **Montre que** le résultat est −2.","type":"num","a":-2,"aide":["4 × (−3) = ?","Ensuite, j’ajoute 10."],"corr":["4 × (−3) = −12","−12 + 10 = −2"],"rep":"Avec 4, le résultat est −2."},
+   {"q":"On choisit le nombre −5. **Calcule** le résultat.","type":"num","a":25,"aide":["(−5) × (−3) : deux nombres négatifs.","Ensuite, j’ajoute 10."],"corr":["(−5) × (−3) = 15","15 + 10 = 25"],"rep":"Avec −5, le résultat est 25."},
+   {"q":"Quel nombre faut-il choisir pour obtenir 10 ?","type":"qcm","o":["0","10","−3"],"a":0,"aide":["Teste chaque nombre avec le programme."],"corr":["0 × (−3) = 0","0 + 10 = 10"],"rep":"Il faut choisir 0 pour obtenir 10."}
+  ]},
+ {"id":"rel-b3","titre":"L’ascenseur","ctx":["Dans un immeuble, le rez-de-chaussée est l’étage 0.","Le parking est à l’étage −3.","Léo part du parking. Il monte de 7 étages, puis il descend de 2 étages."],
+  "qs":[
+   {"q":"**Calcule** l’étage où arrive Léo.","type":"num","a":2,"aide":["Il part de −3. Monter, c’est ajouter. Descendre, c’est soustraire."],"corr":["−3 + 7 = 4","4 − 2 = 2"],"rep":"Léo arrive à l’étage 2."},
+   {"q":"Ensuite, Léo retourne au parking. De combien d’étages descend-il ?","type":"num","a":5,"unit":"étages","aide":["Il va de l’étage 2 à l’étage −3.","Écart = 2 − (−3)"],"corr":["2 − (−3) = 2 + 3 = 5"],"rep":"Léo descend de 5 étages."}
+  ]}
+],
+"calc":["rel-add","rel-sub","rel-mul","rel-comp","rel-prio"],
+"mots":[
+ {"id":"nombre-relatif","mot":"nombre relatif","art":"le","g":"m","cat":"nombre","ill":"nl2:-4|4|-3,2|","def":"Un [[nombre]] avec un [[signe]] + ou −. Il peut être positif ou négatif.","ph":["−3 et 5 sont des nombres relatifs.","Une température est un [[nombre relatif|nombre-relatif]]."]},
+ {"id":"nombre-positif","mot":"nombre positif","art":"le","g":"m","cat":"nombre","ill":"nl2:-4|4|3|pos","def":"Un [[nombre]] plus grand que 0. On peut écrire le signe + : 3 ou +3.","ph":["25 est un [[nombre positif|nombre-positif]].","Le résultat est un [[nombre positif|nombre-positif]]."],"dire":["+3 se lit « plus trois ».","3 est positif."]},
+ {"id":"nombre-negatif","mot":"nombre négatif","art":"le","g":"m","cat":"nombre","ill":"nl2:-4|4|-3|neg","def":"Un [[nombre]] plus petit que 0. Il a toujours le signe − : −3.","ph":["−8 est un [[nombre négatif|nombre-negatif]].","Sous la mer, l’[[altitude]] est un [[nombre négatif|nombre-negatif]]."],"dire":["−3 se lit « moins trois ».","3 degrés en dessous de zéro."]},
+ {"id":"signe","mot":"signe","art":"le","g":"m","cat":"nombre","ill":"txt:{−}3    {+}7","def":"Le + ou le − devant un [[nombre]]. Il dit si le nombre est positif ou négatif.","ph":["Le [[signe]] de −5 est moins.","Je regarde le [[signe]] des deux nombres."]},
+ {"id":"oppose","mot":"opposé","art":"l’","g":"m","cat":"nombre","ill":"nl2:-4|4|-3,3|opp","def":"Deux nombres sont opposés s’ils ont la même [[distance à zéro|distance-a-zero]] et des [[signes|signe]] différents : −3 et 3.","ph":["L’[[opposé|oppose]] de −3 est 3.","La [[somme]] de deux [[opposés|oppose]] est égale à 0."]},
+ {"id":"distance-a-zero","mot":"distance à zéro","art":"la","g":"f","cat":"nombre","ill":"nl2:-5|5|-4|dist","def":"L’écart entre le nombre et 0 sur la [[droite graduée|droite-graduee]]. C’est le nombre sans son [[signe]].","ph":["La [[distance à zéro|distance-a-zero]] de −4 est 4.","−4 et 4 ont la même [[distance à zéro|distance-a-zero]]."]},
+ {"id":"regle-des-signes","mot":"règle des signes","art":"la","g":"f","cat":"nombre","ill":"txt:{−} × {−} = {+}|{+} × {−} = {−}","def":"Pour multiplier ou diviser : même [[signe]], le résultat est positif. Signes différents, le résultat est négatif.","ph":["J’applique la [[règle des signes|regle-des-signes]] : (−2) × (−5) = 10.","Avec la [[règle des signes|regle-des-signes]], (−12) ÷ 3 = −4."]},
+ {"id":"priorites","mot":"priorités de calcul","art":"les","g":"fpl","cat":"nombre","ill":"txt:2 + {3 × 4}|= 2 + 12 = [14]","def":"L’ordre des calculs : d’abord les [[parenthèses|parentheses]], puis × et ÷, puis + et −.","ph":["Je respecte les [[priorités de calcul|priorites]].","Avec les [[priorités de calcul|priorites]], 2 + 3 × 4 = 14."]},
+ {"id":"parentheses","mot":"parenthèses","art":"les","g":"fpl","cat":"nombre","ill":"txt:{(}2 + 3{)} × 4|= 5 × 4 = [20]","def":"Les signes ( et ). On fait d’abord le calcul entre les parenthèses.","ph":["Je calcule d’abord entre les [[parenthèses|parentheses]].","J’écris −3 entre [[parenthèses|parentheses]] : 5 × (−3)."]},
+ {"id":"ecart","mot":"écart","art":"l’","g":"m","cat":"nombre","ill":"nl2:-3|5|-2,4|ecart","def":"La [[différence|difference]] entre deux nombres : le plus grand moins le plus petit.","ph":["L’[[écart|ecart]] entre 4 et −2 est 6.","Je calcule l’[[écart|ecart]] de température."],"dire":["La différence entre…","Combien de degrés entre…"]},
+ {"id":"altitude","mot":"altitude","art":"l’","g":"f","cat":"mesure","ill":"ico2:altitude","def":"La hauteur par rapport au niveau de la mer. Sous la mer, l’altitude est négative.","ph":["Le village est à une [[altitude]] de 800 m.","Le plongeur est à une [[altitude]] de −20 m."]}
+]
+}

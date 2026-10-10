@@ -1,0 +1,3299 @@
+{
+"app": "mathsallophones2",
+"version": 1,
+"categories": [
+{
+"id": "verbe",
+"nom": "Consignes et énoncés",
+"icone": "✏️"
+},
+{
+"id": "nombre",
+"nom": "Nombres et calculs",
+"icone": "🔢"
+},
+{
+"id": "algebre",
+"nom": "Calcul littéral",
+"icone": "🧮"
+},
+{
+"id": "fonction",
+"nom": "Fonctions et repère",
+"icone": "📈"
+},
+{
+"id": "geometrie",
+"nom": "Géométrie",
+"icone": "📐"
+},
+{
+"id": "mesure",
+"nom": "Grandeurs et mesures",
+"icone": "⚖️"
+},
+{
+"id": "donnees",
+"nom": "Statistiques et probabilités",
+"icone": "📊"
+},
+{
+"id": "algo",
+"nom": "Algorithmique",
+"icone": "🧩"
+}
+],
+"commentaires": {
+"debut": [
+"Coup d’envoi ! C’est parti !",
+"Le match commence. Concentration !",
+"Le ballon est au centre. À toi de jouer !",
+"Les joueurs entrent sur le terrain. Allez, on y va !",
+"C’est parti pour un beau match !",
+"Coup de sifflet ! Le jeu commence !"
+],
+"juste": [
+"Et c’est le but !",
+"Magnifique ! C’est juste !",
+"Quelle réponse ! Bravo !",
+"Dans la lucarne ! Bravo !",
+"Imparable ! C’est la bonne réponse !",
+"Superbe action, c’est gagné !",
+"Le public applaudit ! Bonne réponse !",
+"Tout juste ! Continue comme ça !",
+"Joli geste ! C’est exactement ça !",
+"Oui ! Le score avance !",
+"Bien joué ! Rien à dire !",
+"Parfait ! Quel joueur !",
+"But ! Quelle précision !",
+"Et ça rentre ! Bravo !"
+],
+"serie3": [
+"Trois de suite ! Quelle forme !",
+"Et de trois ! Rien ne t’arrête !",
+"Trois bonnes réponses d’affilée ! Bravo !",
+"Un triplé ! Le stade chante ton nom !"
+],
+"serie5": [
+"Cinq de suite ! C’est un festival !",
+"Cinq sur cinq ! Le stade est debout !",
+"Cinq bonnes réponses d’affilée ! Quelle série !",
+"Cinq buts ! Tu fais le show !"
+],
+"serie8": [
+"Huit de suite ! C’est historique !",
+"Huit bonnes réponses ! Tu es en feu !",
+"Huit sur huit ! Une performance de champion !"
+],
+"remontee": [
+"Belle réaction ! Tu reviens dans le match !",
+"Et voilà ! Tu as su rebondir !",
+"Après l’erreur, le but ! Bravo !",
+"Tu ne lâches rien, et ça paye !",
+"Quel retour ! Bien joué !"
+],
+"faux": [
+"Oh, pas loin ! On repart.",
+"Le gardien a arrêté celle-là. La prochaine sera la bonne !",
+"Raté de peu ! Regarde bien la réponse.",
+"Ce n’est pas grave. On apprend en jouant !",
+"Sur le poteau ! Tu y es presque.",
+"Pas cette fois. Garde confiance !",
+"Le ballon passe à côté. On continue !"
+],
+"presque": [
+"Presque parfait ! Regarde bien les petits détails.",
+"Le but est valable ! Regarde juste l’orthographe.",
+"C’est juste ! Attention aux accents la prochaine fois."
+],
+"derniere": [
+"Dernière question ! Dernière action du match !",
+"Les arrêts de jeu ! Une dernière question !",
+"Dernière chance de marquer ! Concentration !"
+],
+"fin3": [
+"Coup de sifflet final ! Victoire éclatante !",
+"Fin du match ! Une performance de champion !",
+"C’est fini ! Quel match extraordinaire !"
+],
+"fin2": [
+"Coup de sifflet final ! Très beau match !",
+"Fin du match ! Belle victoire, bravo !",
+"C’est terminé ! Très bonne performance !"
+],
+"fin1": [
+"Fin du match ! On s’entraîne et on revient plus fort !",
+"Coup de sifflet final. Le prochain match sera meilleur !",
+"C’est fini ! Bravo d’avoir joué jusqu’au bout !"
+],
+"spirale": [
+"La spirale tourne ! On révise les anciennes leçons.",
+"Retour sur le terrain des anciennes leçons !",
+"On ne laisse rien filer : révision en spirale !"
+],
+"brevet": [
+"Place au brevet ! On lit tout l’énoncé, tranquillement.",
+"Un vrai problème de brevet ! Lis bien chaque phrase.",
+"Match de championnat ! On souligne les verbes et on y va.",
+"Grand match aujourd’hui : un problème comme au brevet !"
+],
+"redige": [
+"Belle phrase-réponse ! Comme un vrai joueur de brevet.",
+"Bien rédigé ! Le correcteur va adorer.",
+"La phrase est parfaite. Quel style !"
+]
+},
+"evenements": {
+"debut": "Début de la série",
+"juste": "Bonne réponse",
+"serie3": "3 bonnes réponses de suite",
+"serie5": "5 bonnes réponses de suite",
+"serie8": "8 bonnes réponses de suite",
+"remontee": "Bonne réponse après une erreur",
+"faux": "Erreur",
+"presque": "Presque juste (accents)",
+"derniere": "Dernière question",
+"fin3": "Fin : 3 étoiles",
+"fin2": "Fin : 2 étoiles",
+"fin1": "Fin : 1 étoile",
+"spirale": "Début de la spirale",
+"brevet": "Début d’un problème de brevet",
+"redige": "Phrase-réponse remise dans l’ordre"
+},
+"rappels": [
+{
+"id": "regle",
+"mot": "règle",
+"art": "la",
+"g": "f",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "tool:regle",
+"def": "Un objet long et droit, avec des graduations en centimètres. Elle sert à [[tracer]] des traits droits et à [[mesurer]].",
+"ph": [
+"Je [[trace|tracer]] un [[segment]] avec la [[règle]].",
+"Je [[mesure|mesurer]] le [[côté|cote]] avec ma [[règle]]."
+],
+"mod1": "materiel",
+"n1": true
+},
+{
+"id": "equerre",
+"mot": "équerre",
+"art": "l’",
+"g": "f",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "tool:equerre",
+"def": "Un objet en forme de [[triangle]] avec un [[angle droit]]. Elle sert à tracer et à [[vérifier|verifier]] les angles droits.",
+"ph": [
+"Je [[vérifie|verifier]] l’[[angle droit]] avec l’[[équerre]].",
+"Je place l’[[équerre]] contre la [[droite]]."
+],
+"mod1": "materiel",
+"n1": true
+},
+{
+"id": "compas",
+"mot": "compas",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "tool:compas",
+"def": "Un outil avec une pointe et une mine. Il sert à tracer des [[cercles|cercle]].",
+"ph": [
+"Je [[trace|tracer]] un [[cercle]] avec le [[compas]].",
+"Je pique la pointe du [[compas]] sur le [[centre]]."
+],
+"mod1": "materiel",
+"n1": true
+},
+{
+"id": "rapporteur",
+"mot": "rapporteur",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "tool:rapporteur",
+"def": "Un objet en demi-cercle, gradué en [[degrés|degre]]. Il sert à mesurer les [[angles|angle]].",
+"ph": [
+"Je [[mesure|mesurer]] l’[[angle]] avec le [[rapporteur]].",
+"Je place le centre du [[rapporteur]] sur le [[sommet]] de l’angle."
+],
+"mod1": "materiel",
+"n1": true
+},
+{
+"id": "calculatrice",
+"mot": "calculatrice",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "tool:calculatrice",
+"def": "Une petite machine pour faire des [[calculs|calcul]] rapidement.",
+"ph": [
+"Je [[vérifie|verifier]] mon [[résultat]] avec la [[calculatrice]].",
+"Je tape le [[calcul]] sur la [[calculatrice]]."
+],
+"mod1": "materiel",
+"n1": true
+},
+{
+"id": "lire",
+"mot": "lire",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:lire",
+"f": {
+"c": "Lis · Lisez",
+"je": "je lis"
+},
+"def": "Regarder les mots et comprendre ce qui est écrit.",
+"ph": [
+"Je [[lis|lire]] l’[[énoncé|enonce]] deux fois.",
+"[[Lisez|lire]] la [[question]] avec attention."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "ecrire",
+"mot": "écrire",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:ecrire",
+"f": {
+"c": "Écris · Écrivez",
+"je": "j’écris"
+},
+"def": "Tracer des lettres ou des chiffres avec un stylo ou un crayon.",
+"ph": [
+"J’[[écris|ecrire]] le [[résultat]] dans la [[case]].",
+"[[Écrivez|ecrire]] le [[nombre]] [[en lettres|en-lettres]]."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "recopier",
+"mot": "recopier",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:recopier",
+"f": {
+"c": "Recopie · Recopiez",
+"je": "je recopie"
+},
+"def": "Écrire encore une fois un texte qui est déjà écrit.",
+"ph": [
+"Je [[recopie|recopier]] l’[[énoncé|enonce]] dans mon [[cahier]].",
+"[[Recopiez|recopier]] le [[calcul]] du [[tableau|tableau-classe]]."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "souligner",
+"mot": "souligner",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:souligner",
+"f": {
+"c": "Souligne · Soulignez",
+"je": "je souligne"
+},
+"def": "Tracer un trait sous un mot ou sous une phrase.",
+"ph": [
+"Je [[souligne|souligner]] la [[question]].",
+"[[Soulignez|souligner]] les mots importants."
+],
+"dire": [
+"Souligne le mot.",
+"Trace un trait sous le mot."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "surligner",
+"mot": "surligner",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:surligner",
+"f": {
+"c": "Surligne · Surlignez",
+"je": "je surligne"
+},
+"def": "Passer une couleur fluo sur un mot pour bien le voir.",
+"ph": [
+"Je [[surligne|surligner]] les [[données|donnee]] de l’[[énoncé|enonce]].",
+"[[Surlignez|surligner]] les nombres en jaune."
+],
+"dire": [
+"Surligne le mot.",
+"Colorie le mot en fluo."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "entourer",
+"mot": "entourer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:entourer",
+"f": {
+"c": "Entoure · Entourez",
+"je": "j’entoure"
+},
+"def": "Tracer un rond autour d’un mot ou d’un nombre.",
+"ph": [
+"J’[[entoure|entourer]] la bonne [[réponse|reponse]].",
+"[[Entourez|entourer]] les nombres [[pairs|pair]]."
+],
+"dire": [
+"Entoure le nombre.",
+"Fais un rond autour du nombre."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "barrer",
+"mot": "barrer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:barrer",
+"f": {
+"c": "Barre · Barrez",
+"je": "je barre"
+},
+"def": "Tracer un trait sur un mot ou un nombre pour l’enlever.",
+"ph": [
+"Je [[barre|barrer]] la mauvaise [[réponse|reponse]].",
+"[[Barrez|barrer]] les nombres [[impairs|impair]]."
+],
+"dire": [
+"Barre le mot.",
+"Raye le mot.",
+"Trace un trait sur le mot."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "cocher",
+"mot": "cocher",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:cocher",
+"f": {
+"c": "Coche · Cochez",
+"je": "je coche"
+},
+"def": "Mettre une petite croix ou un ✓ dans une [[case]].",
+"ph": [
+"Je [[coche|cocher]] la [[case]] « vrai ».",
+"[[Cochez|cocher]] la bonne [[réponse|reponse]]."
+],
+"dire": [
+"Coche la case.",
+"Mets une croix dans la case."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "relier",
+"mot": "relier",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:relier",
+"f": {
+"c": "Relie · Reliez",
+"je": "je relie"
+},
+"def": "Tracer un trait pour joindre deux choses qui vont ensemble.",
+"ph": [
+"Je [[relie|relier]] chaque mot à son image.",
+"[[Reliez|relier]] le [[point]] A et le [[point]] B."
+],
+"dire": [
+"Relie les points.",
+"Trace un trait entre les points."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "completer",
+"mot": "compléter",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:completer",
+"f": {
+"c": "Complète · Complétez",
+"je": "je complète"
+},
+"def": "Écrire ce qui manque dans un espace vide.",
+"ph": [
+"Je [[complète|completer]] le [[tableau|tableau-donnees]].",
+"[[Complétez|completer]] la phrase avec le bon mot."
+],
+"dire": [
+"Complète la phrase.",
+"Remplis les trous.",
+"Écris le mot qui manque."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "tracer",
+"mot": "tracer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:tracer",
+"f": {
+"c": "Trace · Tracez",
+"je": "je trace"
+},
+"def": "Dessiner un trait ou une [[figure]] avec soin, souvent avec une [[règle]].",
+"ph": [
+"Je [[trace|tracer]] une [[droite]] avec ma [[règle]].",
+"[[Tracez|tracer]] un [[cercle]] de [[rayon]] 3 cm."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "mesurer",
+"mot": "mesurer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:mesurer",
+"f": {
+"c": "Mesure · Mesurez",
+"je": "je mesure"
+},
+"def": "Chercher la taille de quelque chose avec un instrument : une [[règle]], un [[rapporteur]]…",
+"ph": [
+"Je [[mesure|mesurer]] le [[segment]] avec ma [[règle]].",
+"[[Mesurez|mesurer]] la [[longueur]] du [[côté|cote]]."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "calculer",
+"mot": "calculer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:calculer",
+"f": {
+"c": "Calcule · Calculez",
+"je": "je calcule"
+},
+"def": "Faire une [[opération]] avec des nombres pour trouver un [[résultat]].",
+"ph": [
+"Je [[calcule|calculer]] la [[somme]] de 12 et 8.",
+"[[Calculez|calculer]] le [[prix]] à payer."
+],
+"dire": [
+"Calcule.",
+"Effectue le calcul.",
+"Trouve le résultat."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "poser-une-operation",
+"mot": "poser une opération",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:poser",
+"f": {
+"c": "Pose l’opération · Posez l’opération",
+"je": "je pose l’opération"
+},
+"def": "Écrire les nombres en colonnes, les uns sous les autres, pour faire le calcul.",
+"ph": [
+"Je [[pose l’opération|poser-une-operation]] en [[colonnes|colonne]].",
+"[[Posez|poser-une-operation]] et [[effectuez|effectuer]] l’[[addition]]."
+],
+"dire": [
+"Pose l’opération.",
+"Écris le calcul en colonnes.",
+"Pose le calcul."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "effectuer",
+"mot": "effectuer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "pose:+|48|25|res",
+"f": {
+"c": "Effectue · Effectuez",
+"je": "j’effectue"
+},
+"def": "Faire un calcul jusqu’au bout, jusqu’au [[résultat]].",
+"ph": [
+"J’[[effectue|effectuer]] la [[multiplication]].",
+"[[Effectuez|effectuer]] les calculs suivants."
+],
+"dire": [
+"Effectue le calcul.",
+"Fais le calcul.",
+"Calcule jusqu’au bout."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "verifier",
+"mot": "vérifier",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:verifier",
+"f": {
+"c": "Vérifie · Vérifiez",
+"je": "je vérifie"
+},
+"def": "Regarder encore une fois pour être sûr que c’est juste.",
+"ph": [
+"Je [[vérifie|verifier]] mon [[calcul]] avec la [[calculatrice]].",
+"[[Vérifiez|verifier]] votre [[réponse|reponse]]."
+],
+"dire": [
+"Vérifie ton calcul.",
+"Contrôle ton résultat.",
+"Regarde si c’est juste."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "corriger",
+"mot": "corriger",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:corriger",
+"f": {
+"c": "Corrige · Corrigez",
+"je": "je corrige"
+},
+"def": "Remplacer une erreur par ce qui est juste.",
+"ph": [
+"Je [[corrige|corriger]] mon erreur.",
+"[[Corrigez|corriger]] le [[calcul]] faux."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "effacer",
+"mot": "effacer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "mark:effacer",
+"f": {
+"c": "Efface · Effacez",
+"je": "j’efface"
+},
+"def": "Faire disparaître un trait ou un mot.",
+"ph": [
+"J’[[efface|effacer]] avec ma [[gomme]].",
+"J’[[efface|effacer]] le [[tableau|tableau-classe]]."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "repondre",
+"mot": "répondre",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:repondre",
+"f": {
+"c": "Réponds · Répondez",
+"je": "je réponds"
+},
+"def": "Dire ou écrire ce qu’on a trouvé, après une [[question]].",
+"ph": [
+"Je [[réponds|repondre]] par une phrase.",
+"[[Répondez|repondre]] à la [[question]]."
+],
+"dire": [
+"Réponds à la question.",
+"Écris la réponse.",
+"Donne la réponse."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "expliquer",
+"mot": "expliquer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:expliquer",
+"f": {
+"c": "Explique · Expliquez",
+"je": "j’explique"
+},
+"def": "Dire comment et pourquoi, pour aider à comprendre.",
+"ph": [
+"J’[[explique|expliquer]] ma méthode.",
+"[[Expliquez|expliquer]] votre [[calcul]]."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "justifier",
+"mot": "justifier",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "txt:3 × 4 = 12|{donc} [12]",
+"f": {
+"c": "Justifie · Justifiez",
+"je": "je justifie"
+},
+"def": "Donner le calcul ou la raison qui prouve que c’est juste.",
+"ph": [
+"Je [[justifie|justifier]] ma [[réponse|reponse]] par un [[calcul]].",
+"[[Justifiez|justifier]] votre [[réponse|reponse]]."
+],
+"dire": [
+"Justifie ta réponse.",
+"Explique pourquoi.",
+"Montre ton calcul."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "observer",
+"mot": "observer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:observer",
+"f": {
+"c": "Observe · Observez",
+"je": "j’observe"
+},
+"def": "Regarder avec beaucoup d’attention.",
+"ph": [
+"J’[[observe|observer]] le [[graphique]].",
+"[[Observez|observer]] la [[figure]]."
+],
+"mod1": "consignes",
+"n1": true
+},
+{
+"id": "en-haut",
+"mot": "en haut",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "pos:haut",
+"def": "Dans la partie du dessus. Le contraire : [[en bas|en-bas]].",
+"ph": [
+"J’[[écris|ecrire]] mon nom [[en haut|en-haut]] de la [[feuille]].",
+"Le titre est [[en haut|en-haut]] de la page."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "en-bas",
+"mot": "en bas",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "pos:bas",
+"def": "Dans la partie du dessous. Le contraire : [[en haut|en-haut]].",
+"ph": [
+"La [[réponse|reponse]] est [[en bas|en-bas]] de la page.",
+"J’[[écris|ecrire]] la date [[en bas|en-bas]] de la [[feuille]]."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "a-gauche",
+"mot": "à gauche",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "pos:gauche",
+"def": "Du côté où on commence à lire une ligne en français. Le contraire : [[à droite|a-droite]].",
+"ph": [
+"Le [[chiffre]] des [[centaines|centaine]] est [[à gauche|a-gauche]].",
+"J’écris le [[calcul]] [[à gauche|a-gauche]] du signe [[=|egal]]."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "a-droite",
+"mot": "à droite",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "pos:droite",
+"def": "Du côté où on finit de lire une ligne en français. Le contraire : [[à gauche|a-gauche]].",
+"note": "Une [[droite]] est aussi une ligne en géométrie.",
+"ph": [
+"Le [[chiffre]] des [[unités|unite]] est [[à droite|a-droite]].",
+"Le [[résultat]] est [[à droite|a-droite]] du signe [[=|egal]]."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "au-dessus",
+"mot": "au-dessus",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "pos:dessus",
+"def": "Plus haut que quelque chose. On dit aussi « sur ».",
+"ph": [
+"La [[retenue]] s’écrit [[au-dessus]] du [[chiffre]].",
+"Le [[numérateur|numerateur]] est [[au-dessus]] du trait."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "en-dessous",
+"mot": "en dessous",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "pos:dessous",
+"def": "Plus bas que quelque chose. On dit aussi « sous ».",
+"ph": [
+"Le [[dénominateur|denominateur]] est [[en dessous|en-dessous]] du trait.",
+"J’écris le [[résultat]] [[en dessous|en-dessous]] du trait."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "horizontal",
+"mot": "horizontal",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:horizontal",
+"def": "Couché, de gauche à droite, comme la ligne de la mer au loin.",
+"ph": [
+"La [[ligne]] du [[tableau|tableau-donnees]] est [[horizontale|horizontal]].",
+"Je [[trace|tracer]] un [[segment]] [[horizontal]]."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "vertical",
+"mot": "vertical",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:vertical",
+"def": "Debout, de haut en bas, comme un mur ou un arbre.",
+"ph": [
+"La [[colonne]] du [[tableau|tableau-donnees]] est [[verticale|vertical]].",
+"Je [[trace|tracer]] un [[segment]] [[vertical]]."
+],
+"mod1": "reperer",
+"n1": true
+},
+{
+"id": "chiffre",
+"mot": "chiffre",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:0 1 2 3 4|5 6 7 8 9",
+"def": "Un signe pour écrire les nombres. Il y en a dix : 0, 1, 2, 3, 4, 5, 6, 7, 8 et 9.",
+"note": "Un chiffre est comme une lettre. Un [[nombre]] est comme un mot.",
+"ph": [
+"Le [[nombre]] 47 s’écrit avec deux [[chiffres|chiffre]] : 4 et 7.",
+"J’écris le [[nombre]] 305 avec les [[chiffres|chiffre]] 3, 0 et 5."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "nombre",
+"mot": "nombre",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:25 · 130|2 026 · 48",
+"def": "Il dit une quantité : combien il y a. On l’écrit avec un ou plusieurs [[chiffres|chiffre]].",
+"ph": [
+"J’[[écris|ecrire]] le [[nombre]] 125 [[en lettres|en-lettres]].",
+"Le [[nombre]] 2 026 a quatre [[chiffres|chiffre]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "unite",
+"mot": "unité",
+"art": "l’",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pv:345|u",
+"def": "Le [[chiffre]] tout [[à droite|a-droite]] dans un [[nombre entier]]. Il compte les objets un par un.",
+"note": "On dit aussi « unité de mesure » pour cm, kg, L…",
+"ph": [
+"Dans 345, le [[chiffre]] des [[unités|unite]] est 5.",
+"Une [[dizaine]], c’est 10 [[unités|unite]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "dizaine",
+"mot": "dizaine",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pv:345|d",
+"def": "Un groupe de 10.",
+"ph": [
+"Dans 345, le [[chiffre]] des [[dizaines|dizaine]] est 4.",
+"Une [[dizaine]] d’œufs, c’est 10 œufs."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "centaine",
+"mot": "centaine",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pv:345|c",
+"def": "Un groupe de 100.",
+"ph": [
+"Dans 345, le [[chiffre]] des [[centaines|centaine]] est 3.",
+"Une [[centaine]], c’est 10 [[dizaines|dizaine]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "millier",
+"mot": "millier",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pv:4500|m",
+"def": "Un groupe de 1 000.",
+"ph": [
+"Dans 4 500, le [[chiffre]] des [[milliers|millier]] est 4.",
+"Un [[millier]], c’est 10 [[centaines|centaine]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "pair",
+"mot": "pair",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:{12}  {14}  {16}  {18}  {20}",
+"def": "Se dit d’un nombre qui finit par 0, 2, 4, 6 ou 8. On peut le partager en deux parts égales.",
+"ph": [
+"12 est un nombre [[pair]].",
+"J’[[entoure|entourer]] les nombres [[pairs|pair]]."
+],
+"dire": [
+"12 est pair.",
+"12 est un nombre pair.",
+"On peut partager 12 en deux parts égales."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "impair",
+"mot": "impair",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:{11}  {13}  {15}  {17}  {19}",
+"def": "Se dit d’un nombre qui finit par 1, 3, 5, 7 ou 9. On ne peut pas le partager en deux parts égales.",
+"ph": [
+"15 est un nombre [[impair]].",
+"Je [[barre|barrer]] les nombres [[impairs|impair]]."
+],
+"dire": [
+"15 est impair.",
+"15 est un nombre impair.",
+"15 ne se partage pas en deux parts égales."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "nombre-entier",
+"mot": "nombre entier",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:0   1   2   3   …   100",
+"def": "Un [[nombre]] sans [[virgule]] : 0, 1, 2, 3… 100…",
+"ph": [
+"25 est un [[nombre entier]].",
+"Le nombre d’élèves est toujours un [[nombre entier]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "virgule",
+"mot": "virgule",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:3{,}5",
+"def": "Un petit signe dans un nombre. Il sépare la partie entière et la partie décimale.",
+"ph": [
+"Dans 3,5 la [[virgule]] est entre 3 et 5.",
+"Je place la [[virgule]] au bon endroit."
+],
+"dire": [
+"3,5 se lit trois virgule cinq.",
+"Trois et demi.",
+"3,50 € se lit trois euros cinquante."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "nombre-decimal",
+"mot": "nombre décimal",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:12{,}50|2{,}5    0{,}75",
+"def": "Un [[nombre]] avec une [[virgule]] : 2,5 ou 12,75.",
+"ph": [
+"12,50 est un [[nombre décimal]].",
+"Les prix sont souvent des [[nombres décimaux|nombre-decimal]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "dixieme",
+"mot": "dixième",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pv:3,7|di",
+"def": "Une [[unité]] partagée en 10 parts égales. Une part = 0,1.",
+"ph": [
+"Dans 3,7 le [[chiffre]] des [[dixièmes|dixieme]] est 7.",
+"Un [[dixième]] s’écrit 0,1."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "centieme",
+"mot": "centième",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pv:2,45|ce",
+"def": "Une [[unité]] partagée en 100 parts égales. Une part = 0,01.",
+"ph": [
+"Dans 2,45 le [[chiffre]] des [[centièmes|centieme]] est 5.",
+"Un [[centime]] est un [[centième]] d’[[euro]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "en-chiffres",
+"mot": "en chiffres",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:[25]",
+"def": "Écrit avec des signes comme 2 et 5 : 25.",
+"ph": [
+"J’[[écris|ecrire]] le nombre [[en chiffres|en-chiffres]] : 25.",
+"[[Écrivez|ecrire]] la date [[en chiffres|en-chiffres]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "en-lettres",
+"mot": "en lettres",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:[vingt-cinq]",
+"def": "Écrit avec des mots : vingt-cinq.",
+"ph": [
+"J’[[écris|ecrire]] 25 [[en lettres|en-lettres]] : vingt-cinq.",
+"Sur un chèque, le [[prix]] est écrit [[en lettres|en-lettres]]."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "compter",
+"mot": "compter",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "dots:count|5",
+"f": {
+"c": "Compte · Comptez",
+"je": "je compte"
+},
+"def": "Dire les nombres dans l’ordre : un, deux, trois… pour savoir combien il y a de choses.",
+"ph": [
+"Je [[compte|compter]] les élèves de la classe.",
+"[[Comptez|compter]] de 10 en 10."
+],
+"mod1": "chiffres",
+"n1": true
+},
+{
+"id": "plus",
+"mot": "plus",
+"sym": "+",
+"art": "le signe",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "sym:+",
+"def": "Le signe de l’[[addition]]. On l’écrit entre deux nombres pour les ajouter.",
+"ph": [
+"3 + 4 se lit « trois [[plus]] quatre ».",
+"J’écris le signe [[plus]] entre les deux nombres."
+],
+"dire": [
+"3 + 4 : trois plus quatre.",
+"On ajoute 4 à 3.",
+"3 et 4 font 7."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "moins",
+"mot": "moins",
+"sym": "−",
+"art": "le signe",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "sym:−",
+"def": "Le signe de la [[soustraction]]. On l’utilise pour enlever.",
+"ph": [
+"9 − 2 se lit « neuf [[moins]] deux ».",
+"Attention au signe [[moins]] !"
+],
+"dire": [
+"9 − 2 : neuf moins deux.",
+"On enlève 2 à 9.",
+"On retire 2 de 9."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "fois",
+"mot": "fois",
+"sym": "×",
+"art": "le signe",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "sym:×",
+"def": "Le signe de la [[multiplication]]. On dit aussi « multiplié par ».",
+"ph": [
+"4 × 5 se lit « quatre [[fois]] cinq ».",
+"6 [[fois]] 7 [[égale|egal]] 42."
+],
+"dire": [
+"4 × 5 : quatre fois cinq.",
+"4 multiplié par 5.",
+"5 pris 4 fois."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "divise-par",
+"mot": "divisé par",
+"sym": "÷",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "sym:÷",
+"def": "Le signe de la [[division]]. On l’écrit aussi « : » ou « / ».",
+"ph": [
+"12 ÷ 3 se lit « douze [[divisé par|divise-par]] trois ».",
+"20 [[divisé par|divise-par]] 4 [[égale|egal]] 5."
+],
+"dire": [
+"12 ÷ 3 : douze divisé par trois.",
+"On partage 12 en 3.",
+"Dans 12, combien de fois 3 ?"
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "egal",
+"mot": "égal",
+"sym": "=",
+"art": "le signe",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "icon:balance",
+"def": "Le signe qui dit que les deux côtés ont la même valeur.",
+"ph": [
+"5 + 3 = 8 se lit « cinq plus trois [[égale|egal]] huit ».",
+"Le [[résultat]] s’écrit après le signe [[égal|egal]]."
+],
+"dire": [
+"5 + 3 = 8 : cinq plus trois égale huit.",
+"Cinq plus trois est égal à huit.",
+"Cinq plus trois font huit.",
+"Cinq plus trois, ça donne huit."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "addition",
+"mot": "addition",
+"art": "l’",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:25 {+} 17",
+"def": "L’[[opération]] pour ajouter des nombres. Son signe est +.",
+"ph": [
+"Je [[pose|poser-une-operation]] l’[[addition]] en [[colonnes|colonne]].",
+"25 + 17 est une [[addition]]."
+],
+"dire": [
+"Je fais une addition.",
+"J’additionne les nombres.",
+"Je calcule la somme."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "soustraction",
+"mot": "soustraction",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:52 {−} 18",
+"def": "L’[[opération]] pour enlever un nombre à un autre. Son signe est −.",
+"ph": [
+"52 − 18 est une [[soustraction]].",
+"Je [[vérifie|verifier]] ma [[soustraction]] avec une [[addition]]."
+],
+"dire": [
+"Je fais une soustraction.",
+"Je soustrais.",
+"Je calcule la différence."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "multiplication",
+"mot": "multiplication",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:23 {×} 4",
+"def": "L’[[opération]] pour ajouter plusieurs fois le même nombre. Son signe est ×.",
+"ph": [
+"23 × 4 est une [[multiplication]].",
+"J’[[effectue|effectuer]] la [[multiplication]] en [[colonnes|colonne]]."
+],
+"dire": [
+"Je fais une multiplication.",
+"Je multiplie.",
+"Je calcule le produit."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "division",
+"mot": "division",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:20 {÷} 4",
+"def": "L’[[opération]] pour partager en parts égales. Son signe est ÷.",
+"ph": [
+"20 ÷ 4 est une [[division]].",
+"Je [[pose|poser-une-operation]] la [[division]]."
+],
+"dire": [
+"Je fais une division.",
+"Je divise.",
+"Je partage en parts égales."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "additionner",
+"mot": "additionner",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "dots:add|3|2",
+"f": {
+"c": "Additionne · Additionnez",
+"je": "j’additionne"
+},
+"def": "Ajouter des nombres ensemble.",
+"ph": [
+"J’[[additionne|additionner]] 12 et 8 : ça fait 20.",
+"[[Additionnez|additionner]] les prix."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "soustraire",
+"mot": "soustraire",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "dots:sub|5|2",
+"f": {
+"c": "Soustrais · Soustrayez",
+"je": "je soustrais"
+},
+"def": "Enlever un nombre à un autre nombre.",
+"ph": [
+"Je [[soustrais|soustraire]] 5 à 12 : ça fait 7.",
+"[[Soustrayez|soustraire]] 18 à 50."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "multiplier",
+"mot": "multiplier",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "dots:mul|3|4",
+"f": {
+"c": "Multiplie · Multipliez",
+"je": "je multiplie"
+},
+"def": "Prendre un nombre plusieurs fois.",
+"ph": [
+"Je [[multiplie|multiplier]] 6 par 3 : ça fait 18.",
+"[[Multipliez|multiplier]] le [[prix]] par 2."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "diviser",
+"mot": "diviser",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "dots:div|12|3",
+"f": {
+"c": "Divise · Divisez",
+"je": "je divise"
+},
+"def": "Partager un nombre en parts égales.",
+"ph": [
+"Je [[divise|diviser]] 12 par 4 : ça fait 3.",
+"[[Divisez|diviser]] 100 par 5."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "somme",
+"mot": "somme",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:25 + 17 = [42]",
+"def": "Le [[résultat]] d’une [[addition]].",
+"note": "« Une somme d’argent » veut dire une quantité d’argent.",
+"ph": [
+"La [[somme]] de 25 et 17 est 42.",
+"Je [[calcule|calculer]] la [[somme]] des prix."
+],
+"dire": [
+"La somme de 2 et de 5 est 7.",
+"La somme de 2 et 5 est égale à 7.",
+"2 plus 5 égale 7.",
+"2 et 5 font 7."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "difference",
+"mot": "différence",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:50 − 18 = [32]",
+"def": "Le [[résultat]] d’une [[soustraction]].",
+"ph": [
+"La [[différence|difference]] entre 50 et 18 est 32.",
+"Je [[calcule|calculer]] la [[différence|difference]] de prix."
+],
+"dire": [
+"La différence entre 9 et 2 est 7.",
+"9 moins 2 égale 7.",
+"Entre 9 et 2, il y a 7 d’écart."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "produit",
+"mot": "produit",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:6 × 7 = [42]",
+"def": "Le [[résultat]] d’une [[multiplication]].",
+"note": "Dans un magasin, un produit est aussi un objet à vendre.",
+"ph": [
+"Le [[produit]] de 6 par 7 est 42.",
+"Je [[calcule|calculer]] le [[produit]] de 8 par 5."
+],
+"dire": [
+"Le produit de 6 par 7 est 42.",
+"Le produit de 6 et de 7 est 42.",
+"6 fois 7 égale 42.",
+"6 multiplié par 7 donne 42."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "quotient",
+"mot": "quotient",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:20 ÷ 4 = [5]",
+"def": "Le [[résultat]] d’une [[division]].",
+"ph": [
+"Le [[quotient]] de 20 par 4 est 5.",
+"Je [[calcule|calculer]] le [[quotient]] de 36 par 6."
+],
+"dire": [
+"Le quotient de 20 par 4 est 5.",
+"20 divisé par 4 égale 5.",
+"Dans 20, il y a 5 fois 4."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "reste",
+"mot": "reste",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pose:÷|17|5",
+"def": "Dans une [[division]], ce qu’on ne peut pas partager à la fin.",
+"note": "Dans les problèmes, on dit aussi [[il reste|il-reste]].",
+"ph": [
+"17 ÷ 5 : le [[quotient]] est 3 et le [[reste]] est 2.",
+"Quand le [[reste]] est 0, la [[division]] tombe juste."
+],
+"dire": [
+"Le reste est 2.",
+"Il reste 2.",
+"La division ne tombe pas juste : il reste 2."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "retenue",
+"mot": "retenue",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "pose:+|28|15|ret",
+"def": "Quand une colonne donne 10 ou plus, on garde la dizaine pour la colonne de gauche.",
+"ph": [
+"8 + 5 = 13 : j’écris 3 et je mets 1 en [[retenue]].",
+"Je n’oublie pas la [[retenue]]."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "resultat",
+"mot": "résultat",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:5 + 3 = [8]|9 − 2 = [7]",
+"def": "Le nombre trouvé à la fin d’un [[calcul]].",
+"ph": [
+"Le [[résultat]] de 6 × 4 est 24.",
+"J’[[entoure|entourer]] le [[résultat]]."
+],
+"dire": [
+"Le résultat est 24.",
+"Je trouve 24.",
+"Ça fait 24.",
+"J’obtiens 24."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "calcul",
+"mot": "calcul",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:(2 + 3) × 4",
+"def": "Un travail avec des nombres et des signes pour trouver une valeur.",
+"ph": [
+"J’écris le [[calcul]], puis le [[résultat]].",
+"Ce [[calcul]] est faux : je le [[corrige|corriger]]."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "operation",
+"mot": "opération",
+"art": "l’",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:{+}   {−}   {×}   {÷}",
+"def": "Un calcul avec un signe : +, −, × ou ÷.",
+"ph": [
+"L’[[addition]] est une [[opération]].",
+"Il y a quatre [[opérations|operation]]."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "calcul-mental",
+"mot": "calcul mental",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "icon:tete",
+"def": "Un calcul fait dans sa tête, sans écrire.",
+"ph": [
+"Je fais du [[calcul mental]] : 20 + 30 = 50.",
+"Le [[calcul mental]] va vite."
+],
+"dire": [
+"Je calcule dans ma tête.",
+"Je fais du calcul mental.",
+"Je calcule sans écrire."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "table-de-multiplication",
+"mot": "table de multiplication",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:7 × 1 = 7|7 × 2 = 14|7 × 3 = 21",
+"def": "La liste des [[produits|produit]] d’un nombre par 1, 2, 3… jusqu’à 10.",
+"ph": [
+"Je récite la [[table de multiplication]] de 7.",
+"Je connais la [[table de multiplication]] de 2."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "double",
+"mot": "double",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:6 {× 2} = [12]",
+"def": "Deux fois la même quantité.",
+"ph": [
+"Le [[double]] de 6 est 12.",
+"Le [[double]] de 25 est 50."
+],
+"dire": [
+"Le double de 6 est 12.",
+"Deux fois 6 font 12.",
+"6 multiplié par 2 donne 12."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "moitie",
+"mot": "moitié",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:10 {÷ 2} = [5]",
+"def": "Une des deux parts égales, quand on partage en deux.",
+"ph": [
+"La [[moitié|moitie]] de 10 est 5.",
+"Je [[colorie|colorier]] la [[moitié|moitie]] du [[rectangle]]."
+],
+"dire": [
+"La moitié de 10 est 5.",
+"10 divisé par 2 égale 5.",
+"Je partage 10 en deux : 5."
+],
+"mod1": "operations",
+"n1": true
+},
+{
+"id": "plus-grand-que",
+"mot": "plus grand que",
+"sym": ">",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:9 {>} 4",
+"def": "Le premier nombre vaut plus que le deuxième. Signe : >. On dit aussi « supérieur à ».",
+"ph": [
+"9 > 4 se lit « 9 est [[plus grand que|plus-grand-que]] 4 ».",
+"15 est [[plus grand que|plus-grand-que]] 12."
+],
+"dire": [
+"9 est plus grand que 4.",
+"9 est supérieur à 4.",
+"4 est plus petit que 9."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "plus-petit-que",
+"mot": "plus petit que",
+"sym": "<",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "txt:3 {<} 8",
+"def": "Le premier nombre vaut moins que le deuxième. Signe : <. On dit aussi « inférieur à ».",
+"ph": [
+"3 < 8 se lit « 3 est [[plus petit que|plus-petit-que]] 8 ».",
+"0,5 est [[plus petit que|plus-petit-que]] 1."
+],
+"dire": [
+"3 est plus petit que 8.",
+"3 est inférieur à 8.",
+"8 est plus grand que 3."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "comparer",
+"mot": "comparer",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:comparer",
+"f": {
+"c": "Compare · Comparez",
+"je": "je compare"
+},
+"def": "Regarder deux choses pour savoir laquelle est la plus grande ou la plus petite.",
+"ph": [
+"Je [[compare|comparer]] 45 et 54.",
+"[[Comparez|comparer]] les deux prix."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "ranger",
+"mot": "ranger",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "chart:ranger",
+"f": {
+"c": "Range · Rangez",
+"je": "je range"
+},
+"def": "Mettre des choses dans un ordre.",
+"note": "« Ranger sa trousse » veut dire : mettre ses affaires à leur place.",
+"ph": [
+"Je [[range|ranger]] les nombres dans l’[[ordre croissant]].",
+"[[Rangez|ranger]] les prix du plus petit au plus grand."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "ordre-croissant",
+"mot": "ordre croissant",
+"art": "l’",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "chart:croissant",
+"def": "Du plus petit au plus grand : 2 – 5 – 9.",
+"ph": [
+"Je [[range|ranger]] les nombres dans l’[[ordre croissant]].",
+"3 ; 7 ; 12 sont dans l’[[ordre croissant]]."
+],
+"dire": [
+"Du plus petit au plus grand.",
+"Dans l’ordre croissant.",
+"En montant : 2, 5, 9."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "ordre-decroissant",
+"mot": "ordre décroissant",
+"art": "l’",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "chart:decroissant",
+"def": "Du plus grand au plus petit : 9 – 5 – 2.",
+"ph": [
+"Je [[range|ranger]] les notes dans l’[[ordre décroissant]].",
+"12 ; 7 ; 3 sont dans l’[[ordre décroissant]]."
+],
+"dire": [
+"Du plus grand au plus petit.",
+"Dans l’ordre décroissant.",
+"En descendant : 9, 5, 2."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "arrondir",
+"mot": "arrondir",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "txt:4,8 {≈} [5]",
+"f": {
+"c": "Arrondis · Arrondissez",
+"je": "j’arrondis"
+},
+"def": "Remplacer un nombre par un nombre proche et plus simple.",
+"ph": [
+"J’[[arrondis|arrondir]] 4,8 à l’[[unité]] : 5.",
+"[[Arrondissez|arrondir]] le [[prix]] à l’[[euro]] près."
+],
+"dire": [
+"J’arrondis 4,8 à 5.",
+"4,8, c’est environ 5.",
+"4,8 est proche de 5."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "entre",
+"mot": "entre",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "nl:entre",
+"def": "Au milieu de deux nombres ou de deux choses.",
+"ph": [
+"7 est [[entre]] 5 et 10.",
+"Le [[point]] I est [[entre]] A et B."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "avant",
+"mot": "avant",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "nl:avant",
+"def": "Qui vient plus tôt dans l’ordre. Le contraire : [[après|apres]].",
+"ph": [
+"Le nombre juste [[avant]] 20 est 19.",
+"Je [[lis|lire]] l’[[énoncé|enonce]] [[avant]] de [[calculer]]."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "apres",
+"mot": "après",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "nl:apres",
+"def": "Qui vient plus tard dans l’ordre. Le contraire : [[avant]].",
+"ph": [
+"Le nombre juste [[après|apres]] 20 est 21.",
+"[[Après|apres]] le [[calcul]], je [[vérifie|verifier]]."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "droite-graduee",
+"mot": "droite graduée",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "nl:graduee",
+"def": "Une [[droite]] avec des nombres placés à la même distance les uns des autres.",
+"ph": [
+"Je place 15 sur la [[droite graduée]].",
+"Sur la [[droite graduée]], 7 est [[entre]] 5 et 10."
+],
+"mod1": "comparer",
+"n1": true
+},
+{
+"id": "fraction",
+"mot": "fraction",
+"art": "la",
+"g": "f",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "frac:3|4|none",
+"def": "Un nombre qui montre une partie d’un tout. On l’écrit avec un trait : 3/4.",
+"ph": [
+"3/4 est une [[fraction]].",
+"Je [[colorie|colorier]] la [[fraction]] 3/4 du disque."
+],
+"dire": [
+"3/4 se lit trois quarts.",
+"Trois parts sur quatre.",
+"Les trois quarts."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "numerateur",
+"mot": "numérateur",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "frac:3|4|num",
+"def": "Le nombre [[au-dessus]] du trait. Il dit combien de parts on prend.",
+"ph": [
+"Dans 3/4, le [[numérateur]] est 3.",
+"Le [[numérateur]] est [[au-dessus]] du trait."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "denominateur",
+"mot": "dénominateur",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "frac:3|4|den",
+"def": "Le nombre [[en dessous|en-dessous]] du trait. Il dit en combien de parts on partage.",
+"ph": [
+"Dans 3/4, le [[dénominateur]] est 4.",
+"Le [[dénominateur]] est [[en dessous|en-dessous]] du trait."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "demi",
+"mot": "demi",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "disc:1|2",
+"def": "Une part quand on partage en 2 parts égales. Il s’écrit 1/2.",
+"ph": [
+"Un [[demi]] s’écrit 1/2.",
+"Il est 3 heures et [[demie|demi]]."
+],
+"dire": [
+"Un demi.",
+"La moitié.",
+"1/2 se lit un demi."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "tiers",
+"mot": "tiers",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "disc:1|3",
+"def": "Une part quand on partage en 3 parts égales. Il s’écrit 1/3.",
+"ph": [
+"Un [[tiers]] s’écrit 1/3.",
+"J’ai mangé un [[tiers]] de la pizza."
+],
+"dire": [
+"Un tiers.",
+"1/3 se lit un tiers.",
+"Une part sur trois."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "quart",
+"mot": "quart",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "disc:1|4",
+"def": "Une part quand on partage en 4 parts égales. Il s’écrit 1/4.",
+"ph": [
+"Un [[quart]] s’écrit 1/4.",
+"Il est 3 heures et [[quart]]."
+],
+"dire": [
+"Un quart.",
+"1/4 se lit un quart.",
+"Une part sur quatre."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "pourcentage",
+"mot": "pourcentage",
+"sym": "%",
+"art": "le",
+"g": "m",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "chart:pourcent",
+"def": "Une partie sur 100. Son signe est %. 25 % veut dire 25 sur 100.",
+"ph": [
+"20 % se lit « vingt pour cent » : c’est un [[pourcentage]].",
+"Le [[prix]] baisse de 10 % : c’est un [[pourcentage]] de réduction."
+],
+"dire": [
+"25 %.",
+"Vingt-cinq pour cent.",
+"25 sur 100."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "proportionnel",
+"mot": "proportionnel",
+"cat": "nombre",
+"mod": "rappels",
+"ill": "chart:prop",
+"def": "Se dit de deux quantités quand on [[multiplie|multiplier]] toujours par le même nombre pour passer de l’une à l’autre.",
+"ph": [
+"Le [[prix]] est [[proportionnel]] au nombre de cahiers.",
+"Ce [[tableau|tableau-donnees]] est un tableau de [[proportionnalité|proportionnel]]."
+],
+"mod1": "fractions",
+"n1": true
+},
+{
+"id": "point",
+"mot": "point",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:point",
+"def": "Un endroit précis. On le dessine avec une petite croix et on lui donne une lettre majuscule : A.",
+"ph": [
+"Je place le [[point]] A.",
+"Je [[relie|relier]] le [[point]] A et le [[point]] B."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "segment",
+"mot": "segment",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:segment",
+"def": "Un trait droit entre deux [[points|point]]. Il a une [[longueur]].",
+"ph": [
+"Le [[segment]] [AB] mesure 5 cm.",
+"Je [[trace|tracer]] le [[segment]] [AB]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "droite",
+"mot": "droite",
+"art": "la",
+"g": "f",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:droite",
+"def": "Un trait droit qui ne s’arrête jamais, des deux côtés.",
+"note": "« À droite » veut dire un côté : voir [[à droite|a-droite]].",
+"ph": [
+"Je [[trace|tracer]] la [[droite]] (AB).",
+"La [[droite]] passe par les [[points|point]] A et B."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "milieu",
+"mot": "milieu",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:milieu",
+"def": "Le [[point]] au centre d’un [[segment]], à la même distance des deux bouts.",
+"ph": [
+"I est le [[milieu]] du [[segment]] [AB].",
+"Je place le [[milieu]] avec ma [[règle]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "angle",
+"mot": "angle",
+"art": "l’",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:angle",
+"def": "L’ouverture entre deux traits qui partent du même [[point]].",
+"ph": [
+"Je [[mesure|mesurer]] l’[[angle]] avec le [[rapporteur]].",
+"Cet [[angle]] mesure 45 [[degrés|degre]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "angle-droit",
+"mot": "angle droit",
+"art": "l’",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:angledroit",
+"def": "Un [[angle]] de 90 [[degrés|degre]], comme le coin d’une feuille.",
+"ph": [
+"Le [[carré|carre]] a quatre [[angles droits|angle-droit]].",
+"Je [[vérifie|verifier]] l’[[angle droit]] avec l’[[équerre]]."
+],
+"dire": [
+"Un angle droit.",
+"Un angle de 90 degrés.",
+"Un coin comme celui d’une feuille."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "degre",
+"mot": "degré",
+"sym": "°",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "shape:degre",
+"def": "L’unité pour mesurer les [[angles|angle]]. Son signe est °.",
+"note": "On l’utilise aussi pour la température : 20 °C.",
+"ph": [
+"Un [[angle droit]] mesure 90 [[degrés|degre]].",
+"Cet [[angle]] mesure 30 [[degrés|degre]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "sommet",
+"mot": "sommet",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:sommet",
+"def": "Le [[point]] où deux [[côtés|cote]] se rencontrent.",
+"note": "Le sommet d’une montagne, c’est son point le plus haut.",
+"ph": [
+"Le [[triangle]] a trois [[sommets|sommet]].",
+"A est un [[sommet]] du [[carré|carre]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "cote",
+"mot": "côté",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:cote",
+"def": "Un des traits droits qui forment le bord d’une [[figure]].",
+"note": "« À côté de » veut dire « près de ».",
+"ph": [
+"Le [[carré|carre]] a quatre [[côtés|cote]] de même longueur.",
+"Je [[mesure|mesurer]] chaque [[côté|cote]] du [[triangle]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "triangle",
+"mot": "triangle",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:triangle",
+"def": "Une [[figure]] avec 3 [[côtés|cote]] et 3 [[sommets|sommet]].",
+"ph": [
+"Je [[trace|tracer]] un [[triangle]].",
+"Le [[triangle]] ABC a trois [[angles|angle]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "carre",
+"mot": "carré",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:carre",
+"def": "Une [[figure]] avec 4 [[côtés|cote]] de même longueur et 4 [[angles droits|angle-droit]].",
+"note": "On dit aussi « au carré » : 5² = 5 × 5.",
+"ph": [
+"Je [[trace|tracer]] un [[carré|carre]] de 4 cm de [[côté|cote]].",
+"Le [[carré|carre]] a quatre [[angles droits|angle-droit]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "rectangle",
+"mot": "rectangle",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:rectangle",
+"def": "Une [[figure]] avec 4 [[angles droits|angle-droit]]. Les [[côtés|cote]] face à face ont la même longueur.",
+"ph": [
+"Ma [[feuille]] a la forme d’un [[rectangle]].",
+"Je [[calcule|calculer]] l’[[aire]] du [[rectangle]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "losange",
+"mot": "losange",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:losange",
+"def": "Une [[figure]] avec 4 [[côtés|cote]] de même longueur. Elle a la forme d’un diamant.",
+"ph": [
+"Le [[losange]] a quatre [[côtés|cote]] de même longueur.",
+"Je [[trace|tracer]] un [[losange]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "cercle",
+"mot": "cercle",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:cercle",
+"def": "Une ligne ronde. Tous ses points sont à la même distance du [[centre]].",
+"ph": [
+"Je [[trace|tracer]] un [[cercle]] avec le [[compas]].",
+"Le [[cercle]] a un [[rayon]] de 3 cm."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "centre",
+"mot": "centre",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:centre",
+"def": "Le [[point]] au milieu d’un [[cercle]].",
+"ph": [
+"Je pique le [[compas]] sur le [[centre]].",
+"O est le [[centre]] du [[cercle]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "rayon",
+"mot": "rayon",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:rayon",
+"def": "La distance entre le [[centre]] et le bord du [[cercle]].",
+"note": "Dans un magasin, un rayon est aussi une étagère. Il y a aussi les rayons du soleil.",
+"ph": [
+"Le [[rayon]] du [[cercle]] est 3 cm.",
+"J’ouvre le [[compas]] de la longueur du [[rayon]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "diametre",
+"mot": "diamètre",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:diametre",
+"def": "Un [[segment]] qui traverse le [[cercle]] en passant par le [[centre]]. Il vaut 2 fois le [[rayon]].",
+"ph": [
+"Le [[diamètre]] mesure 6 cm.",
+"Le [[diamètre]] est le [[double]] du [[rayon]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "paralleles",
+"mot": "parallèles",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:paralleles",
+"def": "Se dit de deux [[droites|droite]] qui ne se croisent jamais. L’écart entre elles reste toujours le même.",
+"ph": [
+"Les deux [[droites|droite]] sont [[parallèles|paralleles]].",
+"Les rails du train sont [[parallèles|paralleles]]."
+],
+"dire": [
+"Les droites sont parallèles.",
+"Elles ne se croisent jamais."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "perpendiculaires",
+"mot": "perpendiculaires",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:perpendiculaires",
+"def": "Se dit de deux [[droites|droite]] qui se croisent en faisant un [[angle droit]].",
+"ph": [
+"Les deux [[droites|droite]] sont [[perpendiculaires]].",
+"Je [[trace|tracer]] deux [[droites|droite]] [[perpendiculaires]] avec l’[[équerre]]."
+],
+"dire": [
+"Les droites sont perpendiculaires.",
+"Elles se croisent en angle droit."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "figure",
+"mot": "figure",
+"art": "la",
+"g": "f",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:figure",
+"def": "Un dessin de géométrie : un [[triangle]], un [[carré|carre]], un [[cercle]]…",
+"note": "La figure veut aussi dire le visage.",
+"ph": [
+"Je [[trace|tracer]] la [[figure]] en vraie grandeur.",
+"J’[[observe|observer]] la [[figure]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "axe-de-symetrie",
+"mot": "axe de symétrie",
+"art": "l’",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:symetrie",
+"def": "Une [[droite]] qui coupe une [[figure]] en deux parties identiques, comme un miroir.",
+"ph": [
+"Le [[rectangle]] a deux [[axes de symétrie|axe-de-symetrie]].",
+"Je plie la [[feuille]] le long de l’[[axe de symétrie]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "cube",
+"mot": "cube",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:cube",
+"def": "Un solide avec 6 [[faces|face]] carrées identiques, comme un dé.",
+"ph": [
+"Un dé a la forme d’un [[cube]].",
+"Le [[cube]] a 6 [[faces|face]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "pave-droit",
+"mot": "pavé droit",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:pave",
+"def": "Un solide avec 6 [[faces|face]] en forme de [[rectangle]], comme une boîte de céréales.",
+"ph": [
+"Une boîte à chaussures est un [[pavé droit]].",
+"Je [[calcule|calculer]] le volume du [[pavé droit]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "cylindre",
+"mot": "cylindre",
+"art": "le",
+"g": "m",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:cylindre",
+"def": "Un solide avec deux disques et une surface ronde, comme une boîte de conserve.",
+"ph": [
+"Une canette a la forme d’un [[cylindre]].",
+"Le [[cylindre]] roule sur la table."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "face",
+"mot": "face",
+"art": "la",
+"g": "f",
+"cat": "geometrie",
+"mod": "rappels",
+"ill": "shape:face",
+"def": "Une surface plate d’un solide.",
+"note": "« En face de » veut dire « devant ».",
+"ph": [
+"Le [[cube]] a 6 [[faces|face]].",
+"Je [[colorie|colorier]] une [[face]] du [[pavé droit]]."
+],
+"mod1": "geometrie",
+"n1": true
+},
+{
+"id": "longueur",
+"mot": "longueur",
+"art": "la",
+"g": "f",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "shape:longueur",
+"def": "La taille d’un objet, d’un bout à l’autre.",
+"ph": [
+"La [[longueur]] du [[segment]] est 5 cm.",
+"Je [[mesure|mesurer]] la [[longueur]] de la table."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "metre",
+"mot": "mètre",
+"sym": "m",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:metre",
+"def": "Une unité de [[longueur]]. 1 m = 100 cm.",
+"ph": [
+"La porte mesure 2 [[mètres|metre]].",
+"1 [[mètre]] = 100 [[centimètres|centimetre]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "centimetre",
+"mot": "centimètre",
+"sym": "cm",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:cm",
+"def": "Une petite unité de [[longueur]]. 100 cm = 1 m.",
+"ph": [
+"Le [[segment]] mesure 8 [[centimètres|centimetre]].",
+"Ma [[règle]] mesure 30 [[centimètres|centimetre]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "millimetre",
+"mot": "millimètre",
+"sym": "mm",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:mm",
+"def": "Une très petite unité de [[longueur]]. 10 mm = 1 cm.",
+"ph": [
+"La mine du crayon mesure 2 [[millimètres|millimetre]].",
+"1 cm = 10 [[millimètres|millimetre]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "kilometre",
+"mot": "kilomètre",
+"sym": "km",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:km",
+"def": "Une grande unité de [[longueur]] pour les distances. 1 km = 1 000 m.",
+"ph": [
+"Le lycée est à 3 [[kilomètres|kilometre]] de chez moi.",
+"1 [[kilomètre]] = 1 000 [[mètres|metre]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "masse",
+"mot": "masse",
+"art": "la",
+"g": "f",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:masse",
+"def": "Ce que pèse un objet. On la mesure en grammes ou en kilogrammes.",
+"note": "Dans la vie, on dit souvent « le poids ».",
+"ph": [
+"La [[masse]] du sac est 2 [[kilogrammes|kilogramme]].",
+"Je mesure la [[masse]] avec une balance."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "gramme",
+"mot": "gramme",
+"sym": "g",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:g",
+"def": "Une petite unité de [[masse]]. 1 000 g = 1 kg.",
+"ph": [
+"Le paquet de beurre pèse 250 [[grammes|gramme]].",
+"1 kg = 1 000 [[grammes|gramme]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "kilogramme",
+"mot": "kilogramme",
+"sym": "kg",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:kg",
+"def": "Une unité de [[masse]]. 1 kg = 1 000 g.",
+"ph": [
+"J’achète 2 [[kilogrammes|kilogramme]] de pommes.",
+"On dit souvent « un kilo » pour un [[kilogramme]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "litre",
+"mot": "litre",
+"sym": "L",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:L",
+"def": "Une unité pour mesurer les liquides.",
+"ph": [
+"La bouteille contient 1 [[litre]] d’eau.",
+"J’achète 6 [[litres|litre]] de lait."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "heure",
+"mot": "heure",
+"sym": "h",
+"art": "l’",
+"g": "f",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:heure",
+"def": "Une unité de temps. 1 h = 60 min.",
+"ph": [
+"Le cours commence à 8 [[heures|heure]].",
+"Le film dure 2 [[heures|heure]]."
+],
+"dire": [
+"Il est 10 h 15.",
+"Il est dix heures et quart.",
+"Il est dix heures quinze."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "minute",
+"mot": "minute",
+"sym": "min",
+"art": "la",
+"g": "f",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:minute",
+"def": "Une unité de temps. 60 min = 1 h.",
+"ph": [
+"La récréation dure 15 [[minutes|minute]].",
+"Il est 10 h 20 : 10 heures et 20 [[minutes|minute]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "seconde",
+"mot": "seconde",
+"sym": "s",
+"art": "la",
+"g": "f",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:seconde",
+"def": "Une très petite unité de temps. 60 s = 1 min.",
+"note": "La « seconde » est aussi une classe du lycée. Et « second » veut dire « deuxième ».",
+"ph": [
+"Il court 100 m en 15 [[secondes|seconde]].",
+"J’attends 10 [[secondes|seconde]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "duree",
+"mot": "durée",
+"art": "la",
+"g": "f",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:duree",
+"def": "Le temps entre le début et la fin.",
+"ph": [
+"La [[durée]] du cours est 55 [[minutes|minute]].",
+"Je [[calcule|calculer]] la [[durée]] du voyage."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "euro",
+"mot": "euro",
+"sym": "€",
+"art": "l’",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:euro",
+"def": "L’argent utilisé en France et dans d’autres pays d’Europe. 1 € = 100 centimes.",
+"ph": [
+"Le cahier coûte 3 [[euros|euro]].",
+"J’ai 20 [[euros|euro]] dans mon porte-monnaie."
+],
+"dire": [
+"3,50 €.",
+"Trois euros cinquante.",
+"Trois euros et cinquante centimes."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "centime",
+"mot": "centime",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "meas:centime",
+"def": "Une petite partie de l’[[euro]]. Il en faut 100 pour faire 1 €.",
+"ph": [
+"La baguette coûte 1 euro et 20 [[centimes|centime]].",
+"0,50 €, c’est 50 [[centimes|centime]]."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "perimetre",
+"mot": "périmètre",
+"art": "le",
+"g": "m",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "shape:perimetre",
+"def": "La [[longueur]] du tour complet d’une [[figure]].",
+"ph": [
+"Le [[périmètre]] du [[carré|carre]] est 4 × 5 = 20 cm.",
+"Je [[calcule|calculer]] le [[périmètre]] du jardin."
+],
+"dire": [
+"Le périmètre est 20 cm.",
+"Le tour de la figure mesure 20 cm."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "aire",
+"mot": "aire",
+"art": "l’",
+"g": "f",
+"cat": "mesure",
+"mod": "rappels",
+"ill": "shape:aire",
+"def": "La surface à l’intérieur d’une [[figure]]. On la mesure en cm² ou en m².",
+"note": "Une aire de jeux est un endroit pour jouer.",
+"ph": [
+"L’[[aire]] du [[rectangle]] est 6 × 4 = 24 cm².",
+"Je [[calcule|calculer]] l’[[aire]] de la chambre."
+],
+"dire": [
+"L’aire est 24 cm².",
+"24 centimètres carrés.",
+"La surface mesure 24 cm²."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "convertir",
+"mot": "convertir",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "meas:convertir",
+"f": {
+"c": "Convertis · Convertissez",
+"je": "je convertis"
+},
+"def": "Changer d’unité sans changer la mesure : 1 m = 100 cm.",
+"ph": [
+"Je [[convertis|convertir]] 2 m en cm : 200 cm.",
+"[[Convertissez|convertir]] 3 kg en grammes."
+],
+"dire": [
+"2 m = 200 cm.",
+"2 mètres, c’est 200 centimètres.",
+"Je convertis 2 m en cm : 200 cm."
+],
+"mod1": "mesures",
+"n1": true
+},
+{
+"id": "enonce",
+"mot": "énoncé",
+"art": "l’",
+"g": "m",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:enonce",
+"def": "Le texte d’un exercice ou d’un [[problème]].",
+"ph": [
+"Je [[lis|lire]] l’[[énoncé]] deux fois.",
+"Je [[souligne|souligner]] la [[question]] dans l’[[énoncé]]."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "probleme",
+"mot": "problème",
+"art": "le",
+"g": "m",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:probleme",
+"def": "Une situation avec une [[question]]. Il faut chercher et [[calculer]] pour trouver la [[réponse|reponse]].",
+"note": "Dans la vie, un problème est aussi une difficulté.",
+"ph": [
+"Je [[résous|resoudre]] le [[problème]].",
+"Ce [[problème]] parle d’argent."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "question",
+"mot": "question",
+"art": "la",
+"g": "f",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:question",
+"def": "La phrase qui demande quelque chose. Elle finit souvent par « ? ».",
+"ph": [
+"Je [[souligne|souligner]] la [[question]].",
+"Je [[réponds|repondre]] à la [[question]] par une phrase."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "reponse",
+"mot": "réponse",
+"art": "la",
+"g": "f",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "txt:? → [12 €]",
+"def": "Ce qu’on dit ou ce qu’on écrit après une [[question]].",
+"ph": [
+"J’[[écris|ecrire]] la [[réponse]] avec une phrase.",
+"Ma [[réponse]] : le stylo coûte 2 €."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "donnee",
+"mot": "donnée",
+"art": "la",
+"g": "f",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:donnee",
+"def": "Une information utile de l’[[énoncé]], souvent un nombre.",
+"ph": [
+"Je [[surligne|surligner]] les [[données|donnee]] de l’[[énoncé]].",
+"Il manque une [[donnée]] pour répondre."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "combien",
+"mot": "combien",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:combien",
+"def": "Le mot pour demander une quantité ou un prix.",
+"ph": [
+"[[Combien]] coûte le [[stylo]] ?",
+"[[Combien]] y a-t-il d’élèves dans la classe ?"
+],
+"dire": [
+"Combien coûte le stylo ?",
+"Quel est le prix du stylo ?",
+"Le stylo coûte combien ?"
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "en-tout",
+"mot": "en tout",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "dots:entout|3|4",
+"def": "Quand on réunit toutes les quantités. Souvent, on fait une [[addition]].",
+"ph": [
+"Il y a 12 filles et 15 garçons. Combien d’élèves [[en tout|en-tout]] ?",
+"[[En tout|en-tout]], je paie 25 €."
+],
+"dire": [
+"Combien en tout ?",
+"Combien au total ?",
+"Combien ensemble ?"
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "de-plus",
+"mot": "de plus",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "chart:deplus",
+"def": "Qui est ajouté. « 5 de plus » veut dire « + 5 ».",
+"ph": [
+"Paul a 5 € [[de plus|de-plus]] que Léa.",
+"Il y a 3 élèves [[de plus|de-plus]] aujourd’hui."
+],
+"dire": [
+"5 € de plus.",
+"5 € en plus.",
+"Plus 5 €."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "de-moins",
+"mot": "de moins",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "chart:demoins",
+"def": "Qui manque ou qui est enlevé. « 5 de moins » veut dire « − 5 ».",
+"ph": [
+"Léa a 5 € [[de moins|de-moins]] que Paul.",
+"Ce pantalon coûte 10 € [[de moins|de-moins]]."
+],
+"dire": [
+"5 € de moins.",
+"5 € en moins.",
+"Moins 5 €."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "chaque",
+"mot": "chaque",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:chaque",
+"def": "Un par un, pour tous.",
+"ph": [
+"[[Chaque]] élève a deux [[cahiers|cahier]].",
+"[[Chaque]] cahier coûte 3 €."
+],
+"dire": [
+"Chaque élève a deux cahiers.",
+"Tous les élèves ont deux cahiers.",
+"Un élève a deux cahiers, et pareil pour tous."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "par",
+"mot": "par",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:par",
+"def": "Pour un seul. « 3 € par cahier » veut dire « 3 € pour un cahier ».",
+"ph": [
+"Il y a 6 chaises [[par]] rangée.",
+"Le bus roule à 50 km [[par]] heure."
+],
+"dire": [
+"3 € par cahier.",
+"3 € pour un cahier.",
+"Chaque cahier coûte 3 €."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "total",
+"mot": "total",
+"art": "le",
+"g": "m",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:ticket",
+"def": "Ce qu’on trouve quand on [[additionne|additionner]] tout.",
+"ph": [
+"Le [[total]] à payer est 25 €.",
+"Je [[calcule|calculer]] le [[total]] des achats."
+],
+"dire": [
+"Le total est 25 €.",
+"En tout, je paie 25 €.",
+"Au total : 25 €."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "il-reste",
+"mot": "il reste",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "txt:20 € − 8 € = [12 €]",
+"def": "Ce qu’on a encore après avoir enlevé une partie. Souvent, on fait une [[soustraction]].",
+"ph": [
+"J’ai 20 €. J’achète un livre à 8 €. [[Il reste|il-reste]] 12 €.",
+"Combien d’argent [[reste-t-il|il-reste]] ?"
+],
+"dire": [
+"Il reste 12 €.",
+"Il en reste 12.",
+"Il lui reste encore 12 €."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "prix",
+"mot": "prix",
+"art": "le",
+"g": "m",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:etiquette",
+"def": "La quantité d’argent pour acheter quelque chose.",
+"ph": [
+"Le [[prix]] du cahier est 2,50 €.",
+"Je [[compare|comparer]] les [[prix]] des deux magasins."
+],
+"dire": [
+"Le prix est 2,50 €.",
+"Ça coûte 2,50 €.",
+"Il vaut 2,50 €."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "couter",
+"mot": "coûter",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:couter",
+"f": {
+"je": "il coûte · ils coûtent"
+},
+"def": "Avoir un [[prix]].",
+"ph": [
+"Le [[stylo]] [[coûte|couter]] 1,20 €.",
+"Combien [[coûtent|couter]] les trois cahiers ?"
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "partager",
+"mot": "partager",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "dots:share|12|3",
+"f": {
+"c": "Partage · Partagez",
+"je": "je partage"
+},
+"def": "Donner la même quantité à chaque personne.",
+"ph": [
+"Je [[partage|partager]] 12 bonbons entre 3 enfants : chacun a 4 bonbons.",
+"[[Partagez|partager]] 30 € entre 3 amis."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "triple",
+"mot": "triple",
+"art": "le",
+"g": "m",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "txt:4 {× 3} = [12]",
+"def": "Trois fois la même quantité.",
+"ph": [
+"Le [[triple]] de 4 est 12.",
+"Le [[prix]] est [[multiplié|multiplier]] par 3 : c’est le [[triple]]."
+],
+"dire": [
+"Le triple de 4 est 12.",
+"Trois fois 4 font 12.",
+"4 multiplié par 3 donne 12."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "resoudre",
+"mot": "résoudre",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:resoudre",
+"f": {
+"c": "Résous · Résolvez",
+"je": "je résous"
+},
+"def": "Chercher et trouver la solution d’un [[problème]].",
+"ph": [
+"Je [[résous|resoudre]] le [[problème]] [[étape]] par étape.",
+"[[Résolvez|resoudre]] le [[problème]] suivant."
+],
+"dire": [
+"Résous le problème.",
+"Trouve la solution.",
+"Cherche la réponse."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "environ",
+"mot": "environ",
+"sym": "≈",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "txt:29 {≈} 30",
+"def": "Pas exactement, mais presque. Signe : ≈.",
+"ph": [
+"Il y a [[environ]] 30 élèves.",
+"Le trajet dure [[environ]] 20 [[minutes|minute]]."
+],
+"dire": [
+"Il y a environ 30 élèves.",
+"Il y a à peu près 30 élèves.",
+"Il y a presque 30 élèves."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "etape",
+"mot": "étape",
+"art": "l’",
+"g": "f",
+"cat": "verbe",
+"mod": "rappels",
+"ill": "icon:etape",
+"def": "Une partie d’un travail. On fait les parties l’une après l’autre.",
+"ph": [
+"Je [[résous|resoudre]] le [[problème]] [[étape]] par étape.",
+"Première [[étape]] : je [[lis|lire]] l’[[énoncé]]."
+],
+"mod1": "problemes",
+"n1": true
+},
+{
+"id": "tableau-donnees",
+"mot": "tableau",
+"ctx": "en mathématiques",
+"art": "le",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:tableau",
+"def": "Des [[cases|case]] rangées en [[lignes|ligne]] et en [[colonnes|colonne]] pour présenter des informations.",
+"note": "Le [[tableau|tableau-classe]] est aussi le grand panneau de la classe.",
+"ph": [
+"Je [[complète|completer]] le [[tableau|tableau-donnees]].",
+"Je lis les notes dans le [[tableau|tableau-donnees]]."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "ligne",
+"mot": "ligne",
+"art": "la",
+"g": "f",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:ligne",
+"def": "Une rangée [[horizontale|horizontal]] d’un [[tableau|tableau-donnees]], de gauche à droite.",
+"note": "Une ligne est aussi un trait.",
+"ph": [
+"La première [[ligne]] donne les mois.",
+"Je lis la deuxième [[ligne]] du [[tableau|tableau-donnees]]."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "colonne",
+"mot": "colonne",
+"art": "la",
+"g": "f",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:colonne",
+"def": "Une rangée [[verticale|vertical]] d’un [[tableau|tableau-donnees]], de haut en bas.",
+"ph": [
+"Je lis la [[colonne]] « janvier ».",
+"Je [[pose l’opération|poser-une-operation]] en [[colonnes|colonne]]."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "case",
+"mot": "case",
+"art": "la",
+"g": "f",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:case",
+"def": "Un petit carré ou rectangle d’un [[tableau|tableau-donnees]]. On écrit une information dedans.",
+"ph": [
+"J’[[écris|ecrire]] le nombre dans la [[case]].",
+"Je [[coche|cocher]] la bonne [[case]]."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "graphique",
+"mot": "graphique",
+"art": "le",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:courbe",
+"def": "Un dessin qui montre des [[données|donnee]] avec des points, des traits ou des barres.",
+"ph": [
+"J’[[observe|observer]] le [[graphique]].",
+"Le [[graphique]] montre la température de la semaine."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "diagramme-en-barres",
+"mot": "diagramme en barres",
+"art": "le",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:barres",
+"def": "Un [[graphique]] avec des rectangles. Plus la barre est haute, plus le nombre est grand.",
+"ph": [
+"Le [[diagramme en barres]] montre les notes de la classe.",
+"Dans le [[diagramme en barres]], la barre la plus haute montre le [[maximum]]."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "diagramme-circulaire",
+"mot": "diagramme circulaire",
+"art": "le",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:camembert",
+"def": "Un [[graphique]] en forme de disque, partagé en parts comme une pizza.",
+"ph": [
+"Le [[diagramme circulaire]] montre les sports préférés.",
+"La plus grande part du [[diagramme circulaire]] est en bleu."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "axe",
+"mot": "axe",
+"art": "l’",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:axes",
+"def": "Une ligne avec des nombres sur un [[graphique]]. Il y en a souvent deux : un [[horizontal]] et un [[vertical]].",
+"ph": [
+"Je lis les mois sur l’[[axe]] [[horizontal]].",
+"Les nombres sont sur l’[[axe]] [[vertical]]."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "legende",
+"mot": "légende",
+"art": "la",
+"g": "f",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:legende",
+"def": "Le petit texte qui explique les couleurs ou les symboles d’un [[graphique]].",
+"ph": [
+"Je lis la [[légende]] du [[graphique]].",
+"Dans la [[légende]], le bleu veut dire « filles »."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "moyenne",
+"mot": "moyenne",
+"art": "la",
+"g": "f",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:moyenne",
+"def": "On [[additionne|additionner]] toutes les valeurs, puis on [[divise|diviser]] par le nombre de valeurs.",
+"ph": [
+"La [[moyenne]] de 10, 12 et 14 est 12.",
+"Ma [[moyenne]] en maths est 13 sur 20."
+],
+"dire": [
+"La moyenne est 12.",
+"En moyenne, c’est 12."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "maximum",
+"mot": "maximum",
+"art": "le",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:max",
+"def": "La plus grande valeur.",
+"ph": [
+"Le [[maximum]] des notes est 18.",
+"La température [[maximum]] est 25 °C."
+],
+"dire": [
+"Le maximum est 18.",
+"La plus grande valeur est 18.",
+"Au plus, c’est 18."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "minimum",
+"mot": "minimum",
+"art": "le",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:min",
+"def": "La plus petite valeur.",
+"ph": [
+"Le [[minimum]] des notes est 6.",
+"Il faut un [[minimum]] de 10 points."
+],
+"dire": [
+"Le minimum est 6.",
+"La plus petite valeur est 6.",
+"Au moins, c’est 6."
+],
+"mod1": "donnees",
+"n1": true
+},
+{
+"id": "effectif",
+"mot": "effectif",
+"art": "l’",
+"g": "m",
+"cat": "donnees",
+"mod": "rappels",
+"ill": "chart:effectif",
+"def": "Le nombre de fois qu’une valeur apparaît dans une liste.",
+"ph": [
+"L’[[effectif]] des élèves de 15 ans est 8.",
+"L’[[effectif]] total de la classe est 24."
+],
+"mod1": "donnees",
+"n1": true
+}
+]
+}

@@ -1,0 +1,67 @@
+{
+"id":"proportionnalite","titre":"Proportionnalité et pourcentages","icone":"🛒","cat":"mesure","domaine":"Grandeurs et données","classe":"Toutes les classes",
+"intro":"Tableaux de proportionnalité, produit en croix, pourcentages, vitesse, échelle et ratio.",
+"objectifs":["Je sais **reconnaître** une situation de proportionnalité.","Je sais **calculer** avec un pourcentage.","Je sais **calculer** une vitesse, une distance ou une durée."],
+"cours":[
+ {"titre":"Deux grandeurs proportionnelles","txt":["Deux [[grandeurs|grandeur]] sont [[proportionnelles|proportionnel]] : je passe de l’une à l’autre en multipliant toujours par le même nombre.","Ce nombre est le [[coefficient de proportionnalité|coefficient-proportionnalite]]."],"ex":["1 kg coûte 3 €, 2 kg coûtent 6 €, 5 kg coûtent 15 €. Le coefficient est 3."],"ill":"chart:prop"},
+ {"titre":"Reconnaître la proportionnalité","txt":["Dans un tableau, je divise chaque nombre du bas par le nombre du haut.","Si je trouve toujours le même résultat, c’est proportionnel.","Sur un graphique, les points sont sur une droite qui passe par l’[[origine]]."],"ill":"rep:lin|2"},
+ {"titre":"La quatrième proportionnelle","txt":["Je connais trois nombres. Je cherche le quatrième.","J’utilise le [[produit en croix|produit-en-croix]]."],"ex":["3 cahiers coûtent 6 €. 5 cahiers coûtent x €.","x = 6 × 5 ÷ 3 = 10. Les 5 cahiers coûtent 10 €."],"ill":"prop:croix|3|6|5"},
+ {"titre":"Les pourcentages","txt":["Prendre 25 % d’un nombre : je multiplie par 25, puis je divise par 100.","Trouver un [[pourcentage]] : je divise la partie par le total, puis je multiplie par 100."],"ex":["25 % de 80 = 80 × 25 ÷ 100 = 20","12 filles sur 30 élèves : 12 ÷ 30 × 100 = 40 %"],"ill":"chart:pourcent"},
+ {"titre":"Augmenter, diminuer","txt":["Une [[augmentation]] de 20 % : je multiplie par 1 + 0,20 = 1,2.","Une [[réduction|reduction]] de 20 % : je multiplie par 1 − 0,20 = 0,8."],"ex":["Un pull coûte 40 €. Il est soldé à −25 % : 40 × 0,75 = 30 €."],"ill":"prop:aug"},
+ {"titre":"La vitesse","txt":["La [[vitesse moyenne|vitesse-moyenne]] est la distance parcourue en une heure, ou en une seconde.","v = d ÷ t ; d = v × t ; t = d ÷ v."],"ex":["Une voiture fait 150 km en 2 h : v = 150 ÷ 2 = 75 km/h."],"note":"Attention aux durées : 1 h 30 min = 1,5 h. Ce n’est pas 1,3 h.","ill":"prop:vitesse"},
+ {"titre":"Les échelles","txt":["Sur un plan à l’[[échelle|echelle]] {{1/100}}, 1 cm sur le plan représente 100 cm en vrai.","Distance réelle = distance sur le plan × 100."],"ex":["4 cm sur le plan représentent 400 cm, donc 4 m en vrai."],"ill":"prop:echelle"},
+ {"titre":"Les ratios","txt":["Un [[ratio]] compare deux quantités. On écrit 2 : 3.","Partager 50 € dans le ratio 2 : 3 : il y a 2 + 3 = 5 parts. Une part vaut 50 ÷ 5 = 10 €."],"ex":["On obtient 2 × 10 = 20 € et 3 × 10 = 30 €."],"ill":"prop:ratio"}
+],
+"methodes":[
+ {"titre":"Calculer une quatrième proportionnelle","etapes":["Je fais un tableau avec les données.","Je repère la case inconnue x.","Je multiplie les deux nombres en diagonale.","Je divise par le troisième nombre."],
+  "exemple":{"enonce":"5 kg de pommes coûtent 12 €. **Calcule** le prix de 8 kg de pommes.","etapes":[{"t":"Je fais le tableau.","c":"5 kg → 12 € ; 8 kg → x €"},{"t":"Je multiplie les deux nombres en diagonale.","c":"12 × 8 = 96"},{"t":"Je divise par le troisième nombre.","c":"96 ÷ 5 = 19,2"}],"reponse":"8 kg de pommes coûtent 19,20 €."}},
+ {"titre":"Appliquer une hausse ou une baisse","etapes":["Je calcule le coefficient : 1 + t ÷ 100 pour une hausse, 1 − t ÷ 100 pour une baisse.","Je multiplie le prix de départ par ce coefficient.","J’écris le nouveau prix."],
+  "exemple":{"enonce":"Un vélo coûte 250 €. Son prix baisse de 30 %. **Calcule** le nouveau prix.","etapes":[{"t":"C’est une baisse de 30 %.","c":"1 − 0,30 = 0,70"},{"t":"Je multiplie le prix par 0,70.","c":"250 × 0,70 = 175"}],"reponse":"Le nouveau prix du vélo est 175 €."}},
+ {"titre":"Calculer une distance avec une vitesse","etapes":["J’écris la durée en heures.","J’utilise d = v × t.","Je vérifie les unités : km/h et heures donnent des km."],
+  "exemple":{"enonce":"Un train roule à 240 km/h pendant 1 h 15 min. **Calcule** la distance parcourue.","etapes":[{"t":"15 min = un quart d’heure = 0,25 h.","c":"1 h 15 min = 1,25 h"},{"t":"J’utilise d = v × t.","c":"d = 240 × 1,25 = 300"}],"reponse":"Le train parcourt 300 km."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Le prix des pommes est proportionnel à la masse. 2 kg coûtent 5 €.","q":"Combien coûtent 4 kg ?","o":["10 €","7 €","20 €"],"a":0,"exp":"4 kg, c’est 2 fois plus que 2 kg. Le prix est 2 fois plus grand : 10 €."},
+ {"t":"qcm","txt":"Un pantalon coûte 50 €. Il est soldé à −20 %.","q":"Que veut dire « −20 % » ?","o":["Le prix baisse de 20 %.","Le prix baisse de 20 €.","Le prix augmente de 20 %."],"a":0,"exp":"20 % de 50 € = 10 €. Le pantalon coûte 40 €."},
+ {"t":"vf","txt":"Une voiture roule à 90 km/h pendant 2 heures.","q":"Elle parcourt 180 km.","a":true,"exp":"d = v × t = 90 × 2 = 180 km."},
+ {"t":"qcm","txt":"Une carte est à l’échelle {{1/100000}}.","q":"Sur la carte, 1 cm représente :","o":["1 km","100 m","10 km"],"a":0,"exp":"100 000 cm = 1 000 m = 1 km."},
+ {"t":"question","txt":["Un randonneur marche 12 km en 3 heures.","Il marche toujours à la même vitesse.","Quelle est sa vitesse moyenne ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». v = 12 ÷ 3 = 4 km/h."},
+ {"t":"donnees","txt":"Un magasin vend un téléphone 300 €. Le magasin est ouvert 6 jours par semaine. Pendant les soldes, le prix baisse de 15 %. Calcule le prix soldé.","q":"Touche les deux données utiles.","a":["300","15"],"exp":"300 × 0,85 = 255 €. Les 6 jours ne servent pas."},
+ {"t":"qcm","txt":"Une durée de 1 h 30 min.","q":"En heures, cela fait :","o":["1,5 h","1,3 h","1,30 h"],"a":0,"exp":"30 min, c’est la moitié d’une heure : 0,5 h."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"Le prix est proportionnel à la masse."}
+],
+"brevet":[
+ {"id":"pr-b1","titre":"Le voyage en voiture","ctx":["La famille Diallo part en vacances.","Elle parcourt 480 km en 5 heures.","La voiture consomme 6 L d’essence pour 100 km."],
+  "qs":[
+   {"q":"**Calcule** la vitesse moyenne de la voiture.","type":"num","a":96,"unit":"km/h","aide":["v = d ÷ t"],"corr":["480 ÷ 5 = 96"],"rep":"La vitesse moyenne est de 96 km/h."},
+   {"q":"**Calcule** la quantité d’essence utilisée pour 480 km.","type":"num","a":28.8,"unit":"L","aide":["6 L pour 100 km. C’est proportionnel.","480 ÷ 100 = 4,8"],"corr":["6 × 480 ÷ 100 = 28,8"],"rep":"La voiture utilise 28,8 L d’essence."},
+   {"q":"Le litre d’essence coûte 1,90 €. **Calcule** le prix de l’essence. **Arrondis** au centime.","type":"num","a":54.72,"arr":2,"unit":"€","aide":["Je multiplie la quantité par le prix d’un litre."],"corr":["28,8 × 1,90 = 54,72"],"rep":"L’essence coûte 54,72 €."}
+  ]},
+ {"id":"pr-b2","titre":"Les soldes","ctx":["Un magasin fait des soldes.","Une veste coûte 80 €. Son prix baisse de 25 %.","Un jean coûte 60 €. Son prix baisse de 15 €."],
+  "qs":[
+   {"q":"**Calcule** le nouveau prix de la veste.","type":"num","a":60,"unit":"€","aide":["Baisse de 25 % : je multiplie par 0,75."],"corr":["80 × 0,75 = 60"],"rep":"La veste coûte maintenant 60 €."},
+   {"q":"**Calcule** le pourcentage de réduction du jean.","type":"num","a":25,"unit":"%","aide":["Je divise la réduction par le prix de départ, puis je multiplie par 100."],"corr":["15 ÷ 60 × 100 = 25"],"rep":"Le prix du jean baisse de 25 %."},
+   {"q":"Quelle réduction est la plus forte, en pourcentage ?","type":"qcm","o":["Les deux sont égales : 25 %.","La réduction de la veste.","La réduction du jean."],"a":0,"aide":["Compare les deux pourcentages."],"corr":["Veste : 25 %. Jean : 25 %."],"rep":"Les deux réductions sont égales : 25 %."}
+  ]},
+ {"id":"pr-b3","titre":"Le plan de la maison","ctx":["Le plan d’une maison est à l’échelle {{1/50}}.","Sur le plan, le salon mesure 12 cm de long et 9 cm de large."],
+  "qs":[
+   {"q":"**Calcule** la longueur réelle du salon, en mètres.","type":"num","a":6,"unit":"m","aide":["1 cm sur le plan = 50 cm en vrai.","12 × 50 = 600 cm"],"corr":["12 × 50 = 600 cm","600 cm = 6 m"],"rep":"Le salon mesure 6 m de long."},
+   {"q":"**Calcule** la largeur réelle du salon, en mètres.","type":"num","a":4.5,"unit":"m","aide":["9 × 50 = ? cm"],"corr":["9 × 50 = 450 cm = 4,5 m"],"rep":"Le salon mesure 4,5 m de large."},
+   {"q":"**Calcule** l’aire réelle du salon.","type":"num","a":27,"unit":"m²","aide":["Aire = longueur × largeur, en mètres."],"corr":["6 × 4,5 = 27"],"rep":"L’aire du salon est 27 m²."}
+  ]}
+],
+"calc":["pr-tab","pr-4e","pr-pct","pr-evol","pr-vit","pr-ech"],
+"mots":[
+ {"id":"grandeur","mot":"grandeur","art":"la","g":"f","cat":"mesure","ill":"txt:{12} km    {3} h|{5} €    {2} kg","def":"Quelque chose qu’on peut mesurer : une [[longueur]], une [[masse]], un [[prix]], une [[durée|duree]].","ph":["Le prix et la masse sont deux [[grandeurs|grandeur]].","Ces deux [[grandeurs|grandeur]] sont proportionnelles."]},
+ {"id":"proportionnel","mot":"proportionnel","cat":"mesure","ill":"chart:prop","def":"Deux [[grandeurs|grandeur]] sont proportionnelles si on multiplie toujours par le même nombre pour passer de l’une à l’autre.","ph":["Le prix est [[proportionnel]] à la masse.","Ce tableau est un tableau de proportionnalité."]},
+ {"id":"coefficient-proportionnalite","mot":"coefficient de proportionnalité","art":"le","g":"m","cat":"mesure","ill":"chart:prop","def":"Le nombre par lequel on multiplie toujours, dans un tableau de proportionnalité.","ph":["Le [[coefficient de proportionnalité|coefficient-proportionnalite]] est 3.","Je calcule le [[coefficient de proportionnalité|coefficient-proportionnalite]] : 12 ÷ 4 = 3."]},
+ {"id":"produit-en-croix","mot":"produit en croix","art":"le","g":"m","cat":"mesure","ill":"prop:croix|3|6|5","def":"Une méthode pour trouver la quatrième valeur d’un tableau de proportionnalité. Je multiplie en diagonale, puis je divise.","ph":["J’utilise le [[produit en croix|produit-en-croix]] : x = 6 × 5 ÷ 3.","Avec un [[produit en croix|produit-en-croix]], je trouve 10 €."],"dire":["la quatrième proportionnelle","la règle de trois"]},
+ {"id":"pourcentage","mot":"pourcentage","art":"le","g":"m","cat":"mesure","sym":"%","ill":"chart:pourcent","def":"Une partie sur 100. 25 % veut dire 25 sur 100. 25 % de 80, c’est 80 × 25 ÷ 100 = 20.","ph":["Je calcule le [[pourcentage]] de filles dans la classe.","Un [[pourcentage]] de 50 %, c’est la moitié."]},
+ {"id":"augmentation","mot":"augmentation","art":"l’","g":"f","cat":"mesure","ill":"prop:aug","def":"Quand un nombre devient plus grand. Augmenter de 20 %, c’est multiplier par 1,2.","ph":["Le prix a une [[augmentation]] de 10 %.","Après l’[[augmentation]], le loyer est de 550 €."],"dire":["une hausse","le prix monte"]},
+ {"id":"reduction","mot":"réduction","art":"la","g":"f","cat":"mesure","ill":"prop:red","def":"Quand un prix devient plus petit. Une réduction de 20 %, c’est multiplier par 0,8.","ph":["Le magasin fait une [[réduction|reduction]] de 30 %.","Avec la [[réduction|reduction]], le pull coûte 30 €."],"dire":["une baisse","une remise","le prix soldé"]},
+ {"id":"vitesse-moyenne","mot":"vitesse moyenne","art":"la","g":"f","cat":"mesure","ill":"prop:vitesse","def":"La distance parcourue en une unité de temps : v = d ÷ t. On l’écrit en km/h ou en m/s.","ph":["La [[vitesse moyenne|vitesse-moyenne]] du train est 240 km/h.","Je calcule la [[vitesse moyenne|vitesse-moyenne]] : 150 ÷ 2 = 75 km/h."]},
+ {"id":"km-h","mot":"kilomètre par heure","art":"le","g":"m","sym":"km/h","cat":"mesure","ill":"txt:90 km/h|= 90 km en [1 h]","def":"Une unité de [[vitesse moyenne|vitesse-moyenne]]. À 90 km/h, on parcourt 90 km en 1 heure.","ph":["La voiture roule à 90 [[kilomètres par heure|km-h]].","50 km/h se lit « 50 [[kilomètres par heure|km-h]] »."]},
+ {"id":"echelle","mot":"échelle","art":"l’","g":"f","cat":"mesure","ill":"prop:echelle","def":"Sur un plan à l’échelle {{1/100}}, 1 cm sur le plan représente 100 cm en vrai.","ph":["Le plan est à l’[[échelle|echelle]] {{1/50}}.","J’utilise l’[[échelle|echelle]] pour trouver la distance réelle."]},
+ {"id":"ratio","mot":"ratio","art":"le","g":"m","cat":"mesure","ill":"prop:ratio","def":"Une façon de comparer deux quantités. Le ratio 2 : 3 veut dire 2 parts pour 3 parts.","ph":["On partage 50 € dans le [[ratio]] 2 : 3.","Le [[ratio]] filles : garçons est 3 : 2."],"dire":["2 : 3 se lit « 2 pour 3 »."]}
+]
+}

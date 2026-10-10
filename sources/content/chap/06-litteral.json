@@ -1,0 +1,69 @@
+{
+"id":"litteral","titre":"Le calcul littéral","icone":"🔤","cat":"algebre","domaine":"Nombres et calculs","classe":"5ᵉ · 4ᵉ · 3ᵉ",
+"intro":"Calculer avec des lettres : remplacer, réduire, développer, factoriser.",
+"objectifs":["Je sais **remplacer** une lettre par un nombre.","Je sais **développer** et **réduire** une expression.","Je sais **factoriser** une expression simple."],
+"cours":[
+ {"titre":"Une expression littérale","txt":["Une [[expression littérale|expression-litterale]] est un [[calcul]] avec une ou plusieurs lettres.","La lettre remplace un nombre que l’on ne connaît pas encore."],"ex":["Le périmètre d’un carré de côté x : P = 4 × x."],"ill":"lit:expr"},
+ {"titre":"Les règles d’écriture","txt":["Je peux enlever le signe × devant une lettre ou devant une parenthèse.","x × x s’écrit x². x × x × x s’écrit x³."],"ex":["4 × x = 4x","3 × (x + 2) = 3(x + 2)","1 × x = x"],"ill":"txt:4 {×} x = [4x]|x × x = [x²]"},
+ {"titre":"Remplacer une lettre par un nombre","txt":["Pour calculer la valeur d’une expression, je [[remplace|remplacer]] la lettre par le nombre.","Je remets le signe ×."],"ex":["A = 3x + 5. Pour x = 2 : A = 3 × 2 + 5 = 11."],"ill":"lit:subst"},
+ {"titre":"Réduire","txt":["[[Réduire|reduire]] une expression : je regroupe les [[termes|terme]] du même type.","Les x avec les x. Les x² avec les x². Les nombres avec les nombres."],"ex":["3x + 5 + 2x − 1 = 5x + 4"],"ill":"lit:red"},
+ {"titre":"Développer","txt":["[[Développer|developper]] : je transforme un [[produit]] en [[somme]].","J’utilise la [[distributivité|distributivite]] : k(a + b) = ka + kb."],"ex":["3(x + 4) = 3x + 12","−2(x − 5) = −2x + 10"],"ill":"lit:dev"},
+ {"titre":"La double distributivité","txt":["Je multiplie chaque terme de la première parenthèse par chaque terme de la deuxième.","(a + b)(c + d) = ac + ad + bc + bd"],"ex":["(x + 2)(x + 3) = x² + 3x + 2x + 6 = x² + 5x + 6"],"ill":"lit:dbl"},
+ {"titre":"Factoriser","txt":["[[Factoriser|factoriser]] : je transforme une somme en produit.","Je cherche un [[facteur commun|facteur-commun]] à tous les termes : ka + kb = k(a + b)."],"ex":["5x + 15 = 5 × x + 5 × 3 = 5(x + 3)"],"ill":"lit:fact"},
+ {"titre":"Une identité remarquable","txt":["(a + b)(a − b) = a² − b²","Cette égalité est toujours vraie. C’est une [[identité remarquable|identite-remarquable]]."],"ex":["(x + 3)(x − 3) = x² − 9","x² − 25 = (x + 5)(x − 5)"],"ill":"txt:(a + b)(a − b)|= [a² − b²]"},
+ {"titre":"Prouver avec une lettre","txt":["Pour prouver qu’une règle est toujours vraie, j’utilise une lettre n à la place du nombre.","Des exemples ne suffisent pas pour prouver."],"ex":["Deux nombres entiers qui se suivent : n et n + 1.","Leur somme est n + n + 1 = 2n + 1. Elle est toujours impaire."],"ill":"txt:n + (n + 1)|= [2n + 1]"}
+],
+"methodes":[
+ {"titre":"Développer et réduire","etapes":["Je multiplie le nombre devant la parenthèse par chaque terme de la parenthèse.","Je fais attention aux signes.","Je réduis : je regroupe les termes en x, puis les nombres."],
+  "exemple":{"enonce":"**Développe** et **réduis** A = 4(2x − 3) + 5x.","etapes":[{"t":"Je développe 4(2x − 3).","c":"4 × 2x − 4 × 3 = 8x − 12"},{"t":"J’écris la nouvelle ligne.","c":"A = 8x − 12 + 5x"},{"t":"Je regroupe les termes en x.","c":"A = 13x − 12"}],"reponse":"A = 13x − 12"}},
+ {"titre":"Développer avec la double distributivité","etapes":["Je multiplie chaque terme de la première parenthèse par chaque terme de la deuxième.","J’écris les 4 produits.","Je réduis."],
+  "exemple":{"enonce":"**Développe** B = (x + 5)(x − 2).","etapes":[{"t":"Je multiplie x par x, puis x par −2.","c":"x² − 2x"},{"t":"Je multiplie 5 par x, puis 5 par −2.","c":"+ 5x − 10"},{"t":"J’écris tout.","c":"B = x² − 2x + 5x − 10"},{"t":"Je réduis.","c":"B = x² + 3x − 10"}],"reponse":"B = x² + 3x − 10"}},
+ {"titre":"Factoriser","etapes":["Je cherche ce qui est commun à tous les termes.","Je l’écris devant une parenthèse.","J’écris dans la parenthèse ce qui reste.","Je vérifie en développant."],
+  "exemple":{"enonce":"**Factorise** C = 6x + 18.","etapes":[{"t":"J’écris chaque terme comme un produit.","c":"6x = 6 × x et 18 = 6 × 3"},{"t":"Le facteur commun est 6.","c":"C = 6(x + 3)"},{"t":"Je vérifie en développant.","c":"6(x + 3) = 6x + 18 ✓"}],"reponse":"C = 6(x + 3)"}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Un rectangle a une longueur de x cm et une largeur de 3 cm.","q":"Quelle expression donne son aire ?","o":["3x","x + 3","2x + 6"],"a":0,"exp":"Aire = longueur × largeur = x × 3 = 3x. Attention : 2x + 6 est le périmètre."},
+ {"t":"qcm","txt":"A = 2x + 7","q":"Que vaut A pour x = 5 ?","o":["17","27","14"],"a":0,"exp":"Je remplace x par 5 : 2 × 5 + 7 = 10 + 7 = 17."},
+ {"t":"qcm","txt":"**Développe** 3(x + 4).","q":"Que dois-je faire ?","o":["Transformer le produit en somme.","Transformer la somme en produit.","Remplacer x par 3."],"a":0,"exp":"Développer : un produit devient une somme. 3(x + 4) = 3x + 12."},
+ {"t":"vf","txt":"On écrit x × x.","q":"x × x s’écrit 2x.","a":false,"exp":"x × x = x². Et 2x = x + x."},
+ {"t":"qcm","txt":"**Factorise** 7x + 14.","q":"Quelle réponse est une factorisation ?","o":["7(x + 2)","7x + 14","21x"],"a":0,"exp":"7x + 14 = 7 × x + 7 × 2 = 7(x + 2). C’est un produit."},
+ {"t":"question","txt":["Léa pense à un nombre.","Elle le multiplie par 2, puis elle ajoute 3.","Écris le résultat en fonction du nombre x."],"q":"Touche la phrase qui est la question.","a":2,"exp":"La consigne commence par le verbe « Écris ». La réponse est 2x + 3."},
+ {"t":"donnees","txt":"Un taxi coûte 4 € au départ, plus 1,50 € par kilomètre. Le taxi a 5 places. Exprime le prix pour x kilomètres.","q":"Touche les deux données utiles.","a":["4","1,50"],"exp":"Prix = 4 + 1,50x. Les 5 places ne servent pas."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"Je développe, puis je réduis l’expression."}
+],
+"brevet":[
+ {"id":"lit-b1","titre":"Le programme de calcul","ctx":["Voici un programme de calcul :","• Choisir un nombre.","• Ajouter 3.","• Multiplier le résultat par 2.","• Soustraire 6."],
+  "qs":[
+   {"q":"On choisit 5. **Calcule** le résultat.","type":"num","a":10,"aide":["5 + 3 = 8. Ensuite, je multiplie par 2."],"corr":["5 + 3 = 8","8 × 2 = 16","16 − 6 = 10"],"rep":"Avec 5, on obtient 10."},
+   {"q":"On choisit −4. **Calcule** le résultat.","type":"num","a":-8,"aide":["−4 + 3 = −1"],"corr":["−4 + 3 = −1","(−1) × 2 = −2","−2 − 6 = −8"],"rep":"Avec −4, on obtient −8."},
+   {"q":"On choisit x. **Exprime** le résultat en fonction de x, puis **développe** et **réduis**.","type":"expr","a":"2x","form":"red","aide":["J’écris (x + 3) × 2 − 6.","Je développe : 2x + 6 − 6."],"corr":["(x + 3) × 2 − 6","= 2x + 6 − 6","= 2x"],"rep":"Le résultat est 2x."},
+   {"q":"Que remarques-tu ?","type":"qcm","o":["Le résultat est toujours le double du nombre choisi.","Le résultat est toujours 6.","Le résultat est toujours égal au nombre choisi."],"a":0,"aide":["2x, c’est 2 fois x."],"corr":["2x = 2 × x"],"rep":"Le résultat est toujours le double du nombre choisi."}
+  ]},
+ {"id":"lit-b2","titre":"Le jardin","ctx":["Un jardin a la forme d’un rectangle.","Sa longueur est (x + 5) m. Sa largeur est x m."],"fig":"lit:rect|x + 5|x",
+  "qs":[
+   {"q":"**Exprime** le périmètre du jardin en fonction de x. **Réduis** l’expression.","type":"expr","a":"4x+10","form":"red","aide":["Périmètre = 2 × longueur + 2 × largeur.","2(x + 5) + 2x"],"corr":["P = 2(x + 5) + 2x","P = 2x + 10 + 2x","P = 4x + 10"],"rep":"Le périmètre est 4x + 10 mètres."},
+   {"q":"**Exprime** l’aire du jardin en fonction de x. **Développe**.","type":"expr","a":"x^2+5x","form":"dev","aide":["Aire = longueur × largeur = x(x + 5)."],"corr":["A = x(x + 5)","A = x² + 5x"],"rep":"L’aire est x² + 5x mètres carrés."},
+   {"q":"**Calcule** l’aire du jardin pour x = 8.","type":"num","a":104,"unit":"m²","aide":["Je remplace x par 8 dans x² + 5x."],"corr":["8² + 5 × 8 = 64 + 40 = 104"],"rep":"Pour x = 8, l’aire est 104 m²."}
+  ]},
+ {"id":"lit-b3","titre":"Développer et factoriser","ctx":["On donne E = (x + 4)(x − 4) et F = 3x² + 12x."],
+  "qs":[
+   {"q":"**Développe** et **réduis** E.","type":"expr","a":"x^2-16","form":"dev","aide":["Utilise (a + b)(a − b) = a² − b²."],"corr":["E = x² − 4x + 4x − 16","E = x² − 16"],"rep":"E = x² − 16"},
+   {"q":"**Factorise** F.","type":"expr","a":"3x(x+4)","form":"fact","aide":["3x² = 3x × x et 12x = 3x × 4."],"corr":["F = 3x × x + 3x × 4","F = 3x(x + 4)"],"rep":"F = 3x(x + 4)"},
+   {"q":"**Calcule** E pour x = 10.","type":"num","a":84,"aide":["Je remplace x par 10 dans x² − 16."],"corr":["10² − 16 = 100 − 16 = 84"],"rep":"Pour x = 10, E = 84."}
+  ]}
+],
+"calc":["lit-val","lit-red","lit-dev","lit-dbl","lit-fact"],
+"mots":[
+ {"id":"expression-litterale","mot":"expression littérale","art":"l’","g":"f","cat":"algebre","ill":"lit:expr","def":"Un [[calcul]] avec une ou plusieurs lettres. Exemple : 3x + 5.","ph":["3x + 5 est une [[expression littérale|expression-litterale]].","J’écris une [[expression littérale|expression-litterale]] pour le périmètre."]},
+ {"id":"remplacer","mot":"remplacer","cat":"verbe","ill":"lit:subst","f":{"c":"Remplace · Remplacez","je":"je remplace"},"def":"Écrire un nombre à la place de la lettre, puis [[calculer]].","ph":["Je [[remplace|remplacer]] x par 2 : 3 × 2 + 5 = 11.","[[Remplace|remplacer]] x par −1 dans l’expression."],"dire":["Calcule A pour x = 2.","Calcule la valeur de A quand x vaut 2."]},
+ {"id":"terme","mot":"terme","art":"le","g":"m","cat":"algebre","ill":"txt:{3x} + {5} − {2x²}","def":"Dans une [[somme]], chaque partie séparée par + ou − est un terme. Dans 3x + 5, les termes sont 3x et 5.","ph":["Le [[terme]] 5 n’a pas de lettre.","Je regroupe les [[termes|terme]] en x."]},
+ {"id":"coefficient","mot":"coefficient","art":"le","g":"m","cat":"algebre","ill":"txt:[7]x","def":"Le nombre devant la lettre. Dans 7x, le coefficient est 7.","ph":["Dans −3x, le [[coefficient]] est −3.","J’additionne les [[coefficients|coefficient]] : 3x + 2x = 5x."]},
+ {"id":"reduire","mot":"réduire","cat":"verbe","ill":"lit:red","f":{"c":"Réduis · Réduisez","je":"je réduis"},"def":"Regrouper les [[termes|terme]] du même type. Exemple : 3x + 2x = 5x.","ph":["Je [[réduis|reduire]] l’expression : 3x + 5 + 2x = 5x + 5.","[[Réduis|reduire]] l’expression A."]},
+ {"id":"developper","mot":"développer","cat":"verbe","ill":"lit:dev","f":{"c":"Développe · Développez","je":"je développe"},"def":"Transformer un [[produit]] en [[somme]]. Exemple : 3(x + 4) = 3x + 12.","ph":["Je [[développe|developper]] 2(x + 5) : j’obtiens 2x + 10.","[[Développe|developper]] et réduis l’expression."]},
+ {"id":"factoriser","mot":"factoriser","cat":"verbe","ill":"lit:fact","f":{"c":"Factorise · Factorisez","je":"je factorise"},"def":"Transformer une [[somme]] en [[produit]]. Exemple : 5x + 15 = 5(x + 3).","ph":["Je [[factorise|factoriser]] 4x + 8 : j’obtiens 4(x + 2).","[[Factorise|factoriser]] l’expression F."]},
+ {"id":"distributivite","mot":"distributivité","art":"la","g":"f","cat":"algebre","ill":"lit:dev","def":"La règle k(a + b) = ka + kb. Le nombre devant la parenthèse multiplie chaque [[terme]].","ph":["J’utilise la [[distributivité|distributivite]] pour développer.","Avec la [[distributivité|distributivite]], 3(x + 2) = 3x + 6."]},
+ {"id":"double-distributivite","mot":"double distributivité","art":"la","g":"f","cat":"algebre","ill":"lit:dbl","def":"La règle (a + b)(c + d) = ac + ad + bc + bd.","ph":["J’utilise la [[double distributivité|double-distributivite]] : j’écris 4 produits.","La [[double distributivité|double-distributivite]] sert à développer (x + 1)(x + 2)."]},
+ {"id":"identite-remarquable","mot":"identité remarquable","art":"l’","g":"f","cat":"algebre","ill":"txt:(a + b)(a − b)|= [a² − b²]","def":"Une égalité toujours vraie, à connaître par cœur : (a + b)(a − b) = a² − b².","ph":["J’utilise l’[[identité remarquable|identite-remarquable]] : (x + 3)(x − 3) = x² − 9.","Je reconnais une [[identité remarquable|identite-remarquable]]."]},
+ {"id":"facteur-commun","mot":"facteur commun","art":"le","g":"m","cat":"algebre","ill":"txt:{5}x + {5} × 3|= {5}(x + 3)","def":"Un [[facteur]] présent dans tous les [[termes|terme]]. On l’écrit devant la parenthèse pour [[factoriser]].","ph":["Le [[facteur commun|facteur-commun]] de 5x + 15 est 5.","Je cherche le [[facteur commun|facteur-commun]]."]}
+]
+}

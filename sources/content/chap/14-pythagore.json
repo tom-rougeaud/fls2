@@ -1,0 +1,77 @@
+{
+"id":"pythagore","titre":"Pythagore, Thalès et trigonométrie","icone":"📏","cat":"geometrie","domaine":"Espace et géométrie","classe":"4ᵉ · 3ᵉ",
+"intro":"Calculer des longueurs et des angles avec le théorème de Pythagore, le théorème de Thalès, le cosinus, le sinus et la tangente.",
+"objectifs":["Je sais **calculer** une longueur avec le théorème de Pythagore.","Je sais **montrer** qu’un triangle est rectangle.","Je sais **utiliser** le théorème de Thalès et la trigonométrie."],
+"cours":[
+ {"titre":"L’hypoténuse","txt":["Dans un [[triangle rectangle|triangle-rectangle]], l’[[hypoténuse|hypotenuse]] est le côté en face de l’angle droit.","C’est le plus long côté du triangle."],"ill":"tri:hyp"},
+ {"titre":"Le théorème de Pythagore","txt":["Si un triangle est rectangle, alors le carré de l’hypoténuse est égal à la somme des carrés des deux autres côtés.","ABC est rectangle en A : BC² = AB² + AC²."],"ill":"tri:pyth"},
+ {"titre":"Calculer une longueur","txt":["Je connais deux côtés d’un triangle rectangle.","Je calcule le troisième côté avec le [[théorème de Pythagore|theoreme-pythagore]]."],"ex":["AB = 3 cm et AC = 4 cm. BC² = 9 + 16 = 25, donc BC = √25 = 5 cm."],"ill":"txt:BC² = 3² + 4²|= 9 + 16 = [25]"},
+ {"titre":"La réciproque de Pythagore","txt":["Si BC² = AB² + AC², alors le triangle ABC est rectangle en A.","C’est la [[réciproque|reciproque]] du théorème de Pythagore.","Si l’égalité est fausse, le triangle n’est pas rectangle."],"ill":"txt:5² = 3² + 4²|25 = 9 + 16 ✓"},
+ {"titre":"Le théorème de Thalès","txt":["Deux droites se coupent en A.","Elles sont coupées par deux droites parallèles (MN) et (BC).","Alors les longueurs sont proportionnelles : {{AM/AB}} = {{AN/AC}} = {{MN/BC}}."],"ill":"tri:thales"},
+ {"titre":"La configuration « papillon »","txt":["Le théorème de Thalès marche aussi quand les deux triangles sont de chaque côté du point A.","On écrit les mêmes quotients."],"ill":"tri:thales2"},
+ {"titre":"La réciproque de Thalès","txt":["Si {{AM/AB}} = {{AN/AC}}, et si les points sont dans le même ordre, alors (MN) et (BC) sont parallèles."],"ill":"tri:thales"},
+ {"titre":"Le côté adjacent et le côté opposé","txt":["On regarde un angle aigu du triangle rectangle.","Le [[côté adjacent|cote-adjacent]] touche l’angle. Ce n’est pas l’hypoténuse.","Le [[côté opposé|cote-oppose]] est en face de l’angle."],"ill":"tri:adjopp"},
+ {"titre":"Cosinus, sinus, tangente","txt":["[[cosinus]] = côté adjacent ÷ hypoténuse","[[sinus]] = côté opposé ÷ hypoténuse","[[tangente]] = côté opposé ÷ côté adjacent"],"note":"Pour retenir : SOH CAH TOA (Sinus = Opposé ÷ Hypoténuse, Cosinus = Adjacent ÷ Hypoténuse, Tangente = Opposé ÷ Adjacent).","ill":"tri:trigo"},
+ {"titre":"Calculer un angle","txt":["Je calcule d’abord le cosinus (ou le sinus, ou la tangente) de l’angle.","J’utilise la touche cos⁻¹ (ou sin⁻¹, tan⁻¹) de la [[calculatrice]].","La calculatrice doit être en mode degrés."],"ex":["cos(B) = 0,5, donc l’angle B mesure 60°."],"ill":"txt:cos(B) = 0,5|B = cos⁻¹(0,5) = [60°]"}
+],
+"methodes":[
+ {"titre":"Calculer l’hypoténuse","etapes":["J’écris : le triangle est rectangle en …, d’après le théorème de Pythagore.","J’écris l’égalité.","Je remplace par les longueurs.","Je calcule la racine carrée."],
+  "exemple":{"enonce":"ABC est rectangle en A. AB = 6 cm et AC = 8 cm. **Calcule** BC.","ill":"tri:pyth","etapes":[{"t":"Le triangle ABC est rectangle en A. D’après le théorème de Pythagore :","c":"BC² = AB² + AC²"},{"t":"Je remplace.","c":"BC² = 6² + 8² = 36 + 64 = 100"},{"t":"Je calcule la racine carrée.","c":"BC = √100 = 10"}],"reponse":"BC = 10 cm."}},
+ {"titre":"Calculer un côté de l’angle droit","etapes":["J’écris l’égalité de Pythagore.","Je remplace par les longueurs connues.","Je fais une soustraction.","Je calcule la racine carrée."],
+  "exemple":{"enonce":"DEF est rectangle en D. EF = 13 cm et DE = 5 cm. **Calcule** DF.","etapes":[{"t":"D’après le théorème de Pythagore :","c":"EF² = DE² + DF²"},{"t":"Je remplace.","c":"13² = 5² + DF², donc 169 = 25 + DF²"},{"t":"Je soustrais.","c":"DF² = 169 − 25 = 144"},{"t":"Je calcule la racine carrée.","c":"DF = √144 = 12"}],"reponse":"DF = 12 cm."}},
+ {"titre":"Montrer qu’un triangle est rectangle","etapes":["Je repère le plus grand côté.","Je calcule son carré.","Je calcule la somme des carrés des deux autres côtés.","Si c’est égal : le triangle est rectangle (réciproque de Pythagore)."],
+  "exemple":{"enonce":"Le triangle RST a pour côtés RS = 9 cm, ST = 12 cm et RT = 15 cm. Est-il rectangle ? **Justifie**.","etapes":[{"t":"Le plus grand côté est [RT].","c":"RT² = 15² = 225"},{"t":"Je calcule l’autre somme.","c":"RS² + ST² = 81 + 144 = 225"},{"t":"Les deux résultats sont égaux.","c":"RT² = RS² + ST²"}],"reponse":"D’après la réciproque du théorème de Pythagore, RST est rectangle en S."}},
+ {"titre":"Utiliser le théorème de Thalès","etapes":["J’écris : les droites … sont parallèles, d’après le théorème de Thalès.","J’écris les trois quotients égaux.","Je garde deux quotients et je remplace.","J’utilise le produit en croix."],
+  "exemple":{"enonce":"Les droites (MN) et (BC) sont parallèles. AM = 3 cm, AB = 9 cm et BC = 12 cm. **Calcule** MN.","ill":"tri:thales","etapes":[{"t":"(MN) // (BC). D’après le théorème de Thalès :","c":"{{AM/AB}} = {{AN/AC}} = {{MN/BC}}"},{"t":"Je garde deux quotients et je remplace.","c":"{{3/9}} = {{MN/12}}"},{"t":"Produit en croix.","c":"MN = 3 × 12 ÷ 9 = 4"}],"reponse":"MN = 4 cm."}},
+ {"titre":"Calculer une longueur avec le cosinus","etapes":["Je repère l’angle, l’hypoténuse et le côté adjacent.","J’écris la formule du cosinus.","Je remplace par les nombres.","Je calcule avec la calculatrice en mode degrés."],
+  "exemple":{"enonce":"ABC est rectangle en A. L’angle en B mesure 40° et BC = 10 cm. **Calcule** AB, arrondi au dixième.","etapes":[{"t":"[AB] est le côté adjacent à l’angle B. [BC] est l’hypoténuse.","c":"cos(B) = {{AB/BC}}"},{"t":"Je remplace.","c":"cos(40°) = {{AB/10}}"},{"t":"Je calcule.","c":"AB = 10 × cos(40°) ≈ 7,7"}],"reponse":"AB ≈ 7,7 cm."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Le triangle ABC est rectangle en A.","q":"Quelle est l’hypoténuse ?","o":["[BC]","[AB]","[AC]"],"a":0,"exp":"L’hypoténuse est en face de l’angle droit. L’angle droit est en A : c’est [BC]."},
+ {"t":"qcm","txt":"Je connais deux côtés d’un triangle rectangle.","q":"Pour calculer le troisième côté, j’utilise :","o":["le théorème de Pythagore","le théorème de Thalès","la somme des angles"],"a":0,"exp":"Avec deux côtés d’un triangle rectangle, j’utilise Pythagore."},
+ {"t":"vf","txt":"Un triangle a des côtés de 3 cm, 4 cm et 6 cm.","q":"Ce triangle est rectangle.","a":false,"exp":"6² = 36 et 3² + 4² = 25. 36 ≠ 25, donc il n’est pas rectangle."},
+ {"t":"qcm","txt":"Dans un triangle rectangle, je connais l’hypoténuse et le côté adjacent à un angle.","q":"Pour calculer l’angle, j’utilise :","o":["le cosinus","le sinus","la tangente"],"a":0,"exp":"Cosinus = côté adjacent ÷ hypoténuse."},
+ {"t":"question","txt":["Une échelle de 5 m est posée contre un mur.","Le pied de l’échelle est à 1,5 m du mur.","À quelle hauteur l’échelle touche-t-elle le mur ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». On cherche une hauteur."},
+ {"t":"donnees","txt":"Un cerf-volant est attaché à une corde de 50 m. La corde fait un angle de 35° avec le sol. Le cerf-volant pèse 200 g. Calcule la hauteur du cerf-volant.","q":"Touche les deux données utiles.","a":["50","35"],"exp":"hauteur = 50 × sin(35°) ≈ 28,7 m. La masse ne sert pas."},
+ {"t":"qcm","txt":"Les droites (MN) et (BC) sont parallèles.","q":"Quel théorème peut-on utiliser ?","o":["le théorème de Thalès","le théorème de Pythagore","la réciproque de Pythagore"],"a":0,"exp":"Avec des droites parallèles, j’utilise le théorème de Thalès."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"D’après le théorème de Pythagore, BC² = AB² + AC²."}
+],
+"brevet":[
+ {"id":"py-b1","titre":"L’échelle","ctx":["Une échelle de 5 m est posée contre un mur vertical.","Le pied de l’échelle est à 1,4 m du mur.","Le sol est horizontal."],"fig":"tri:echelle",
+  "qs":[
+   {"q":"Pourquoi peut-on utiliser le théorème de Pythagore ?","type":"qcm","o":["Le mur est perpendiculaire au sol : le triangle est rectangle.","L’échelle mesure 5 m.","Le triangle est isocèle."],"a":0,"aide":["Pythagore marche seulement dans un triangle rectangle."],"corr":["Le mur est vertical et le sol est horizontal : ils forment un angle droit."],"rep":"Le triangle est rectangle, car le mur est perpendiculaire au sol."},
+   {"q":"**Calcule** la hauteur où l’échelle touche le mur.","type":"num","a":4.8,"unit":"m","aide":["L’échelle est l’hypoténuse : 5² = 1,4² + h².","h² = 25 − 1,96"],"corr":["5² = 1,4² + h²","25 = 1,96 + h²","h² = 23,04","h = √23,04 = 4,8"],"rep":"L’échelle touche le mur à 4,8 m de hauteur."},
+   {"q":"L’échelle doit toucher le mur au-dessus de 4,5 m. Est-ce le cas ?","type":"qcm","o":["Oui, car 4,8 m est plus que 4,5 m.","Non, car 4,8 m est moins que 4,5 m.","Non, car 5 m est plus que 4,5 m."],"a":0,"aide":["Compare 4,8 et 4,5."],"corr":["4,8 > 4,5"],"rep":"Oui, l’échelle touche le mur au-dessus de 4,5 m."}
+  ]},
+ {"id":"py-b2","titre":"Le cadre du menuisier","ctx":["Un menuisier fabrique un cadre en forme de triangle.","Les côtés mesurent 30 cm, 40 cm et 50 cm."],
+  "qs":[
+   {"q":"**Calcule** le carré du plus grand côté.","type":"num","a":2500,"aide":["Le plus grand côté mesure 50 cm."],"corr":["50² = 2 500"],"rep":"50² = 2 500"},
+   {"q":"**Calcule** la somme des carrés des deux autres côtés.","type":"num","a":2500,"aide":["30² + 40²"],"corr":["30² + 40² = 900 + 1 600 = 2 500"],"rep":"30² + 40² = 2 500"},
+   {"q":"Le cadre a-t-il un angle droit ? **Justifie**.","type":"qcm","o":["Oui, d’après la réciproque du théorème de Pythagore.","Non, car 50 n’est pas égal à 30 + 40.","On ne peut pas savoir."],"a":0,"aide":["Les deux résultats sont-ils égaux ?"],"corr":["50² = 30² + 40²"],"rep":"Oui : d’après la réciproque du théorème de Pythagore, le cadre a un angle droit."}
+  ]},
+ {"id":"py-b3","titre":"L’ombre de l’arbre","ctx":["Un bâton de 1,5 m est planté bien droit dans le sol. Son ombre mesure 2 m.","Au même moment, l’ombre d’un arbre mesure 12 m.","Les rayons du soleil sont parallèles."],"fig":"tri:ombre",
+  "qs":[
+   {"q":"Quel théorème permet de calculer la hauteur de l’arbre ?","type":"qcm","o":["le théorème de Thalès","le théorème de Pythagore","la somme des angles"],"a":0,"aide":["Les rayons du soleil sont parallèles."],"corr":["Il y a des droites parallèles : j’utilise Thalès."],"rep":"J’utilise le théorème de Thalès."},
+   {"q":"**Calcule** la hauteur de l’arbre.","type":"num","a":9,"unit":"m","aide":["{{1,5/h}} = {{2/12}}","Produit en croix : h = 1,5 × 12 ÷ 2"],"corr":["h = 1,5 × 12 ÷ 2 = 9"],"rep":"L’arbre mesure 9 m."}
+  ]},
+ {"id":"py-b4","titre":"La rampe d’accès","ctx":["Une rampe pour fauteuil roulant monte de 0,5 m.","La rampe mesure 6 m de long.","La loi demande un angle de 5° au maximum avec le sol."],"fig":"tri:rampe",
+  "qs":[
+   {"q":"Quelle formule faut-il utiliser pour calculer l’angle avec le sol ?","type":"qcm","o":["sinus = côté opposé ÷ hypoténuse","cosinus = côté adjacent ÷ hypoténuse","tangente = côté opposé ÷ côté adjacent"],"a":0,"aide":["0,5 m est en face de l’angle. La rampe (6 m) est l’hypoténuse."],"corr":["côté opposé : 0,5 m ; hypoténuse : 6 m"],"rep":"J’utilise le sinus."},
+   {"q":"**Calcule** l’angle de la rampe avec le sol. **Arrondis** au dixième de degré.","type":"num","a":4.78019,"arr":1,"unit":"°","aide":["sin(angle) = 0,5 ÷ 6","angle = sin⁻¹(0,5 ÷ 6)"],"corr":["sin(angle) = 0,5 ÷ 6 ≈ 0,083","angle ≈ 4,8°"],"rep":"L’angle de la rampe est environ 4,8°."},
+   {"q":"La rampe respecte-t-elle la loi ?","type":"qcm","o":["Oui, car 4,8° est moins que 5°.","Non, car 4,8° est plus que 5°.","Non, car 6 m est plus que 5 m."],"a":0,"aide":["Compare 4,8° et 5°."],"corr":["4,8 < 5"],"rep":"Oui, la rampe respecte la loi."}
+  ]}
+],
+"calc":["py-hyp","py-cote","py-rec","th-long","tr-long","tr-angle"],
+"mots":[
+ {"id":"hypotenuse","mot":"hypoténuse","art":"l’","g":"f","cat":"geometrie","ill":"tri:hyp","def":"Dans un [[triangle rectangle|triangle-rectangle]], le côté en face de l’[[angle droit|angle-droit]]. C’est le plus long côté.","ph":["L’[[hypoténuse|hypotenuse]] du triangle ABC rectangle en A est [BC].","Je repère d’abord l’[[hypoténuse|hypotenuse]]."]},
+ {"id":"theoreme-pythagore","mot":"théorème de Pythagore","art":"le","g":"m","cat":"geometrie","ill":"tri:pyth","def":"Si ABC est rectangle en A, alors BC² = AB² + AC².","ph":["D’après le [[théorème de Pythagore|theoreme-pythagore]], BC² = AB² + AC².","J’utilise le [[théorème de Pythagore|theoreme-pythagore]] pour calculer BC."]},
+ {"id":"reciproque","mot":"réciproque","art":"la","g":"f","cat":"geometrie","ill":"txt:BC² = AB² + AC²|→ [rectangle en A]","def":"La [[propriété|propriete]] dans l’autre sens. Si BC² = AB² + AC², alors le triangle est rectangle en A.","ph":["D’après la [[réciproque|reciproque]] du théorème de Pythagore, le triangle est rectangle.","J’utilise la [[réciproque|reciproque]] pour montrer que les droites sont parallèles."]},
+ {"id":"theoreme-thales","mot":"théorème de Thalès","art":"le","g":"m","cat":"geometrie","ill":"tri:thales","def":"Avec deux droites [[parallèles|paralleles]], les longueurs sont proportionnelles : {{AM/AB}} = {{AN/AC}} = {{MN/BC}}.","ph":["D’après le [[théorème de Thalès|theoreme-thales]], {{AM/AB}} = {{MN/BC}}.","J’utilise le [[théorème de Thalès|theoreme-thales]] pour calculer MN."]},
+ {"id":"rapport","mot":"rapport","art":"le","g":"m","cat":"geometrie","ill":"txt:k = 6 ÷ 3 = [2]","def":"Le nombre par lequel on multiplie les longueurs. On le trouve avec une [[division]].","ph":["Le [[rapport]] d’agrandissement est 2.","Je calcule le [[rapport]] : 9 ÷ 3 = 3."]},
+ {"id":"cote-adjacent","mot":"côté adjacent","art":"le","g":"m","cat":"geometrie","ill":"tri:adj","def":"Le côté qui touche l’[[angle]] et qui n’est pas l’[[hypoténuse|hypotenuse]].","ph":["[AB] est le [[côté adjacent|cote-adjacent]] à l’angle B.","Le cosinus utilise le [[côté adjacent|cote-adjacent]]."]},
+ {"id":"cote-oppose","mot":"côté opposé","art":"le","g":"m","cat":"geometrie","ill":"tri:opp","def":"Le côté en face de l’[[angle]].","ph":["[AC] est le [[côté opposé|cote-oppose]] à l’angle B.","Le sinus utilise le [[côté opposé|cote-oppose]]."]},
+ {"id":"cosinus","mot":"cosinus","art":"le","g":"m","cat":"geometrie","ill":"tri:cos","def":"Dans un triangle rectangle : [[côté adjacent|cote-adjacent]] ÷ [[hypoténuse|hypotenuse]].","ph":["Le [[cosinus]] de l’angle B est {{AB/BC}}.","J’utilise le [[cosinus]] pour calculer AB."],"dire":["cos(B) se lit « cosinus de B »."]},
+ {"id":"sinus","mot":"sinus","art":"le","g":"m","cat":"geometrie","ill":"tri:sin","def":"Dans un triangle rectangle : [[côté opposé|cote-oppose]] ÷ [[hypoténuse|hypotenuse]].","ph":["Le [[sinus]] de l’angle B est {{AC/BC}}.","J’utilise le [[sinus]] pour calculer la hauteur."],"dire":["sin(B) se lit « sinus de B »."]},
+ {"id":"tangente","mot":"tangente","art":"la","g":"f","cat":"geometrie","ill":"tri:tan","def":"Dans un triangle rectangle : [[côté opposé|cote-oppose]] ÷ [[côté adjacent|cote-adjacent]].","ph":["La [[tangente]] de l’angle B est {{AC/AB}}.","J’utilise la [[tangente]] quand je n’ai pas l’hypoténuse."],"dire":["tan(B) se lit « tangente de B »."]}
+]
+}

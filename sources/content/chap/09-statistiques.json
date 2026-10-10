@@ -1,0 +1,68 @@
+{
+"id":"statistiques","titre":"Les statistiques","icone":"📊","cat":"donnees","domaine":"Données et fonctions","classe":"5ᵉ · 4ᵉ · 3ᵉ",
+"intro":"Lire des données. Calculer une moyenne, une médiane, une étendue, une fréquence.",
+"objectifs":["Je sais **calculer** une moyenne et une fréquence.","Je sais **trouver** la médiane d’une série.","Je sais **lire** un tableau et un diagramme."],
+"cours":[
+ {"titre":"Une série statistique","txt":["Une [[série statistique|serie-statistique]] est une liste de [[données|donnee]] : des notes, des tailles, des températures…","Chaque donnée est une [[valeur]]."],"ex":["Les notes de Sara : 12 ; 15 ; 9 ; 14 ; 10."],"ill":"stat:serie"},
+ {"titre":"Effectif et fréquence","txt":["L’[[effectif]] d’une valeur : le nombre de fois où elle apparaît.","L’[[effectif total|effectif-total]] : le nombre total de données.","La [[fréquence|frequence]] : l’effectif divisé par l’effectif total. On l’écrit souvent en [[pourcentage]]."],"ex":["8 élèves sur 25 ont un chat. Fréquence : 8 ÷ 25 = 0,32 = 32 %."],"ill":"stat:freq"},
+ {"titre":"La moyenne","txt":["Pour calculer la [[moyenne]], j’additionne toutes les valeurs.","Ensuite, je divise par l’effectif total."],"ex":["(12 + 15 + 9 + 14 + 10) ÷ 5 = 60 ÷ 5 = 12"],"ill":"chart:moyenne"},
+ {"titre":"La moyenne pondérée","txt":["Avec un tableau d’effectifs, je multiplie chaque valeur par son effectif.","J’additionne les résultats, puis je divise par l’effectif total.","C’est une [[moyenne pondérée|moyenne-ponderee]]."],"ex":["Notes : 10 (3 fois), 12 (5 fois), 15 (2 fois).","(10 × 3 + 12 × 5 + 15 × 2) ÷ 10 = 120 ÷ 10 = 12"],"ill":"stat:moyp"},
+ {"titre":"La médiane","txt":["Je range les valeurs dans l’[[ordre croissant|ordre-croissant]].","La [[médiane|mediane]] partage la série en deux groupes de même effectif.","Au moins la moitié des valeurs sont inférieures ou égales à la médiane."],"ex":["9 ; 10 ; 12 ; 14 ; 15 : la médiane est 12.","3 ; 5 ; 8 ; 10 : la médiane est (5 + 8) ÷ 2 = 6,5."],"ill":"stat:mediane"},
+ {"titre":"L’étendue","txt":["L’[[étendue|etendue]] est la plus grande valeur moins la plus petite valeur.","Elle dit si les valeurs sont proches ou éloignées."],"ex":["9 ; 10 ; 12 ; 14 ; 15 : l’étendue est 15 − 9 = 6."],"ill":"stat:etendue"},
+ {"titre":"Lire un diagramme","txt":["Un [[diagramme en barres|diagramme-en-barres]] montre les effectifs.","Un [[diagramme circulaire|diagramme-circulaire]] montre les fréquences : le disque entier, c’est 100 %, donc 360°.","Dans un [[histogramme]], les barres sont collées : les valeurs sont rangées par groupes."],"ill":"stat:hist"}
+],
+"methodes":[
+ {"titre":"Trouver la médiane","etapes":["Je range les valeurs dans l’ordre croissant.","Je compte l’effectif total N.","Si N est impair, la médiane est la valeur du milieu.","Si N est pair, je prends les deux valeurs du milieu et je calcule leur moyenne."],
+  "exemple":{"enonce":"**Détermine** la médiane de la série : 14 ; 8 ; 11 ; 17 ; 9 ; 12.","etapes":[{"t":"Je range les valeurs dans l’ordre croissant.","c":"8 ; 9 ; 11 ; 12 ; 14 ; 17"},{"t":"N = 6 est pair. Les valeurs du milieu sont la 3ᵉ et la 4ᵉ.","c":"11 et 12"},{"t":"Je calcule leur moyenne.","c":"(11 + 12) ÷ 2 = 11,5"}],"reponse":"La médiane est 11,5."}},
+ {"titre":"Calculer une moyenne pondérée","etapes":["Je multiplie chaque valeur par son effectif.","J’additionne tous les produits.","Je calcule l’effectif total.","Je divise la somme par l’effectif total."],
+  "exemple":{"enonce":"Dans une classe : 4 élèves chaussent du 37, 10 élèves du 38 et 6 élèves du 39. **Calcule** la pointure moyenne.","etapes":[{"t":"Je multiplie chaque pointure par son effectif.","c":"37 × 4 = 148 ; 38 × 10 = 380 ; 39 × 6 = 234"},{"t":"J’additionne.","c":"148 + 380 + 234 = 762"},{"t":"L’effectif total est 4 + 10 + 6 = 20. Je divise.","c":"762 ÷ 20 = 38,1"}],"reponse":"La pointure moyenne est 38,1."}},
+ {"titre":"Calculer une fréquence","etapes":["Je trouve l’effectif de la valeur.","Je trouve l’effectif total.","Je divise l’effectif par l’effectif total.","Je multiplie par 100 pour avoir un pourcentage."],
+  "exemple":{"enonce":"Sur 40 élèves, 14 viennent en bus. **Calcule** la fréquence des élèves qui viennent en bus.","etapes":[{"t":"Je divise l’effectif par l’effectif total.","c":"14 ÷ 40 = 0,35"},{"t":"Je multiplie par 100.","c":"0,35 × 100 = 35"}],"reponse":"35 % des élèves viennent en bus."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Les notes de Yanis : 8 ; 12 ; 13 ; 15.","q":"Quel calcul donne la moyenne ?","o":["(8 + 12 + 13 + 15) ÷ 4","8 + 12 + 13 + 15","15 − 8"],"a":0,"exp":"J’additionne les 4 notes, puis je divise par 4."},
+ {"t":"qcm","txt":"Les tailles de 5 joueurs : 1,80 m ; 1,75 m ; 1,92 m ; 1,85 m ; 1,78 m.","q":"Quelle est l’étendue ?","o":["0,17 m","1,80 m","1,92 m"],"a":0,"exp":"La plus grande taille moins la plus petite : 1,92 − 1,75 = 0,17 m."},
+ {"t":"vf","txt":"La médiane d’une série est 12.","q":"Au moins la moitié des valeurs sont inférieures ou égales à 12.","a":true,"exp":"La médiane partage la série en deux groupes de même effectif."},
+ {"t":"qcm","txt":"Dans une classe de 25 élèves, 10 élèves font du sport.","q":"Quelle est la fréquence des élèves qui font du sport ?","o":["40 %","10 %","25 %"],"a":0,"exp":"10 ÷ 25 = 0,4 = 40 %."},
+ {"t":"question","txt":["Un club de basket a 30 joueurs.","Le plus petit mesure 1,62 m et le plus grand mesure 1,98 m.","Calcule l’étendue des tailles."],"q":"Touche la phrase qui est la question.","a":2,"exp":"La consigne commence par le verbe « Calcule »."},
+ {"t":"donnees","txt":"Dans une classe, il y a 28 élèves. 7 élèves ont un chien. La classe est au 2ᵉ étage. Quelle est la fréquence des élèves qui ont un chien ?","q":"Touche les deux données utiles.","a":["28","7"],"exp":"7 ÷ 28 = 0,25 = 25 %. L’étage ne sert pas."},
+ {"t":"qcm","txt":"Une série rangée dans l’ordre croissant : 3 ; 5 ; 7 ; 9 ; 20.","q":"Quelle est la médiane ?","o":["7","8,8","9"],"a":0,"exp":"Il y a 5 valeurs. La valeur du milieu est la 3ᵉ : 7. (8,8 est la moyenne.)"},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"La médiane partage la série en deux groupes."}
+],
+"brevet":[
+ {"id":"st-b1","titre":"Les notes du contrôle","ctx":["Voici les notes sur 20 d’un groupe de 9 élèves :","12 ; 8 ; 15 ; 10 ; 17 ; 9 ; 14 ; 11 ; 13"],
+  "qs":[
+   {"q":"**Calcule** l’étendue de cette série.","type":"num","a":9,"aide":["La plus grande note est 17. La plus petite est 8."],"corr":["17 − 8 = 9"],"rep":"L’étendue est 9."},
+   {"q":"**Calcule** la note moyenne. **Arrondis** au dixième.","type":"num","a":12.1111111,"arr":1,"aide":["J’additionne les 9 notes, puis je divise par 9."],"corr":["12 + 8 + 15 + 10 + 17 + 9 + 14 + 11 + 13 = 109","109 ÷ 9 ≈ 12,1"],"rep":"La moyenne est environ 12,1 sur 20."},
+   {"q":"**Détermine** la note médiane.","type":"num","a":12,"aide":["Je range : 8 ; 9 ; 10 ; 11 ; … ","Il y a 9 notes : la médiane est la 5ᵉ."],"corr":["8 ; 9 ; 10 ; 11 ; 12 ; 13 ; 14 ; 15 ; 17","La 5ᵉ note est 12."],"rep":"La note médiane est 12."},
+   {"q":"Quel pourcentage des élèves a une note supérieure ou égale à 10 ? **Arrondis** à l’unité.","type":"num","a":77.7777,"arr":0,"unit":"%","aide":["Je compte les notes 10 ou plus.","Il y en a 7 sur 9."],"corr":["7 notes sur 9","7 ÷ 9 × 100 ≈ 78"],"rep":"Environ 78 % des élèves ont 10 ou plus."}
+  ]},
+ {"id":"st-b2","titre":"Les pointures","ctx":["On a relevé les pointures des élèves d’une classe."],"tab":[["Pointure","36","37","38","39","40"],["Effectif","3","5","8","3","1"]],
+  "qs":[
+   {"q":"**Calcule** l’effectif total.","type":"num","a":20,"unit":"élèves","aide":["J’additionne les effectifs."],"corr":["3 + 5 + 8 + 3 + 1 = 20"],"rep":"Il y a 20 élèves."},
+   {"q":"**Calcule** la pointure moyenne.","type":"num","a":37.7,"aide":["36 × 3 + 37 × 5 + 38 × 8 + 39 × 3 + 40 × 1","Je divise par 20."],"corr":["108 + 185 + 304 + 117 + 40 = 754","754 ÷ 20 = 37,7"],"rep":"La pointure moyenne est 37,7."},
+   {"q":"Quelle est la pointure médiane ?","type":"qcm","o":["38","37,7","37"],"a":0,"aide":["Il y a 20 élèves : je cherche la 10ᵉ et la 11ᵉ pointure.","3 + 5 = 8 élèves jusqu’au 37."],"corr":["Les élèves 9 à 16 chaussent du 38.","La 10ᵉ et la 11ᵉ pointures sont 38."],"rep":"La pointure médiane est 38."},
+   {"q":"**Calcule** la fréquence de la pointure 38, en pourcentage.","type":"num","a":40,"unit":"%","aide":["8 élèves sur 20."],"corr":["8 ÷ 20 = 0,4 = 40 %"],"rep":"40 % des élèves chaussent du 38."}
+  ]},
+ {"id":"st-b3","titre":"La médiathèque","ctx":["Le diagramme montre le nombre de livres empruntés à la médiathèque pendant 5 jours."],"fig":"stat:barres|Lun,Mar,Mer,Jeu,Ven|12,18,9,15,6",
+  "qs":[
+   {"q":"Quel jour a-t-on emprunté le plus de livres ?","type":"qcm","o":["Mardi","Jeudi","Lundi"],"a":0,"aide":["Je cherche la barre la plus haute."],"corr":["Mardi : 18 livres"],"rep":"On a emprunté le plus de livres mardi."},
+   {"q":"**Calcule** le nombre total de livres empruntés.","type":"num","a":60,"unit":"livres","aide":["J’additionne les 5 valeurs."],"corr":["12 + 18 + 9 + 15 + 6 = 60"],"rep":"60 livres ont été empruntés."},
+   {"q":"**Calcule** le nombre moyen de livres empruntés par jour.","type":"num","a":12,"unit":"livres","aide":["Je divise le total par 5."],"corr":["60 ÷ 5 = 12"],"rep":"En moyenne, 12 livres sont empruntés par jour."},
+   {"q":"**Calcule** l’étendue de la série.","type":"num","a":12,"aide":["La plus grande valeur moins la plus petite."],"corr":["18 − 6 = 12"],"rep":"L’étendue est 12 livres."}
+  ]}
+],
+"calc":["st-moy","st-med","st-etendue","st-freq","st-moyp"],
+"mots":[
+ {"id":"serie-statistique","mot":"série statistique","art":"la","g":"f","cat":"donnees","ill":"stat:serie","def":"Une liste de [[données|donnee]] : des notes, des tailles, des températures…","ph":["Je range la [[série statistique|serie-statistique]] dans l’ordre croissant.","Cette [[série statistique|serie-statistique]] a 9 valeurs."]},
+ {"id":"valeur","mot":"valeur","art":"la","g":"f","cat":"donnees","ill":"stat:valeur","def":"Une des données d’une série. Dans 12 ; 15 ; 9, il y a 3 valeurs.","ph":["La plus grande [[valeur]] est 17.","Je compte le nombre de [[valeurs|valeur]]."]},
+ {"id":"effectif","mot":"effectif","art":"l’","g":"m","cat":"donnees","ill":"chart:effectif","def":"Le nombre de fois où une [[valeur]] apparaît dans la série.","ph":["L’[[effectif]] de la note 12 est 5.","J’écris les [[effectifs|effectif]] dans le tableau."]},
+ {"id":"effectif-total","mot":"effectif total","art":"l’","g":"m","cat":"donnees","ill":"txt:3 + 5 + 8 + 4|= [20]","def":"Le nombre total de données. J’additionne tous les [[effectifs|effectif]].","ph":["L’[[effectif total|effectif-total]] est 20 élèves.","Je divise par l’[[effectif total|effectif-total]]."]},
+ {"id":"frequence","mot":"fréquence","art":"la","g":"f","cat":"donnees","ill":"stat:freq","def":"L’[[effectif]] d’une valeur divisé par l’[[effectif total|effectif-total]]. On l’écrit souvent en [[pourcentage]].","ph":["La [[fréquence|frequence]] des élèves qui ont un chat est 32 %.","Je calcule la [[fréquence|frequence]] : 8 ÷ 25 = 0,32."]},
+ {"id":"moyenne","mot":"moyenne","art":"la","g":"f","cat":"donnees","ill":"chart:moyenne","def":"J’additionne toutes les [[valeurs|valeur]], puis je divise par l’[[effectif total|effectif-total]].","ph":["La [[moyenne]] de 10, 12 et 14 est 12.","Ma [[moyenne]] en maths est 13 sur 20."],"dire":["La moyenne est 12.","En moyenne, c’est 12."]},
+ {"id":"moyenne-ponderee","mot":"moyenne pondérée","art":"la","g":"f","cat":"donnees","ill":"stat:moyp","def":"Une [[moyenne]] calculée avec un tableau : chaque valeur est multipliée par son [[effectif]].","ph":["Je calcule la [[moyenne pondérée|moyenne-ponderee]] des pointures.","Pour la [[moyenne pondérée|moyenne-ponderee]], je divise par l’effectif total."]},
+ {"id":"mediane","mot":"médiane","art":"la","g":"f","cat":"donnees","ill":"stat:mediane","def":"Quand la série est rangée dans l’ordre croissant, la médiane est au milieu. Elle partage la série en deux groupes de même effectif.","ph":["La [[médiane|mediane]] de la série est 12.","Pour trouver la [[médiane|mediane]], je range d’abord les valeurs."]},
+ {"id":"etendue","mot":"étendue","art":"l’","g":"f","cat":"donnees","ill":"stat:etendue","def":"La plus grande [[valeur]] moins la plus petite valeur.","ph":["L’[[étendue|etendue]] des notes est 17 − 8 = 9.","Une petite [[étendue|etendue]] : les valeurs sont proches."]},
+ {"id":"histogramme","mot":"histogramme","art":"l’","g":"m","cat":"donnees","ill":"stat:hist","def":"Un diagramme avec des barres collées. Chaque barre est un groupe de valeurs.","ph":["Je lis l’[[histogramme]] des tailles.","Dans un [[histogramme]], les barres se touchent."]}
+]
+}

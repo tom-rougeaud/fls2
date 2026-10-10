@@ -1,0 +1,63 @@
+{
+"id":"fractions","titre":"Les fractions","icone":"🍰","cat":"nombre","domaine":"Nombres et calculs","classe":"5ᵉ · 4ᵉ",
+"intro":"Simplifier, additionner, multiplier et diviser des fractions. Prendre une fraction d’une quantité.",
+"objectifs":["Je sais **simplifier** une fraction.","Je sais **additionner** et **multiplier** des fractions.","Je sais **calculer** une fraction d’une quantité."],
+"cours":[
+ {"titre":"Le vocabulaire","txt":["Dans {{3/4}}, 3 est le [[numérateur|numerateur]] et 4 est le [[dénominateur|denominateur]].","Le dénominateur n’est jamais égal à 0.","Une [[fraction]] est aussi un [[quotient]] : {{3/4}} = 3 ÷ 4 = 0,75."],"ill":"frac:3|4|none"},
+ {"titre":"Des fractions égales","txt":["Je peux multiplier le numérateur et le dénominateur par le même nombre.","Je peux aussi les diviser par le même nombre.","La fraction ne change pas : on obtient des [[fractions égales|fractions-egales]]."],"ex":["{{2/3}} = {{4/6}} = {{10/15}}"],"ill":"fr2:eq|2|3|4|6"},
+ {"titre":"Simplifier","txt":["[[Simplifier|simplifier]] une fraction : je divise le numérateur et le dénominateur par le même nombre.","Quand je ne peux plus simplifier, la fraction est [[irréductible|fraction-irreductible]]."],"ex":["{{12/18}} = {{2/3}} : je divise par 6."],"ill":"fr2:simp|12|18|2|3"},
+ {"titre":"Additionner et soustraire","txt":["Si les dénominateurs sont égaux : j’additionne les numérateurs. Je garde le dénominateur.","Sinon, je mets d’abord les fractions au [[même dénominateur|meme-denominateur]]."],"ex":["{{2/7}} + {{3/7}} = {{5/7}}","{{1/2}} + {{1/6}} = {{3/6}} + {{1/6}} = {{4/6}} = {{2/3}}"],"ill":"fr2:add|2|7|3|7"},
+ {"titre":"Multiplier","txt":["Je multiplie les numérateurs entre eux.","Je multiplie les dénominateurs entre eux."],"ex":["{{2/3}} × {{4/5}} = {{8/15}}"],"ill":"txt:2 × 4 = 8|3 × 5 = 15"},
+ {"titre":"Diviser","txt":["Diviser par une fraction, c’est multiplier par son [[inverse]].","L’inverse de {{3/4}} est {{4/3}}."],"ex":["{{3/4}} ÷ {{2/5}} = {{3/4}} × {{5/2}} = {{15/8}}"],"ill":"fr2:inv|3|4"},
+ {"titre":"Une fraction d’une quantité","txt":["Prendre {{3/4}} de 20 : je partage 20 en 4 parts égales, et je prends 3 parts.","Je calcule 20 ÷ 4 × 3 = 15."],"ex":["Les {{2/5}} de 30 élèves : 30 ÷ 5 × 2 = 12 élèves."],"ill":"fr2:qte|3|4|20"}
+],
+"methodes":[
+ {"titre":"Additionner deux fractions","etapes":["Je regarde les dénominateurs.","S’ils sont différents, je cherche un dénominateur commun : un multiple des deux.","J’écris les deux fractions avec ce dénominateur.","J’additionne les numérateurs. Je garde le dénominateur.","Je simplifie si je peux."],
+  "exemple":{"enonce":"**Calcule** {{1/4}} + {{2/3}}.","etapes":[{"t":"Les dénominateurs 4 et 3 sont différents. 12 est un multiple de 4 et de 3.","c":"Dénominateur commun : 12"},{"t":"J’écris les deux fractions sur 12.","c":"{{1/4}} = {{3/12}} et {{2/3}} = {{8/12}}"},{"t":"J’additionne les numérateurs.","c":"{{3/12}} + {{8/12}} = {{11/12}}"}],"reponse":"{{1/4}} + {{2/3}} = {{11/12}}"}},
+ {"titre":"Simplifier une fraction","etapes":["Je cherche un nombre qui divise le numérateur et le dénominateur.","Je divise les deux par ce nombre.","Je recommence jusqu’à la fraction irréductible."],
+  "exemple":{"enonce":"**Simplifie** {{24/36}}.","etapes":[{"t":"24 et 36 sont dans la table de 12.","c":"24 = 12 × 2 et 36 = 12 × 3"},{"t":"Je divise le numérateur et le dénominateur par 12.","c":"{{24/36}} = {{2/3}}"},{"t":"2 et 3 n’ont pas de diviseur commun (sauf 1).","c":"{{2/3}} est irréductible."}],"reponse":"{{24/36}} = {{2/3}}"}},
+ {"titre":"Calculer une fraction d’une quantité","etapes":["Je divise la quantité par le dénominateur.","Je multiplie le résultat par le numérateur.","J’écris une phrase avec l’unité."],
+  "exemple":{"enonce":"Une classe a 28 élèves. Les {{3/4}} des élèves ont un vélo. **Calcule** le nombre d’élèves qui ont un vélo.","etapes":[{"t":"Je divise 28 par le dénominateur 4.","c":"28 ÷ 4 = 7"},{"t":"Je multiplie par le numérateur 3.","c":"7 × 3 = 21"}],"reponse":"21 élèves ont un vélo."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"Dans la classe, {{1/3}} des élèves viennent à pied.","q":"Que veut dire « {{1/3}} des élèves » ?","o":["1 élève sur 3","3 élèves","1 élève et 3 élèves"],"a":0,"exp":"{{1/3}} : sur 3 élèves, 1 élève vient à pied."},
+ {"t":"qcm","txt":"Un gâteau est partagé en 8 parts égales. Sami mange 3 parts.","q":"Quelle fraction du gâteau Sami mange-t-il ?","o":["{{3/8}}","{{8/3}}","{{3/5}}"],"a":0,"exp":"Il prend 3 parts sur 8 : {{3/8}}."},
+ {"t":"vf","txt":"On compare {{4/6}} et {{2/3}}.","q":"Ces deux fractions sont égales.","a":true,"exp":"{{4/6}} : je divise par 2, j’obtiens {{2/3}}."},
+ {"t":"qcm","txt":"**Calcule** {{2/5}} + {{1/5}}.","q":"Que fait-on avec les dénominateurs ?","o":["On garde 5.","On additionne : 5 + 5 = 10.","On multiplie : 5 × 5 = 25."],"a":0,"exp":"Les dénominateurs sont égaux : on garde 5. {{2/5}} + {{1/5}} = {{3/5}}."},
+ {"t":"question","txt":["Un fermier a 45 moutons.","Les {{2/5}} des moutons sont noirs.","Combien de moutons noirs a-t-il ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question commence par « Combien » et finit par « ? »."},
+ {"t":"donnees","txt":"Un réservoir contient 60 L d’eau. On utilise les {{2/3}} de l’eau. Le réservoir a été rempli il y a 4 jours. Quelle quantité d’eau a-t-on utilisée ?","q":"Touche les deux données utiles.","a":["60","2/3"],"exp":"Je calcule les {{2/3}} de 60 L : 60 ÷ 3 × 2 = 40 L. Les 4 jours ne servent pas."},
+ {"t":"qcm","txt":"L’inverse de {{3/7}}.","q":"Quel est ce nombre ?","o":["{{7/3}}","{{3/7}}","0,37"],"a":0,"exp":"Pour l’inverse, j’échange le numérateur et le dénominateur."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"J’additionne les numérateurs et je garde le dénominateur."}
+],
+"brevet":[
+ {"id":"fr-b1","titre":"Le budget de Nora","ctx":["Nora gagne 1 800 € par mois.","Elle utilise {{1/3}} de cet argent pour le loyer.","Elle utilise {{1/4}} de cet argent pour la nourriture."],
+  "qs":[
+   {"q":"**Calcule** le prix du loyer.","type":"num","a":600,"unit":"€","aide":["Je calcule {{1/3}} de 1 800 €.","1 800 ÷ 3 = ?"],"corr":["1 800 ÷ 3 = 600"],"rep":"Le loyer coûte 600 €."},
+   {"q":"**Calcule** l’argent utilisé pour la nourriture.","type":"num","a":450,"unit":"€","aide":["Je calcule {{1/4}} de 1 800 €."],"corr":["1 800 ÷ 4 = 450"],"rep":"Nora utilise 450 € pour la nourriture."},
+   {"q":"Quelle fraction de son argent reste-t-il à Nora ? **Donne** une fraction irréductible.","type":"frac","a":"5/12","irr":true,"aide":["Tout l’argent, c’est {{12/12}}.","{{1/3}} = {{4/12}} et {{1/4}} = {{3/12}}."],"corr":["{{1/3}} + {{1/4}} = {{4/12}} + {{3/12}} = {{7/12}}","1 − {{7/12}} = {{12/12}} − {{7/12}} = {{5/12}}"],"rep":"Il reste {{5/12}} de son argent à Nora."},
+   {"q":"**En déduire** l’argent qui reste à Nora.","type":"num","a":750,"unit":"€","aide":["Je calcule {{5/12}} de 1 800 €.","1 800 ÷ 12 × 5 = ?"],"corr":["1 800 ÷ 12 = 150","150 × 5 = 750"],"rep":"Il reste 750 € à Nora."}
+  ]},
+ {"id":"fr-b2","titre":"La course","ctx":["Une course fait 12 km.","Au bout d’une heure, Paul a parcouru les {{3/4}} de la course."],
+  "qs":[
+   {"q":"Quelle distance Paul a-t-il parcourue ?","type":"num","a":9,"unit":"km","aide":["Je calcule les {{3/4}} de 12 km."],"corr":["12 ÷ 4 = 3","3 × 3 = 9"],"rep":"Paul a parcouru 9 km."},
+   {"q":"Quelle distance lui reste-t-il ?","type":"num","a":3,"unit":"km","aide":["12 − 9 = ?"],"corr":["12 − 9 = 3"],"rep":"Il lui reste 3 km."},
+   {"q":"Quelle fraction de la course lui reste-t-il ?","type":"frac","a":"1/4","irr":true,"aide":["Il a fait {{3/4}}. Toute la course, c’est {{4/4}}."],"corr":["{{4/4}} − {{3/4}} = {{1/4}}"],"rep":"Il lui reste {{1/4}} de la course."}
+  ]},
+ {"id":"fr-b3","titre":"Deux calculs","ctx":["On donne A = {{2/3}} + {{1/6}} et B = {{3/4}} × {{8/9}}."],
+  "qs":[
+   {"q":"**Calcule** A. **Donne** le résultat sous forme irréductible.","type":"frac","a":"5/6","irr":true,"aide":["{{2/3}} = {{4/6}}"],"corr":["A = {{4/6}} + {{1/6}} = {{5/6}}"],"rep":"A = {{5/6}}"},
+   {"q":"**Calcule** B. **Donne** le résultat sous forme irréductible.","type":"frac","a":"2/3","irr":true,"aide":["Je multiplie les numérateurs, puis les dénominateurs.","Je simplifie {{24/36}}."],"corr":["B = {{24/36}}","B = {{2/3}}"],"rep":"B = {{2/3}}"},
+   {"q":"**Compare** A et B.","type":"qcm","o":["A > B","A < B","A = B"],"a":0,"aide":["{{2/3}} = {{4/6}}. Compare {{5/6}} et {{4/6}}."],"corr":["{{5/6}} > {{4/6}}"],"rep":"A est plus grand que B."}
+  ]}
+],
+"calc":["fr-simp","fr-add","fr-mul","fr-div","fr-qte"],
+"mots":[
+ {"id":"fraction-irreductible","mot":"fraction irréductible","art":"la","g":"f","cat":"nombre","ill":"fr2:simp|12|18|2|3","def":"Une [[fraction]] qu’on ne peut plus [[simplifier]]. Exemple : {{2/3}}.","ph":["{{2/3}} est une [[fraction irréductible|fraction-irreductible]].","Je donne le résultat sous forme de [[fraction irréductible|fraction-irreductible]]."]},
+ {"id":"simplifier","mot":"simplifier","cat":"verbe","ill":"fr2:simp|6|8|3|4","f":{"c":"Simplifie · Simplifiez","je":"je simplifie"},"def":"Diviser le [[numérateur|numerateur]] et le [[dénominateur|denominateur]] par le même nombre.","ph":["Je [[simplifie|simplifier]] {{6/8}} par 2 : j’obtiens {{3/4}}.","[[Simplifie|simplifier]] la fraction {{10/15}}."]},
+ {"id":"fractions-egales","mot":"fractions égales","art":"les","g":"fpl","cat":"nombre","ill":"fr2:eq|1|2|2|4","def":"Des [[fractions|fraction]] qui ont la même valeur : {{1/2}} = {{2/4}} = {{3/6}}.","ph":["{{1/2}} et {{2/4}} sont des [[fractions égales|fractions-egales]].","J’écris deux [[fractions égales|fractions-egales]] à {{3/5}}."]},
+ {"id":"meme-denominateur","mot":"même dénominateur","art":"le","g":"m","cat":"nombre","ill":"fr2:add|1|4|2|4","def":"Deux [[fractions|fraction]] ont le même dénominateur quand le nombre sous le trait est le même.","ph":["J’écris les fractions avec le [[même dénominateur|meme-denominateur]].","{{1/4}} et {{3/4}} ont le [[même dénominateur|meme-denominateur]]."],"dire":["un dénominateur commun","réduire au même dénominateur"]},
+ {"id":"inverse","mot":"inverse","art":"l’","g":"m","cat":"nombre","ill":"fr2:inv|3|4","def":"L’inverse de {{3/4}} est {{4/3}}. Un nombre multiplié par son inverse donne 1.","ph":["L’[[inverse]] de {{2/5}} est {{5/2}}.","Diviser par 2, c’est multiplier par l’[[inverse]] de 2 : {{1/2}}."]},
+ {"id":"fraction-de","mot":"fraction d’une quantité","art":"la","g":"f","cat":"nombre","ill":"fr2:qte|3|4|20","def":"Prendre {{3/4}} de 20 : partager 20 en 4 parts égales et prendre 3 parts. On trouve 15.","ph":["Je calcule une [[fraction d’une quantité|fraction-de]] : les {{2/3}} de 30.","Les {{3/4}} de 20 € font 15 €."],"dire":["les trois quarts de 20","3 sur 4 de 20"]},
+ {"id":"proportion","mot":"proportion","art":"la","g":"f","cat":"nombre","ill":"fr2:qte|2|5|30","def":"Une partie d’un groupe, écrite avec une [[fraction]] ou un [[pourcentage]].","ph":["La [[proportion]] de filles est {{12/30}}, donc {{2/5}}.","Je compare les [[proportions|proportion]] dans les deux classes."],"dire":["12 filles sur 30 élèves","40 % des élèves"]}
+]
+}

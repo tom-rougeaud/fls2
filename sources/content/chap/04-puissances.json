@@ -1,0 +1,62 @@
+{
+"id":"puissances","titre":"Puissances et racines carrées","icone":"⚡","cat":"nombre","domaine":"Nombres et calculs","classe":"4ᵉ · 3ᵉ",
+"intro":"Le carré, le cube, les puissances de 10, la notation scientifique et la racine carrée.",
+"objectifs":["Je sais **calculer** une puissance.","Je sais **écrire** un nombre en notation scientifique.","Je sais **calculer** une racine carrée."],
+"cours":[
+ {"titre":"Le carré et le cube","txt":["Le [[carré|carre-nombre]] de 5 : 5² = 5 × 5 = 25.","Le [[cube|cube-nombre]] de 2 : 2³ = 2 × 2 × 2 = 8."],"note":"Attention : 5² n’est pas égal à 5 × 2.","ill":"pw:5|2"},
+ {"titre":"Les puissances","txt":["Une [[puissance]] est une multiplication du même nombre plusieurs fois.","Dans 3⁴, le petit nombre 4 est l’[[exposant]]. Il dit combien de fois on écrit le 3."],"ex":["3⁴ = 3 × 3 × 3 × 3 = 81"],"ill":"pw:3|4|exp"},
+ {"titre":"Les puissances de 10","txt":["10 exposant n s’écrit avec un 1 suivi de n zéros.","10 exposant moins n est un nombre très petit : le 1 est au rang n après la virgule."],"ex":["10³ = 1 000","10⁶ = 1 000 000 (un million)","10⁻² = 0,01","10⁻³ = 0,001"],"ill":"txt:10³ = 1 000|10⁻³ = 0,001"},
+ {"titre":"La notation scientifique","txt":["Un nombre en [[notation scientifique|notation-scientifique]] s’écrit a × 10ⁿ.","Le nombre a a un seul chiffre avant la virgule. Ce chiffre n’est pas 0."],"ex":["34 000 = 3,4 × 10⁴","0,0052 = 5,2 × 10⁻³"],"ill":"txt:34 000 = [3,4 × 10⁴]"},
+ {"titre":"Les préfixes","txt":["kilo (k) = 10³ ; méga (M) = 10⁶ ; giga (G) = 10⁹.","milli (m) = 10⁻³ ; micro (µ) = 10⁻⁶ ; nano (n) = 10⁻⁹."],"ex":["1 km = 10³ m = 1 000 m","1 Go = 10⁹ octets"],"ill":"txt:{kilo} = 10³   {méga} = 10⁶|{milli} = 10⁻³   {nano} = 10⁻⁹"},
+ {"titre":"La racine carrée","txt":["La [[racine carrée|racine-carree]] de 49 est le nombre positif qui, au carré, donne 49.","√49 = 7 car 7² = 49. Le nombre 49 est un [[carré parfait|carre-parfait]].","Pour les autres nombres, j’utilise la touche √ de la [[calculatrice]]."],"ex":["√100 = 10","√2 ≈ 1,41"],"ill":"pw:sqrt|49"},
+ {"titre":"Calculer avec des puissances","txt":["Je calcule les puissances avant les multiplications et les additions."],"ex":["2 × 3² = 2 × 9 = 18","(−3)² = (−3) × (−3) = 9"],"ill":"txt:2 × {3²}|= 2 × 9 = [18]"}
+],
+"methodes":[
+ {"titre":"Écrire un nombre en notation scientifique","etapes":["Je place la virgule juste après le premier chiffre qui n’est pas 0.","Je compte de combien de rangs la virgule s’est déplacée.","Vers la gauche : l’exposant est positif. Vers la droite : l’exposant est négatif.","J’écris a × 10ⁿ."],
+  "exemple":{"enonce":"**Écris** 52 000 en notation scientifique.","etapes":[{"t":"Je place la virgule après le 5.","c":"5,2"},{"t":"La virgule s’est déplacée de 4 rangs vers la gauche.","c":"n = 4"},{"t":"J’écris le nombre.","c":"52 000 = 5,2 × 10⁴"}],"reponse":"52 000 = 5,2 × 10⁴"}},
+ {"titre":"Calculer une racine carrée","etapes":["Je cherche un nombre qui, multiplié par lui-même, donne le nombre.","Si je le trouve, c’est la racine carrée exacte.","Sinon, j’utilise la touche √ de la calculatrice et j’arrondis."],
+  "exemple":{"enonce":"**Calcule** √81, puis **donne** une valeur approchée de √50 au dixième.","etapes":[{"t":"9 × 9 = 81.","c":"√81 = 9"},{"t":"50 n’est pas un carré parfait : 7² = 49 et 8² = 64.","c":"7 < √50 < 8"},{"t":"À la calculatrice, √50 ≈ 7,07.","c":"√50 ≈ 7,1"}],"reponse":"√81 = 9 et √50 ≈ 7,1"}},
+ {"titre":"Calculer une puissance","etapes":["Je lis le nombre et l’exposant.","J’écris la multiplication en entier.","Je calcule de gauche à droite."],
+  "exemple":{"enonce":"**Calcule** 2⁵.","etapes":[{"t":"L’exposant est 5 : j’écris 5 fois le nombre 2.","c":"2⁵ = 2 × 2 × 2 × 2 × 2"},{"t":"Je calcule.","c":"4 × 2 × 2 × 2 = 8 × 2 × 2 = 32"}],"reponse":"2⁵ = 32"}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"5² se lit « 5 au carré ».","q":"5² est égal à :","o":["25","10","7"],"a":0,"exp":"5² = 5 × 5 = 25. Ce n’est pas 5 × 2."},
+ {"t":"qcm","txt":"La distance entre la Terre et le Soleil est environ 1,5 × 10⁸ km.","q":"Ce nombre est :","o":["150 000 000 km","1 500 km","15 000 000 000 km"],"a":0,"exp":"× 10⁸ : je décale la virgule de 8 rangs vers la droite. 1,5 × 10⁸ = 150 000 000."},
+ {"t":"vf","txt":"On compare 2³ et 3².","q":"2³ est égal à 3².","a":false,"exp":"2³ = 8 et 3² = 9. Ils ne sont pas égaux."},
+ {"t":"qcm","txt":"Une clé USB a une capacité de 32 Go (gigaoctets).","q":"Le préfixe « giga » veut dire :","o":["10⁹ (un milliard)","10³ (mille)","10⁶ (un million)"],"a":0,"exp":"giga = 10⁹. 32 Go = 32 milliards d’octets."},
+ {"t":"question","txt":["Un carré a une aire de 64 cm².","Ses quatre côtés ont la même longueur.","Quelle est la longueur d’un côté ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question finit par « ? ». Je calcule √64 = 8 cm."},
+ {"t":"donnees","txt":"Une bactérie mesure 0,000 002 m. Elle vit 20 minutes. Écris sa taille en notation scientifique.","q":"Touche la donnée utile.","a":["0,000 002"],"exp":"La taille est 0,000 002 m = 2 × 10⁻⁶ m. Les 20 minutes ne servent pas."},
+ {"t":"qcm","txt":"√36","q":"√36 est égal à :","o":["6","18","72"],"a":0,"exp":"6 × 6 = 36, donc √36 = 6."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"La racine carrée de 49 est égale à 7."}
+],
+"brevet":[
+ {"id":"pw-b1","titre":"La Terre et la Lune","ctx":["La distance entre la Terre et la Lune est d’environ 384 000 km.","La lumière parcourt environ 3 × 10⁵ km en une seconde."],
+  "qs":[
+   {"q":"Quelle est l’écriture scientifique de 384 000 ?","type":"qcm","o":["3,84 × 10⁵","38,4 × 10⁴","3,84 × 10³"],"a":0,"aide":["Un seul chiffre avant la virgule : 3,84.","La virgule se déplace de 5 rangs."],"corr":["384 000 = 3,84 × 10⁵"],"rep":"384 000 = 3,84 × 10⁵"},
+   {"q":"**Calcule** le temps mis par la lumière pour aller de la Terre à la Lune. **Arrondis** au dixième de seconde.","type":"num","a":1.28,"arr":1,"unit":"s","aide":["3 × 10⁵ = 300 000 km en 1 seconde.","Je divise la distance par 300 000."],"corr":["384 000 ÷ 300 000 = 1,28","1,28 ≈ 1,3"],"rep":"La lumière met environ 1,3 seconde."}
+  ]},
+ {"id":"pw-b2","titre":"La pièce carrée","ctx":["Une pièce carrée a une aire de 30,25 m².","On veut poser une plinthe tout autour de la pièce. Une plinthe est une bande de bois en bas du mur."],
+  "qs":[
+   {"q":"**Calcule** la longueur d’un côté de la pièce.","type":"num","a":5.5,"unit":"m","aide":["L’aire d’un carré est côté × côté.","Je calcule √30,25."],"corr":["√30,25 = 5,5","5,5 × 5,5 = 30,25"],"rep":"Un côté de la pièce mesure 5,5 m."},
+   {"q":"**En déduire** la longueur de plinthe nécessaire.","type":"num","a":22,"unit":"m","aide":["C’est le périmètre du carré : 4 × côté."],"corr":["4 × 5,5 = 22"],"rep":"Il faut 22 m de plinthe."}
+  ]},
+ {"id":"pw-b3","titre":"La clé USB","ctx":["Un film a une taille de 4 Go.","1 Go = 10⁹ octets.","Une clé USB a une capacité de 64 Go."],
+  "qs":[
+   {"q":"Combien de films peut-on mettre sur la clé USB ?","type":"num","a":16,"unit":"films","aide":["Je divise 64 par 4."],"corr":["64 ÷ 4 = 16"],"rep":"On peut mettre 16 films sur la clé."},
+   {"q":"Quelle est la taille d’un film en octets ?","type":"qcm","o":["4 × 10⁹ octets","4 × 10⁶ octets","4 000 octets"],"a":0,"aide":["1 Go = 10⁹ octets."],"corr":["4 Go = 4 × 10⁹ octets"],"rep":"Un film a une taille de 4 × 10⁹ octets."}
+  ]}
+],
+"calc":["pw-calc","pw-10","pw-sci","pw-racine","pw-prio"],
+"mots":[
+ {"id":"puissance","mot":"puissance","art":"la","g":"f","cat":"nombre","ill":"pw:3|4","def":"La [[multiplication]] d’un nombre par lui-même, plusieurs fois. 3⁴ = 3 × 3 × 3 × 3.","ph":["3⁴ se lit « 3 [[puissance]] 4 ».","Je calcule la [[puissance]] : 2⁵ = 32."],"dire":["3 puissance 4","3 exposant 4"]},
+ {"id":"exposant","mot":"exposant","art":"l’","g":"m","cat":"nombre","ill":"pw:3|4|exp","def":"Le petit nombre en haut à droite. Il dit combien de fois on multiplie le nombre.","ph":["Dans 3⁴, l’[[exposant]] est 4.","Dans 10⁻³, l’[[exposant]] est négatif."]},
+ {"id":"carre-nombre","mot":"carré d’un nombre","art":"le","g":"m","cat":"nombre","ill":"pw:5|2","def":"Le nombre multiplié par lui-même. Le carré de 5 est 5² = 5 × 5 = 25.","ph":["Le [[carré|carre-nombre]] de 6 est 36.","Je calcule le [[carré|carre-nombre]] de 7 : 7² = 49."],"dire":["5 au carré","5 exposant 2"]},
+ {"id":"cube-nombre","mot":"cube d’un nombre","art":"le","g":"m","cat":"nombre","ill":"pw:2|3","def":"Le nombre multiplié trois fois par lui-même. Le cube de 2 est 2³ = 2 × 2 × 2 = 8.","ph":["Le [[cube|cube-nombre]] de 3 est 27.","4³ se lit « 4 au [[cube|cube-nombre]] »."],"dire":["2 au cube","2 exposant 3"]},
+ {"id":"racine-carree","mot":"racine carrée","art":"la","g":"f","cat":"nombre","ill":"pw:sqrt|49","def":"√49 est le nombre positif qui, au carré, donne 49. √49 = 7 car 7² = 49.","ph":["La [[racine carrée|racine-carree]] de 81 est 9.","Je calcule la [[racine carrée|racine-carree]] avec la calculatrice."],"dire":["racine carrée de 49","racine de 49"]},
+ {"id":"carre-parfait","mot":"carré parfait","art":"le","g":"m","cat":"nombre","ill":"txt:1   4   9   16   25|36   49   64   81   100","def":"Le carré d’un [[nombre entier|nombre-entier]] : 1, 4, 9, 16, 25, 36…","ph":["64 est un [[carré parfait|carre-parfait]] car 8² = 64.","50 n’est pas un [[carré parfait|carre-parfait]]."]},
+ {"id":"puissance-de-10","mot":"puissance de 10","art":"la","g":"f","cat":"nombre","ill":"txt:10³ = 1 000|10⁻³ = 0,001","def":"10 exposant n : un 1 suivi de n zéros. Avec un exposant négatif, c’est un nombre très petit.","ph":["10⁶ est une [[puissance de 10|puissance-de-10]] : c’est un million.","Je multiplie par une [[puissance de 10|puissance-de-10]]."]},
+ {"id":"notation-scientifique","mot":"notation scientifique","art":"la","g":"f","cat":"nombre","ill":"txt:34 000 = [3,4 × 10⁴]","def":"L’écriture a × 10ⁿ. Le nombre a a un seul chiffre avant la [[virgule]], et ce chiffre n’est pas 0.","ph":["En [[notation scientifique|notation-scientifique]], 34 000 s’écrit 3,4 × 10⁴.","J’écris la distance en [[notation scientifique|notation-scientifique]]."]},
+ {"id":"prefixe","mot":"préfixe","art":"le","g":"m","cat":"mesure","ill":"txt:{kilo} = 10³   {méga} = 10⁶|{milli} = 10⁻³   {nano} = 10⁻⁹","def":"Le début du nom d’une unité. Il dit sa taille : « kilo » veut dire 1 000, « milli » veut dire un millième.","ph":["Le [[préfixe|prefixe]] « kilo » veut dire 1 000.","Dans « gigaoctet », le [[préfixe|prefixe]] est « giga »."]},
+ {"id":"ordre-de-grandeur","mot":"ordre de grandeur","art":"l’","g":"m","cat":"nombre","ill":"txt:98 × 21|≈ [100 × 20] = 2 000","def":"Un résultat proche et facile à calculer. Il sert à vérifier qu’une réponse est possible.","ph":["Un [[ordre de grandeur|ordre-de-grandeur]] de 98 × 21 est 2 000.","Je vérifie mon résultat avec un [[ordre de grandeur|ordre-de-grandeur]]."]}
+]
+}

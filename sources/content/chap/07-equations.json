@@ -1,0 +1,69 @@
+{
+"id":"equations","titre":"Les équations","icone":"⚖️","cat":"algebre","domaine":"Nombres et calculs","classe":"4ᵉ · 3ᵉ",
+"intro":"Trouver un nombre inconnu. Tester, résoudre, vérifier, mettre un problème en équation.",
+"objectifs":["Je sais **tester** si un nombre est solution.","Je sais **résoudre** une équation.","Je sais **mettre** un problème en équation."],
+"cours":[
+ {"titre":"Une équation","txt":["Une [[équation|equation]] est une [[égalité|egalite]] avec un nombre inconnu.","Ce nombre s’appelle l’[[inconnue]]. On l’écrit souvent x."],"ex":["3x + 5 = 20"],"ill":"eq:bal|3x + 5|20"},
+ {"titre":"Les deux membres","txt":["Le signe = sépare l’équation en deux [[membres|membre]].","À gauche du signe = : le premier membre. À droite : le deuxième membre."],"ex":["Dans 3x + 5 = 20, le premier membre est 3x + 5. Le deuxième membre est 20."],"ill":"eq:membres|3x + 5|20"},
+ {"titre":"Tester un nombre","txt":["Pour savoir si un nombre est [[solution]], je le [[remplace|remplacer]] dans les deux membres.","Si je trouve le même résultat, le nombre est solution."],"ex":["x = 5 : 3 × 5 + 5 = 20. Donc 5 est solution de 3x + 5 = 20."],"ill":"txt:x = 5 ?|3 × 5 + 5 = [20] ✓"},
+ {"titre":"Résoudre","txt":["[[Résoudre|resoudre]] une équation, c’est trouver sa solution.","Je peux ajouter ou soustraire le même nombre aux deux membres.","Je peux multiplier ou diviser les deux membres par le même nombre. Ce nombre n’est pas 0."],"ill":"eq:bal2"},
+ {"titre":"Isoler x","txt":["Je mets les termes en x d’un côté et les nombres de l’autre côté.","On dit : j’[[isole|isoler]] x."],"ex":["5x − 3 = 2x + 9","5x − 2x = 9 + 3","3x = 12","x = 4"],"ill":"txt:3[x] = 12|[x] = 12 ÷ 3 = 4"},
+ {"titre":"Mettre un problème en équation","txt":["Je choisis l’inconnue : « Soit x le prix d’un stylo ».","J’écris l’équation avec les données de l’énoncé.","Je résous l’équation.","Je vérifie, puis je réponds avec une phrase."],"ill":"ico2:miseeq"},
+ {"titre":"L’équation produit nul","txt":["Si A × B = 0, alors A = 0 ou B = 0.","C’est une [[équation produit nul|equation-produit]]."],"ex":["(x − 2)(x + 5) = 0","x − 2 = 0 ou x + 5 = 0","Les solutions sont 2 et −5."],"ill":"txt:(x − 2)(x + 5) = {0}|x = 2   ou   x = −5"}
+],
+"methodes":[
+ {"titre":"Résoudre une équation","etapes":["Je mets les termes en x dans le premier membre.","Je mets les nombres dans le deuxième membre.","Je divise par le nombre devant x.","Je vérifie en remplaçant x par la solution."],
+  "exemple":{"enonce":"**Résous** l’équation 4x + 7 = 31.","etapes":[{"t":"J’enlève 7 aux deux membres.","c":"4x + 7 − 7 = 31 − 7"},{"t":"Je calcule.","c":"4x = 24"},{"t":"Je divise les deux membres par 4.","c":"x = 24 ÷ 4 = 6"},{"t":"Je vérifie.","c":"4 × 6 + 7 = 24 + 7 = 31 ✓"}],"reponse":"La solution de l’équation est 6."}},
+ {"titre":"Mettre un problème en équation","etapes":["Je choisis l’inconnue x.","J’écris les autres quantités avec x.","J’écris l’équation.","Je résous l’équation.","Je vérifie et je réponds avec une phrase."],
+  "exemple":{"enonce":"Un cahier coûte 2 € de plus qu’un stylo. Pour 3 stylos et 1 cahier, je paie 10 €. **Détermine** le prix d’un stylo.","etapes":[{"t":"Je choisis l’inconnue.","c":"Soit x le prix d’un stylo."},{"t":"Le cahier coûte 2 € de plus.","c":"Prix du cahier : x + 2"},{"t":"J’écris l’équation.","c":"3x + x + 2 = 10"},{"t":"Je réduis et je résous.","c":"4x + 2 = 10 ; 4x = 8 ; x = 2"},{"t":"Je vérifie.","c":"3 × 2 + 4 = 10 ✓"}],"reponse":"Un stylo coûte 2 €."}},
+ {"titre":"Résoudre une équation produit nul","etapes":["Je vérifie que le deuxième membre est 0.","J’écris : un des facteurs est nul.","Je résous chaque petite équation.","J’écris les deux solutions."],
+  "exemple":{"enonce":"**Résous** (x − 3)(2x + 8) = 0.","etapes":[{"t":"Un produit est nul si un de ses facteurs est nul.","c":"x − 3 = 0 ou 2x + 8 = 0"},{"t":"Je résous la première équation.","c":"x = 3"},{"t":"Je résous la deuxième équation.","c":"2x = −8, donc x = −4"}],"reponse":"Les solutions sont 3 et −4."}}
+],
+"comprendre":[
+ {"t":"qcm","txt":"2x + 3 = 11","q":"Quelle est l’inconnue ?","o":["x","2","11"],"a":0,"exp":"L’inconnue est la lettre : x."},
+ {"t":"qcm","txt":"x + 8 = 15","q":"Quelle est la solution ?","o":["7","23","8"],"a":0,"exp":"7 + 8 = 15, donc x = 7."},
+ {"t":"vf","txt":"On teste x = 4 dans l’équation 3x − 2 = 10.","q":"4 est une solution.","a":true,"exp":"3 × 4 − 2 = 12 − 2 = 10. L’égalité est vraie."},
+ {"t":"qcm","txt":"Le double d’un nombre, plus 5, est égal à 17.","q":"Quelle équation correspond ?","o":["2x + 5 = 17","x + 2 + 5 = 17","2(x + 5) = 17"],"a":0,"exp":"Le double de x : 2x. Plus 5 : 2x + 5."},
+ {"t":"question","txt":["Tom a 3 ans de plus que sa sœur.","À eux deux, ils ont 25 ans.","Quel âge a la sœur de Tom ?"],"q":"Touche la phrase qui est la question.","a":2,"exp":"La question commence par « Quel » et finit par « ? »."},
+ {"t":"donnees","txt":"Un abonnement de cinéma coûte 30 € par an. Avec l’abonnement, une place coûte 5 €. Le cinéma a 8 salles. Combien de places peut-on voir avec 80 € en tout ?","q":"Touche les trois données utiles.","a":["30","5","80"],"exp":"30 + 5x = 80, donc x = 10 places. Les 8 salles ne servent pas."},
+ {"t":"qcm","txt":"3x = 12","q":"Pour trouver x, je dois :","o":["diviser 12 par 3","multiplier 12 par 3","soustraire 3 à 12"],"a":0,"exp":"3 × x = 12, donc x = 12 ÷ 3 = 4."},
+ {"t":"ordre","q":"Remets la phrase dans l’ordre.","phrase":"La solution de l’équation est 6."}
+],
+"brevet":[
+ {"id":"eq-b1","titre":"Deux tarifs","ctx":["Une salle de sport propose deux tarifs :","• Tarif A : 8 € par séance.","• Tarif B : un abonnement de 60 €, puis 3 € par séance."],
+  "qs":[
+   {"q":"**Calcule** le prix de 10 séances avec le tarif A.","type":"num","a":80,"unit":"€","aide":["8 € par séance, 10 séances."],"corr":["10 × 8 = 80"],"rep":"Avec le tarif A, 10 séances coûtent 80 €."},
+   {"q":"**Calcule** le prix de 10 séances avec le tarif B.","type":"num","a":90,"unit":"€","aide":["60 € plus 3 € par séance."],"corr":["60 + 10 × 3 = 60 + 30 = 90"],"rep":"Avec le tarif B, 10 séances coûtent 90 €."},
+   {"q":"On note x le nombre de séances. Quelle expression donne le prix avec le tarif B ?","type":"qcm","o":["60 + 3x","63x","3 + 60x"],"a":0,"aide":["60 €, plus 3 € pour chaque séance."],"corr":["60 + 3 × x = 60 + 3x"],"rep":"Le prix avec le tarif B est 60 + 3x."},
+   {"q":"**Résous** l’équation 8x = 60 + 3x.","type":"num","a":12,"aide":["J’enlève 3x aux deux membres."],"corr":["8x − 3x = 60","5x = 60","x = 12"],"rep":"La solution est 12 : pour 12 séances, les deux tarifs sont égaux."},
+   {"q":"**En déduire** quand le tarif B est le moins cher.","type":"qcm","o":["Pour plus de 12 séances.","Pour moins de 12 séances.","Pour 10 séances."],"a":0,"aide":["Teste avec 20 séances : tarif A puis tarif B."],"corr":["20 séances : A = 160 € et B = 120 €."],"rep":"Le tarif B est le moins cher pour plus de 12 séances."}
+  ]},
+ {"id":"eq-b2","titre":"Le carré et le rectangle","ctx":["Un carré a des côtés de x cm.","Un rectangle a une longueur de (x + 4) cm et une largeur de 3 cm.","Le carré et le rectangle ont le même périmètre."],
+  "qs":[
+   {"q":"**Exprime** le périmètre du carré en fonction de x.","type":"expr","a":"4x","form":"red","aide":["Un carré a 4 côtés égaux."],"corr":["P = 4 × x = 4x"],"rep":"Le périmètre du carré est 4x."},
+   {"q":"**Exprime** le périmètre du rectangle en fonction de x. **Réduis**.","type":"expr","a":"2x+14","form":"red","aide":["2 × (x + 4) + 2 × 3"],"corr":["2(x + 4) + 2 × 3","= 2x + 8 + 6","= 2x + 14"],"rep":"Le périmètre du rectangle est 2x + 14."},
+   {"q":"**Résous** l’équation 4x = 2x + 14.","type":"num","a":7,"aide":["J’enlève 2x aux deux membres."],"corr":["4x − 2x = 14","2x = 14","x = 7"],"rep":"La solution est 7 : le côté du carré mesure 7 cm."},
+   {"q":"**Calcule** le périmètre commun.","type":"num","a":28,"unit":"cm","aide":["Je remplace x par 7 dans 4x."],"corr":["4 × 7 = 28","Vérification : 2 × 7 + 14 = 28 ✓"],"rep":"Les deux figures ont un périmètre de 28 cm."}
+  ]},
+ {"id":"eq-b3","titre":"Une équation produit","ctx":["On veut résoudre l’équation (x − 5)(3x + 6) = 0."],
+  "qs":[
+   {"q":"Si un produit est égal à 0, alors :","type":"qcm","o":["un des facteurs est égal à 0","les deux facteurs sont égaux","le produit est négatif"],"a":0,"aide":["Pense à 0 × 7 = 0."],"corr":["A × B = 0 donc A = 0 ou B = 0."],"rep":"Un des facteurs est nul."},
+   {"q":"**Résous** l’équation x − 5 = 0.","type":"num","a":5,"aide":["J’ajoute 5 aux deux membres."],"corr":["x = 5"],"rep":"x = 5"},
+   {"q":"**Résous** l’équation 3x + 6 = 0.","type":"num","a":-2,"aide":["3x = −6"],"corr":["3x = −6","x = −6 ÷ 3 = −2"],"rep":"x = −2"},
+   {"q":"Quelles sont les solutions de (x − 5)(3x + 6) = 0 ?","type":"qcm","o":["5 et −2","−5 et 2","5 et 6"],"a":0,"aide":["Ce sont les deux nombres trouvés."],"corr":["x = 5 ou x = −2"],"rep":"Les solutions sont 5 et −2."}
+  ]}
+],
+"calc":["eq-test","eq-1","eq-2","eq-mise","eq-prod"],
+"mots":[
+ {"id":"equation","mot":"équation","art":"l’","g":"f","cat":"algebre","ill":"eq:bal|3x + 5|20","def":"Une [[égalité|egalite]] avec un nombre inconnu, souvent x. Exemple : 3x + 5 = 20.","ph":["Je résous l’[[équation|equation]] 2x + 1 = 9.","J’écris une [[équation|equation]] pour le problème."]},
+ {"id":"inconnue","mot":"inconnue","art":"l’","g":"f","cat":"algebre","ill":"txt:3{x} + 5 = 20","def":"Le nombre que l’on cherche dans une [[équation|equation]]. On l’écrit souvent x.","ph":["L’[[inconnue]] est le prix d’un stylo.","Je choisis l’[[inconnue]] : soit x l’âge de Tom."]},
+ {"id":"solution","mot":"solution","art":"la","g":"f","cat":"algebre","ill":"txt:x = [5]|3 × 5 + 5 = 20 ✓","def":"Le nombre qui rend l’[[égalité|egalite]] vraie. 5 est la solution de 3x + 5 = 20.","ph":["La [[solution]] de l’équation est 6.","Je vérifie la [[solution]]."]},
+ {"id":"membre","mot":"membre","art":"le","g":"m","cat":"algebre","ill":"eq:membres|3x + 5|20","def":"Une des deux parties d’une [[égalité|egalite]], à gauche ou à droite du signe =.","ph":["J’enlève 5 aux deux [[membres|membre]].","Le premier [[membre]] est 3x + 5."]},
+ {"id":"egalite","mot":"égalité","art":"l’","g":"f","cat":"algebre","ill":"txt:12 + 8 {=} 4 × 5","def":"Deux [[calculs|calcul]] reliés par le signe =. Ils ont la même valeur.","ph":["12 + 8 = 4 × 5 est une [[égalité|egalite]] vraie.","L’[[égalité|egalite]] est vraie pour x = 3."]},
+ {"id":"resoudre","mot":"résoudre","cat":"verbe","ill":"eq:bal2","f":{"c":"Résous · Résolvez","je":"je résous"},"def":"Trouver la [[solution]] d’une [[équation|equation]] ou d’un [[problème|probleme]].","ph":["Je [[résous|resoudre]] l’équation 4x = 24.","[[Résous|resoudre]] l’équation 2x + 3 = 11."]},
+ {"id":"isoler","mot":"isoler","cat":"verbe","ill":"txt:3{x} = 12|{x} = 12 ÷ 3 = 4","f":{"c":"Isole · Isolez","je":"j’isole"},"def":"Laisser l’[[inconnue]] seule d’un côté du signe =.","ph":["J’[[isole|isoler]] x dans le premier membre.","Pour [[isoler]] x, je divise par 3."]},
+ {"id":"tester","mot":"tester","cat":"verbe","ill":"txt:x = 4 ?|3 × 4 − 2 = [10] ✓","f":{"c":"Teste · Testez","je":"je teste"},"def":"[[Remplacer|remplacer]] x par un nombre pour voir si l’[[égalité|egalite]] est vraie.","ph":["Je [[teste|tester]] x = 4 dans l’équation.","[[Teste|tester]] l’égalité pour x = −1."]},
+ {"id":"mettre-en-equation","mot":"mettre en équation","cat":"verbe","ill":"ico2:miseeq","f":{"c":"Mets en équation · Mettez en équation","je":"je mets en équation"},"def":"Écrire une [[équation|equation]] qui traduit le [[problème|probleme]].","ph":["Je [[mets en équation|mettre-en-equation]] le problème.","Pour [[mettre en équation|mettre-en-equation]], je choisis d’abord l’inconnue."],"dire":["Soit x le nombre cherché.","Je traduis l’énoncé par une équation."]},
+ {"id":"equation-produit","mot":"équation produit nul","art":"l’","g":"f","cat":"algebre","ill":"txt:(x − 2)(x + 5) = {0}|x = 2   ou   x = −5","def":"Une [[équation|equation]] A × B = 0. Les solutions rendent A = 0 ou B = 0.","ph":["(x − 1)(x + 4) = 0 est une [[équation produit nul|equation-produit]].","Une [[équation produit nul|equation-produit]] a souvent deux solutions."]}
+]
+}
