@@ -2,3 +2,4 @@ dist/
 __pycache__/
 test/node_modules/
 test/e2e/site/
+livret/build/

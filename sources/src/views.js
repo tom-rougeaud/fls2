@@ -35,8 +35,12 @@ function trainCards(){
   <a class="modcard c-nombre" href="#/revision"><span class="mi">🔁</span><h3>Révision</h3><p>Ce que je dois encore travailler : mots et calculs ratés.</p></a>`; }
 
 /* ---------- Chapitres ---------- */
+/* Livret papier : un PDF par chapitre (cours, méthodes, exercices, fiches des mots) et le livret complet */
+function pdfChap(m){ const n=MODS.indexOf(m)+1; return `pdf/chapitre-${String(n).padStart(2,'0')}-${m.id}.pdf`; }
+const PDF_LIVRET='pdf/livret-maths-allophones-niveau-2.pdf';
 function viewChapitres(){ const doms=[...new Set(MODS.map(m=>m.domaine))];
-  return `<div class="stack"><h1>📚 Les chapitres</h1><p class="lede">16 chapitres pour tout le collège, et surtout la 3ᵉ. Dans chaque chapitre : le cours, la méthode, les mots, les exercices.</p>${legendHTML()}
+  return `<div class="stack"><h1>📚 Les chapitres</h1><p class="lede">16 chapitres pour tout le collège, et surtout la 3ᵉ. Dans chaque chapitre : le cours, la méthode, les mots, les exercices.</p>
+  <div class="card row" style="justify-content:space-between;align-items:center;gap:.75rem"><span>📄 <b>Le livret papier</b> : cours, méthodes, exercices, formulaire et glossaire, dans le même ordre que l’appli.</span><a class="btn sm go" href="${PDF_LIVRET}" target="_blank" rel="noopener" download>Télécharger le livret (PDF)</a></div>${legendHTML()}
   ${doms.map(d=>`<h2 class="domh">${esc(d)}</h2><div class="grid">${MODS.filter(m=>m.domaine===d).map(modCard).join('')}</div>`).join('')}</div>`; }
 const CTABS=[['cours','📖','Le cours'],['methode','🪜','La méthode'],['mots','🔤','Les mots'],['exos','🎯','Je m’entraîne']];
 function viewChap(){
@@ -45,7 +49,7 @@ function viewChap(){
   const i=MODS.indexOf(m), prev=MODS[i-1], next=MODS[i+1];
   let body=''; if(tab==='cours') body=coursHTML(m); else if(tab==='methode') body=methodeHTML(m); else if(tab==='mots') body=motsHTML(m); else body=exosHTML(m);
   return `<div class="stack c-${m.cat}">
-  <p class="row"><a href="#/chapitres" class="btn sm alt">← Chapitres</a><button type="button" class="btn sm alt" data-act="print" data-mod="${m.id}">🖨️ Imprimer le cours</button></p>
+  <p class="row"><a href="#/chapitres" class="btn sm alt">← Chapitres</a><button type="button" class="btn sm alt" data-act="print" data-mod="${m.id}">🖨️ Imprimer le cours</button><a class="btn sm go" href="${pdfChap(m)}" target="_blank" rel="noopener" download>📄 PDF du chapitre</a></p>
   <header class="chaphead"><span class="chapico" aria-hidden="true">${m.icone}</span><div><p class="mk-l">Chapitre ${m.num} · ${esc(m.domaine)} · ${esc(m.classe)}</p><h1>${esc(m.titre)}</h1><p class="lede">${esc(m.intro)}</p></div></header>
   <div class="card objs"><span class="lbl">🎯 Dans ce chapitre</span><ul>${(m.objectifs||[]).map(o=>`<li><span>${rich(o)}</span>${sayBtn(o,true)}</li>`).join('')}</ul></div>
   <nav class="ctabs" aria-label="Parties du chapitre">${CTABS.map(([id,ic,l])=>`<a href="#/chap/${m.id}/${id}" ${id===tab?'aria-current="page"':''}><span aria-hidden="true">${ic}</span> ${l}</a>`).join('')}</nav>
@@ -231,6 +235,7 @@ function viewApropos(){ const nT=(()=>{ try{ return studioItems().length; }catch
   <li>Pour chaque chapitre : un <b>cours en français facile</b> (inspiré du FALC : phrases courtes, une idée par phrase, des exemples), une <b>méthode pas à pas</b> avec un exemple résolu, et les <b>mots importants</b>.</li>
   <li><b>${N2.length} mots</b> du niveau 2, chacun avec une image, une définition simple, des phrases à réutiliser et sa prononciation. Les ${RAPPELS.length} mots de base du niveau 1 sont aussi là, en rappel.</li>
   <li>Trois sortes d’exercices de maths : <b>je comprends l’énoncé</b> (trouver la question, les données utiles, le sens d’un mot), <b>je calcule</b> (des calculs tirés au hasard, avec de l’aide et la correction), <b>comme au brevet</b> (des problèmes à plusieurs questions, et une phrase-réponse à rédiger).</li>
+  <li>Un <b>livret papier</b> en PDF, dans le même ordre que l’appli : le cours, les méthodes, des exercices à faire sur papier, un formulaire pour le brevet et le glossaire, avec des QR codes qui ouvrent le bon chapitre. Il se télécharge en entier (page Chapitres) ou chapitre par chapitre.</li>
   <li>Les verbes des consignes sont <b class="kv">en gras et soulignés</b>. Un chapitre entier explique les consignes du brevet : justifier, démontrer, en déduire, valeur exacte ou approchée…</li>
   <li>La <b>voix du professeur</b> (${nT} textes à enregistrer, plusieurs prises qui tournent) ; sinon une voix naturelle de synthèse. Une phrase est toujours dite en entier : jamais de sons assemblés. Les enregistrements du niveau 1 sont réutilisés quand le texte est le même.</li>
   <li>Des <b>commentaires comme au football</b>, la <b>spirale</b> (mots et calculs des chapitres déjà vus), un <b>brevet blanc</b>, un glossaire, un carnet, le zoom et des réglages d’affichage.</li></ul>

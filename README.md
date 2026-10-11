@@ -51,6 +51,33 @@ S’y ajoutent :
   - les fractions écrites sur deux étages.
 - Zoom, glossaire, carnet de progression (export / import / effacement) et fiche imprimable par chapitre.
 
+## Le livret papier (PDF)
+
+- `pdf/livret-maths-allophones-niveau-2.pdf` : le livret complet, environ 280 pages A4 en couleur, dans le même ordre que l’appli. Il se télécharge depuis la page *Chapitres* de l’appli.
+- `pdf/chapitre-NN-….pdf` : un PDF par chapitre, avec le cours, les méthodes, les exercices et les fiches des mots du chapitre. Bouton « 📄 PDF du chapitre » dans chaque chapitre de l’appli.
+- **Au début du livret** : une couverture, une page « comment ça marche », les phrases pour la classe et pour justifier, et le sommaire.
+- **Dans chaque chapitre** :
+  - le cours et les méthodes avec un exemple résolu ;
+  - des exercices sur papier : mots et images, définitions, « je lis l’énoncé », question et données, mot qui manque, phrase à remettre dans l’ordre, calculs en deux niveaux, problèmes « comme au brevet » avec un coup de pouce, phrase-réponse à rédiger, oral avec le voisin, mots croisés ou mots mêlés, bilan.
+- **Le reste du livret** :
+  - 4 révisions en spirale ;
+  - un formulaire pour le brevet ;
+  - le glossaire par chapitre (avec « Dans ma langue ») puis de A à Z ;
+  - une page « Mes nouveaux mots ».
+- **Les QR codes** ouvrent l’appli : l’accueil, un chapitre, ou ses mots à écouter. Leurs adresses ne doivent pas changer.
+- **La version professeur** a les réponses en rouge et un corrigé express. Elle n’est pas publiée dans ce dépôt.
+
+Pour refaire les PDF après une modification du contenu :
+
+```
+cd sources
+python3 build.py --publier
+cd livret
+python3 make.py --publier
+```
+
+Il faut Python avec Playwright (Chromium), `pypdf` et `segno`, ainsi que Node et jsdom (`sources/test`). Les calculs du livret sont tirés par les générateurs de l’appli, avec un tirage fixe : le livret est le même à chaque construction.
+
 ## La voix du professeur et le partage avec le niveau 1
 
 - Les enregistrements du niveau 2 vont dans les tables `fls2_clips` / `fls2_textes` et le stockage `fls2-voix` du même projet Supabase que le niveau 1.
@@ -62,12 +89,14 @@ S’y ajoutent :
 
 ```
 index.html            l’application (un seul fichier, construit à partir de sources/)
+pdf/                  le livret élève et un PDF par chapitre
 vendor/               voix naturelle (ONNX Runtime Web, phonémiseur Piper) et encodeur MP3 du studio
 supabase/             schéma des tables et du stockage (modèle, sans adresse personnelle)
 sources/
   content/            le contenu pédagogique : base.json + un fichier JSON par chapitre
   src/                code (core, db, voice, illus, illus2, maths, exos, studio, views, main), style, gabarit
   build.py            construit et vérifie l’application
+  livret/             générateur du livret PDF (gen.js, print.css, paginate.js, formulaire.js, make.py)
   test/               tests automatiques
 ```
 
