@@ -2669,7 +2669,7 @@ function viewAccueil(){
   <section><h2>Les chapitres</h2><div class="grid">${MODS.map(modCard).join('')}</div></section>
   <section><h2>S’entraîner</h2><div class="grid">${trainCards()}</div></section>
   <section class="card c-${w.cat}"><h2>Le mot du jour</h2><div class="row"><div style="width:7.5rem;background:var(--tt);border-radius:1rem">${renderIll(w.ill,w.cat)}</div><div style="flex:1 1 14rem"><p class="wc-word" style="font-size:1.8rem"><span class="art">${esc(w.art||'')}</span> <span class="m">${esc(w.mot)}</span></p><p>${rich(w.def)}</p><a class="btn sm alt" href="#/mot/${w.id}">Voir la fiche</a></div></div></section>
-  <section class="card n1card"><h2>Besoin des mots de base ?</h2><p class="small">Les mots plus simples (la somme, le triangle, entourer…) sont dans le <b>niveau 1</b>. Ils sont aussi dans le glossaire de cette appli, avec l’étiquette « niveau 1 ».</p><a class="btn sm alt" href="${N1_URL}" target="_blank" rel="noopener">Ouvrir Maths Allophones · niveau 1 ↗</a></section>
+  <section class="card n1card"><h2>Les autres niveaux</h2><p class="small">Les mots plus simples (la somme, le triangle, entourer…) sont dans le <b>niveau 1</b>. Ils sont aussi dans le glossaire de cette appli, avec l’étiquette « niveau 1 ». Les maths du lycée professionnel sont dans le <b>niveau 3</b>.</p><div class="row"><a class="btn sm alt" href="${N1_URL}" target="_blank" rel="noopener">Niveau 1 ↗</a><a class="btn sm alt" href="https://tom-rougeaud.github.io/fls3/" target="_blank" rel="noopener">Niveau 3 ↗</a></div></section>
   </div>`;
 }
 function trainCards(){
